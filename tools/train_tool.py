@@ -156,7 +156,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
                 if optimizer_was_run:
                     lr_scheduler.step()
                 optimizer.zero_grad()
-            
+
             if step % output_time == 0 and local_rank <= 0:
                 output_info = output_function(acc_result, config)
 
@@ -165,7 +165,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
                 output_value(current_epoch, "train", "%d/%d" % (step + 1, total_len), "%s/%s" % (
                     gen_time_str(delta_t), gen_time_str(delta_t * (total_len - step - 1) / (step + 1))),
                              "%.3lf" % (total_loss / (step + 1)), output_info, None, config)
-            
+
             # global_step += 1
             if (step + 1) % grad_accumulate == 0 and valid_mode == 'step' and int((step + 1) / grad_accumulate) % step_epoch == 0:
                 acc_result = None

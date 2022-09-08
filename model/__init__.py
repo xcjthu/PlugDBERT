@@ -1,8 +1,10 @@
 from .Pretrain.MLMPretrain import MLMPretrain
-from .Pretrain.VallinaPretrain import VallinaPretrain
+from .Pretrain.VallinaPretrain import VallinaPretrain,VallinaDeltaPretrain
+
 model_list = {
     "mlm": MLMPretrain,
-    "vallina": VallinaPretrain
+    "vallina": VallinaPretrain,
+    "vallina_delta": VallinaDeltaPretrain
 }
 
 def get_model(model_name):
