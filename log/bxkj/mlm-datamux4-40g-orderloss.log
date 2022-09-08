@@ -1,0 +1,1041 @@
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+None
+None
+None
+None
+None
+None
+None
+None
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+04/04/2022 21:48:53 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+04/04/2022 21:48:53 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/04/2022 21:48:53 - INFO - __main__ -   CUDA available: True
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+04/04/2022 21:48:54 - INFO - tools.init_tool -   Begin to initialize models...
+ignore 0 parameters/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+ignore parameters with nograd in name, and only 206 parameters are turned
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+None04/04/2022 21:49:03 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+
+None
+None04/04/2022 21:49:03 - INFO - tools.init_tool -   Initialize done.
+
+[train]
+Noneepoch: 20
+
+Nonebatch_size: 64
+
+shuffle: True
+reader_num: 8
+Nonegrad_accumulate: 2
+
+optimizer: AdamW
+learning_rate: 3e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mux_num: 4
+mlm_prob: 0.15
+reuse_num: 4
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+Nonebatch_size: 64
+
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: kara
+train_formatter_type: mlm
+train_data_path: /data/home/scv0540/xcj/datamux/data/wiki-webtext
+kara_namespace: pretrain
+kara_dataset: corpus
+kara_version: 1st
+valid_dataset_type: Raw
+valid_formatter_type: mlm
+valid_data_path: /data/home/scv0540/xcj/datamux/data/valid_text.jsonl
+========
+[model]
+model_name: mlm
+pretrained_model: /data/home/scv0540/xcj/PLMs/bert-base-uncased
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: /data/home/scv0540/xcj/datamux/checkpoint
+model_name: mlm-webtext
+output_function: avgloss
+========
+None
+04/04/2022 21:49:03 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+valid_mode step no_valid False
+step_epoch 1000
+04/04/2022 21:49:03 - INFO - tools.train_tool -   Start training
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+1         train   1/31702      0:21/11406:34      11.184  {"mlm": 11.050614356994629, "mse": 0.13339845836162567}
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/04/2022 21:49:25 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+1         train   101/31702    1:29/464:54        9.246   {"mlm": 9.12020999606293, "mse": 0.12563608479824398}
+1         train   201/31702    2:35/407:17        8.421   {"mlm": 8.331377053142187, "mse": 0.08916201522175353}
+1         train   301/31702    3:42/387:05        8.107   {"mlm": 8.038732069275309, "mse": 0.06808841999842974}
+1         train   401/31702    4:49/376:20        7.936   {"mlm": 7.881447566120404, "mse": 0.05490620003924926}
+1         train   501/31702    5:56/369:36        7.829   {"mlm": 7.782357711753922, "mse": 0.04622200362759823}
+1         train   601/31702    7:02/364:26        7.749   {"mlm": 7.709448185220931, "mse": 0.03995466217500918}
+1         train   701/31702    8:09/360:39        7.693   {"mlm": 7.657735179732428, "mse": 0.035271043426220366}
+1         train   801/31702    9:16/357:36        7.650   {"mlm": 7.618564006838757, "mse": 0.03167289021144738}
+1         train   901/31702   10:23/354:58        7.616   {"mlm": 7.586921281211252, "mse": 0.028802513551136496}
+1         train   1001/31702  11:29/352:39        7.588   {"mlm": 7.5613878299663595, "mse": 0.02646569940950033}
+1         train   1101/31702  12:36/350:31        7.565   {"mlm": 7.540649174994279, "mse": 0.02454213958172691}
+1         train   1201/31702  13:43/348:34        7.546   {"mlm": 7.523192887302243, "mse": 0.02291428607145633}
+1         train   1301/31702  14:50/346:45        7.530   {"mlm": 7.50843512068154, "mse": 0.02153580051347138}
+1         train   1401/31702  15:57/345:01        7.515   {"mlm": 7.4948848214513655, "mse": 0.020373434040244724}
+1         train   1501/31702  17:04/343:24        7.502   {"mlm": 7.483096115117387, "mse": 0.019403547340964306}
+1         train   1601/31702  18:11/341:52        7.490   {"mlm": 7.471582193809476, "mse": 0.018620478499042036}
+1         train   1701/31702  19:18/340:26        7.479   {"mlm": 7.4610368800401545, "mse": 0.017995902006298102}
+1         train   1801/31702  20:25/339:03        7.465   {"mlm": 7.447020101785528, "mse": 0.01749844568769144}
+1         train   1901/31702  21:32/337:40        7.447   {"mlm": 7.429615437890403, "mse": 0.01717219296105496}
+
+1         valid   1/15         0:12/ 2:51         6.817   
+1         valid   15/15        0:29/ 0:00         6.846   {"mlm": 6.841666666666667, "mse": 6.716666666666667, "train": 0.0}
+1         train   2001/31702  23:11/344:12        7.423   {"mlm": 6.8546624183654785, "mse": 0.012104437686502934}
+1         train   2101/31702  24:18/342:32        7.392   {"mlm": 6.767132811026998, "mse": 0.013313155473753958}
+1         train   2201/31702  25:25/340:53        7.358   {"mlm": 6.692851500724679, "mse": 0.013197828334436487}
+1         train   2301/31702  26:33/339:17        7.323   {"mlm": 6.640785204611744, "mse": 0.01304453668924067}
+1         train   2401/31702  27:40/337:44        7.287   {"mlm": 6.592377050261843, "mse": 0.012863455040663704}
+1         train   2501/31702  28:47/336:13        7.250   {"mlm": 6.546464892442593, "mse": 0.012730561168920138}
+1         train   2601/31702  29:55/334:43        7.214   {"mlm": 6.503377927916617, "mse": 0.012559278976612302}
+1         train   2701/31702  31:02/333:16        7.178   {"mlm": 6.466829680172081, "mse": 0.012421025252886403}
+1         train   2801/31702  32:09/331:49        7.143   {"mlm": 6.430464828505499, "mse": 0.012283371519599663}
+1         train   2901/31702  33:16/330:25        7.109   {"mlm": 6.397817160260267, "mse": 0.01215643462281546}
+1         train   3001/31702  34:24/329:01        7.075   {"mlm": 6.36809473580771, "mse": 0.012050559655851596}
+1         train   3101/31702  35:31/327:38        7.043   {"mlm": 6.340547453804952, "mse": 0.01198024737422814}
+1         train   3201/31702  36:38/326:16        7.011   {"mlm": 6.312151303001486, "mse": 0.011903486741888186}
+1         train   3301/31702  37:45/324:55        6.979   {"mlm": 6.284605619634325, "mse": 0.011780628364684947}
+1         train   3401/31702  38:53/323:34        6.949   {"mlm": 6.259098725860073, "mse": 0.011663604110910117}
+1         train   3501/31702  40:00/322:14        6.918   {"mlm": 6.234299239756504, "mse": 0.011562208419195379}
+1         train   3601/31702  41:07/320:57        6.889   {"mlm": 6.209344816833344, "mse": 0.011442261550233448}
+1         train   3701/31702  42:15/319:39        6.860   {"mlm": 6.186254275959425, "mse": 0.011332267115679927}
+1         train   3801/31702  43:22/318:21        6.831   {"mlm": 6.162823298717458, "mse": 0.011229519261722595}
+1         train   3901/31702  44:29/317:04        6.803   {"mlm": 6.139379877093464, "mse": 0.011120446092463336}
+
+1         valid   1/15         0:12/ 2:51         5.627   
+1         valid   15/15        0:29/ 0:00         5.637   {"mlm": 5.633333333333334, "mse": 5.433333333333334, "train": 0.0}
+1         train   4001/31702  46:08/319:29        6.775   {"mlm": 5.72178840637207, "mse": 0.009138006716966629}
+1         train   4101/31702  47:16/318:08        6.747   {"mlm": 5.621381736037755, "mse": 0.00902898196075665}
+1         train   4201/31702  48:23/316:46        6.720   {"mlm": 5.600750583914382, "mse": 0.008808760757822155}
+1         train   4301/31702  49:30/315:25        6.692   {"mlm": 5.580662408936459, "mse": 0.008696270122678573}
+1         train   4401/31702  50:38/314:06        6.665   {"mlm": 5.560230259883434, "mse": 0.008609026599619677}
+1         train   4501/31702  51:45/312:46        6.639   {"mlm": 5.543106431256749, "mse": 0.008544109644602517}
+1         train   4601/31702  52:52/311:27        6.613   {"mlm": 5.52237123657582, "mse": 0.008500159065705568}
+1         train   4701/31702  53:59/310:08        6.587   {"mlm": 5.502540393154563, "mse": 0.00846870487672775}
+1         train   4801/31702  55:07/308:50        6.562   {"mlm": 5.486117688606443, "mse": 0.00838923365163725}
+1         train   4901/31702  56:14/307:32        6.537   {"mlm": 5.468840687441641, "mse": 0.00834423145351644}
+1         train   5001/31702  57:21/306:15        6.512   {"mlm": 5.44966194608233, "mse": 0.008278156255746816}
+1         train   5101/31702  58:28/304:58        6.487   {"mlm": 5.4316579271294, "mse": 0.008233379864884196}
+1         train   5201/31702  59:36/303:42        6.463   {"mlm": 5.413241963303158, "mse": 0.008205374611307442}
+1         train   5301/31702  60:43/302:25        6.438   {"mlm": 5.394154369052239, "mse": 0.008158527229834551}
+1         train   5401/31702  61:50/301:10        6.414   {"mlm": 5.374803954239491, "mse": 0.008105672773925706}
+1         train   5501/31702  62:58/299:54        6.390   {"mlm": 5.355476452143171, "mse": 0.008055121164773898}
+1         train   5601/31702  64:05/298:39        6.367   {"mlm": 5.33759068430103, "mse": 0.007998100837354062}
+1         train   5701/31702  65:12/297:24        6.344   {"mlm": 5.319929780853559, "mse": 0.007953818871867982}
+1         train   5801/31702  66:19/296:09        6.321   {"mlm": 5.303253430647694, "mse": 0.007916134999581985}
+1         train   5901/31702  67:27/294:55        6.298   {"mlm": 5.285795096909605, "mse": 0.00787371691896422}
+
+1         valid   1/15         0:12/ 2:51         4.923   
+1         valid   15/15        0:29/ 0:00         4.928   {"mlm": 4.925, "mse": 4.683333333333334, "train": 0.0}
+1         train   6001/31702  69:06/295:57        6.276   {"mlm": 4.875057697296143, "mse": 0.0071060266345739365}
+1         train   6101/31702  70:13/294:41        6.253   {"mlm": 4.8834332711625805, "mse": 0.00691073316398381}
+1         train   6201/31702  71:20/293:24        6.230   {"mlm": 4.849833832451361, "mse": 0.006888933806443837}
+1         train   6301/31702  72:28/292:08        6.207   {"mlm": 4.82346017178507, "mse": 0.006838393023243774}
+1         train   6401/31702  73:35/290:52        6.184   {"mlm": 4.8005402070328484, "mse": 0.00678673842132203}
+1         train   6501/31702  74:42/289:37        6.161   {"mlm": 4.778393635016953, "mse": 0.0067341858762764405}
+1         train   6601/31702  75:49/288:21        6.138   {"mlm": 4.75623506000157, "mse": 0.006670083405105971}
+1         train   6701/31702  76:57/287:06        6.115   {"mlm": 4.733000918563865, "mse": 0.00661867555063457}
+1         train   6801/31702  78:04/285:51        6.093   {"mlm": 4.713967785257823, "mse": 0.00657533189588774}
+1         train   6901/31702  79:11/284:37        6.070   {"mlm": 4.6949048534482225, "mse": 0.0065334173752518}
+1         train   7001/31702  80:19/283:22        6.045   {"mlm": 4.6583910779162245, "mse": 0.006493352272628726}
+1         train   7101/31702  81:26/282:08        6.012   {"mlm": 4.57049182087156, "mse": 0.00650484681080394}
+1         train   7201/31702  82:33/280:54        5.975   {"mlm": 4.4656706954120695, "mse": 0.006507707182798755}
+1         train   7301/31702  83:40/279:40        5.936   {"mlm": 4.360517880075442, "mse": 0.006511224794568784}
+1         train   7401/31702  84:48/278:26        5.898   {"mlm": 4.270823253043458, "mse": 0.006510881517949294}
+1         train   7501/31702  85:55/277:13        5.859   {"mlm": 4.185110706396694, "mse": 0.006512965339370603}
+1         train   7601/31702  87:02/275:59        5.829   {"mlm": 4.148804609660876, "mse": 0.006475051795176086}
+1         train   7701/31702  88:09/274:46        5.808   {"mlm": 4.150694963723193, "mse": 0.006415369228100177}
+1         train   7801/31702  89:17/273:33        5.788   {"mlm": 4.156205047838295, "mse": 0.006354424464870565}
+1         train   7901/31702  90:24/272:20        5.769   {"mlm": 4.162332702096922, "mse": 0.006292603847015647}
+
+1         valid   1/15         0:12/ 2:50         4.325   
+1         valid   15/15        0:28/ 0:00         4.291   {"mlm": 4.283333333333333, "mse": 4.05, "train": 0.0}
+1         train   8001/31702  92:03/272:42        5.750   {"mlm": 4.276952266693115, "mse": 0.005282329395413399}
+1         train   8101/31702  93:10/271:28        5.730   {"mlm": 4.165571996481112, "mse": 0.00491458278536649}
+1         train   8201/31702  94:18/270:14        5.711   {"mlm": 4.140982235249002, "mse": 0.0049023725931064705}
+1         train   8301/31702  95:25/269:00        5.691   {"mlm": 4.125796777465415, "mse": 0.004877478469076545}
+1         train   8401/31702  96:32/267:46        5.672   {"mlm": 4.106487797382764, "mse": 0.004842969803766643}
+1         train   8501/31702  97:39/266:33        5.653   {"mlm": 4.09446313804733, "mse": 0.004814080247551411}
+1         train   8601/31702  98:47/265:19        5.634   {"mlm": 4.0870049967742, "mse": 0.004777025765725434}
+1         train   8701/31702  99:54/264:06        5.616   {"mlm": 4.083868177743169, "mse": 0.004739557994069922}
+1         train   8801/31702  101:01/262:53       5.598   {"mlm": 4.0770820880799405, "mse": 0.004707782001428762}
+1         train   8901/31702  102:09/261:40       5.580   {"mlm": 4.0708747484310885, "mse": 0.004673017376773348}
+1         train   9001/31702  103:16/260:27       5.563   {"mlm": 4.063595773694994, "mse": 0.004641925785123006}
+1         train   9101/31702  104:23/259:14       5.546   {"mlm": 4.056388295855336, "mse": 0.0046142971984362005}
+1         train   9201/31702  105:30/258:02       5.528   {"mlm": 4.04816477245137, "mse": 0.004584470275653019}
+1         train   9301/31702  106:38/256:49       5.511   {"mlm": 4.040118897721733, "mse": 0.004552482073442247}
+1         train   9401/31702  107:45/255:37       5.494   {"mlm": 4.031430525578915, "mse": 0.004520828715511608}
+1         train   9501/31702  108:52/254:24       5.478   {"mlm": 4.021506107465019, "mse": 0.004489137375538674}
+1         train   9601/31702  109:59/253:12       5.461   {"mlm": 4.0102291976862, "mse": 0.00445699147027286}
+1         train   9701/31702  111:07/252:00       5.444   {"mlm": 3.9981765186415217, "mse": 0.004426208969292125}
+1         train   9801/31702  112:14/250:48       5.427   {"mlm": 3.987415725691063, "mse": 0.004397583489090634}
+1         train   9901/31702  113:21/249:36       5.411   {"mlm": 3.978722061250537, "mse": 0.004371292964932065}
+
+1         valid   1/15         0:12/ 2:50         3.873   
+1         valid   15/15        0:29/ 0:00         3.930   {"mlm": 3.925, "mse": 3.7583333333333333, "train": 0.0}
+1         train   10001/31702 115:01/249:34       5.395   {"mlm": 3.941218852996826, "mse": 0.003993338905274868}
+1         train   10101/31702 116:08/248:21       5.380   {"mlm": 3.8800446042920105, "mse": 0.003948740197788223}
+1         train   10201/31702 117:15/247:08       5.365   {"mlm": 3.8677502876490504, "mse": 0.003942739075994981}
+1         train   10301/31702 118:22/245:56       5.351   {"mlm": 3.8653012652729832, "mse": 0.0039040293951404354}
+1         train   10401/31702 119:30/244:44       5.336   {"mlm": 3.857549876643535, "mse": 0.0038682683922601235}
+1         train   10501/31702 120:37/243:31       5.321   {"mlm": 3.839846594842846, "mse": 0.003830324691588323}
+1         train   10601/31702 121:44/242:19       5.307   {"mlm": 3.8273521969203346, "mse": 0.0037962305471889936}
+1         train   10701/31702 122:51/241:07       5.292   {"mlm": 3.8152496824931146, "mse": 0.0037680229350802266}
+1         train   10801/31702 123:59/239:55       5.278   {"mlm": 3.802483469359437, "mse": 0.0037500294019583236}
+1         train   10901/31702 125:06/238:43       5.263   {"mlm": 3.792038007793363, "mse": 0.003727767833577806}
+1         train   11001/31702 126:13/237:31       5.249   {"mlm": 3.7810578658268765, "mse": 0.0037101295573839714}
+1         train   11101/31702 127:21/236:20       5.235   {"mlm": 3.7726044628860516, "mse": 0.0036924324141346682}
+1         train   11201/31702 128:28/235:08       5.221   {"mlm": 3.762857234646736, "mse": 0.0036752896360528783}
+1         train   11301/31702 129:35/233:56       5.207   {"mlm": 3.7540791375558253, "mse": 0.0036615423751145968}
+1         train   11401/31702 130:42/232:45       5.193   {"mlm": 3.7467563511387607, "mse": 0.0036477491799356424}
+1         train   11501/31702 131:50/231:33       5.180   {"mlm": 3.74414364089178, "mse": 0.003641503720018742}
+1         train   11601/31702 132:57/230:22       5.168   {"mlm": 3.74104976117946, "mse": 0.003635125678279283}
+1         train   11701/31702 134:04/229:11       5.155   {"mlm": 3.7381678303152865, "mse": 0.0036260679539135364}
+1         train   11801/31702 135:12/228:00       5.143   {"mlm": 3.73552693028638, "mse": 0.003618742650357188}
+1         train   11901/31702 136:19/226:48       5.130   {"mlm": 3.7326654728182613, "mse": 0.0036102306220958747}
+
+1         valid   1/15         0:12/ 2:51         3.646   
+1         valid   15/15        0:29/ 0:00         3.730   {"mlm": 3.725, "mse": 3.591666666666667, "train": 0.0}
+1         train   12001/31702 137:59/226:30       5.118   {"mlm": 3.6619069576263428, "mse": 0.0032514184713363647}
+1         train   12101/31702 139:06/225:19       5.106   {"mlm": 3.649941144603314, "mse": 0.0033891175477073925}
+1         train   12201/31702 140:13/224:07       5.094   {"mlm": 3.639226499481581, "mse": 0.003379356716087653}
+1         train   12301/31702 141:20/222:56       5.082   {"mlm": 3.6416293497497456, "mse": 0.0033717692436718467}
+1         train   12401/31702 142:28/221:44       5.071   {"mlm": 3.6405197004427636, "mse": 0.0033617599210016744}
+1         train   12501/31702 143:35/220:33       5.059   {"mlm": 3.6286873051268373, "mse": 0.0033458790387735217}
+1         train   12601/31702 144:42/219:21       5.047   {"mlm": 3.61857733670963, "mse": 0.0033366317119288215}
+1         train   12701/31702 145:50/218:10       5.035   {"mlm": 3.609020695706747, "mse": 0.0033266554535439667}
+1         train   12801/31702 146:57/216:59       5.023   {"mlm": 3.6000600001041065, "mse": 0.0033148850916597653}
+1         train   12901/31702 148:04/215:47       5.012   {"mlm": 3.5942914530916035, "mse": 0.0033035537012988136}
+1         train   13001/31702 149:12/214:37       5.001   {"mlm": 3.5961259028294705, "mse": 0.003301505733246019}
+1         train   13101/31702 150:19/213:26       4.991   {"mlm": 3.601534172581284, "mse": 0.0033048666317056488}
+1         train   13201/31702 151:26/212:15       4.981   {"mlm": 3.606432824210263, "mse": 0.0033061576411624336}
+1         train   13301/31702 152:34/211:04       4.971   {"mlm": 3.6093151943212654, "mse": 0.003304941602606759}
+1         train   13401/31702 153:41/209:53       4.961   {"mlm": 3.6111809228846723, "mse": 0.003303999195758155}
+1         train   13501/31702 154:48/208:42       4.951   {"mlm": 3.6084693389920535, "mse": 0.0032974195194745226}
+1         train   13601/31702 155:55/207:31       4.940   {"mlm": 3.604231599567087, "mse": 0.0032892427389753713}
+1         train   13701/31702 157:03/206:20       4.930   {"mlm": 3.599382799558959, "mse": 0.0032817314949427578}
+1         train   13801/31702 158:10/205:09       4.920   {"mlm": 3.5949769536367326, "mse": 0.00327458626889044}
+1         train   13901/31702 159:17/203:59       4.910   {"mlm": 3.591048682632727, "mse": 0.003267246282814773}
+
+1         valid   1/15         0:11/ 2:46         3.599   
+1         valid   15/15        0:28/ 0:00         3.603   {"mlm": 3.6, "mse": 3.475, "train": 0.0}
+1         train   14001/31702 160:56/203:28       4.900   {"mlm": 3.4746384620666504, "mse": 0.0032149471808224916}
+1         train   14101/31702 162:04/202:17       4.890   {"mlm": 3.489616365716009, "mse": 0.003112862709596163}
+1         train   14201/31702 163:11/201:06       4.880   {"mlm": 3.481483213937105, "mse": 0.0030933034279620026}
+1         train   14301/31702 164:18/199:55       4.870   {"mlm": 3.472344545034871, "mse": 0.003097348257843591}
+1         train   14401/31702 165:25/198:44       4.860   {"mlm": 3.469335539382592, "mse": 0.0030895166216357763}
+1         train   14501/31702 166:33/197:33       4.850   {"mlm": 3.4612767415608237, "mse": 0.0030762703671954766}
+1         train   14601/31702 167:40/196:22       4.840   {"mlm": 3.4512041583037414, "mse": 0.003065907756275747}
+1         train   14701/31702 168:47/195:12       4.831   {"mlm": 3.4434457240193104, "mse": 0.0030534080051672187}
+1         train   14801/31702 169:54/194:01       4.821   {"mlm": 3.4361049447315613, "mse": 0.0030463034637067724}
+1         train   14901/31702 171:02/192:50       4.811   {"mlm": 3.4321558523125177, "mse": 0.0030361309280095995}
+1         train   15001/31702 172:09/191:40       4.803   {"mlm": 3.4370420788908813, "mse": 0.003038849231771209}
+1         train   15101/31702 173:16/190:29       4.794   {"mlm": 3.444077672577251, "mse": 0.003044873234527448}
+1         train   15201/31702 174:24/189:18       4.786   {"mlm": 3.4492446534540333, "mse": 0.003051267239690869}
+1         train   15301/31702 175:31/188:08       4.777   {"mlm": 3.4530724090030795, "mse": 0.003055058536567166}
+1         train   15401/31702 176:38/186:57       4.769   {"mlm": 3.4543957097627365, "mse": 0.0030588355537924084}
+1         train   15501/31702 177:45/185:47       4.760   {"mlm": 3.450975406654353, "mse": 0.003056476021410127}
+1         train   15601/31702 178:53/184:37       4.751   {"mlm": 3.4467436123609096, "mse": 0.0030511916476330353}
+1         train   15701/31702 180:00/183:26       4.742   {"mlm": 3.4429224263493414, "mse": 0.003045741305097955}
+1         train   15801/31702 181:07/182:16       4.734   {"mlm": 3.4397300724715807, "mse": 0.0030380872410227197}
+1         train   15901/31702 182:15/181:06       4.725   {"mlm": 3.4364573641992253, "mse": 0.003033485896674733}
+
+1         valid   1/15         0:11/ 2:45         3.516   
+1         valid   15/15        0:28/ 0:00         3.507   {"mlm": 3.5, "mse": 3.3916666666666666, "train": 0.0}
+1         train   16001/31702 183:53/180:27       4.717   {"mlm": 3.280503511428833, "mse": 0.0029930188320577145}
+1         train   16101/31702 185:01/179:16       4.709   {"mlm": 3.3707295101467927, "mse": 0.002923973474079872}
+1         train   16201/31702 186:08/178:06       4.700   {"mlm": 3.3677749503311234, "mse": 0.002925863160533988}
+1         train   16301/31702 187:15/176:55       4.692   {"mlm": 3.369428533256252, "mse": 0.002930316657904672}
+1         train   16401/31702 188:23/175:45       4.684   {"mlm": 3.372531958054426, "mse": 0.0029236741022594702}
+1         train   16501/31702 189:30/174:34       4.677   {"mlm": 3.384658291906178, "mse": 0.0029357008509590717}
+1         train   16601/31702 190:37/173:24       4.669   {"mlm": 3.395428625002082, "mse": 0.0029484249911768466}
+1         train   16701/31702 191:45/172:14       4.662   {"mlm": 3.404094935823949, "mse": 0.0029565357807731407}
+1         train   16801/31702 192:52/171:03       4.655   {"mlm": 3.409388024559926, "mse": 0.0029609849552662297}
+1         train   16901/31702 193:59/169:53       4.648   {"mlm": 3.4111866286803827, "mse": 0.0029611027599017775}
+1         train   17001/31702 195:07/168:43       4.640   {"mlm": 3.4046297656906233, "mse": 0.0029548951387442612}
+1         train   17101/31702 196:14/167:33       4.632   {"mlm": 3.395475194413049, "mse": 0.002946387548600201}
+1         train   17201/31702 197:21/166:22       4.624   {"mlm": 3.3879384051552424, "mse": 0.002939753429607475}
+1         train   17301/31702 198:29/165:12       4.617   {"mlm": 3.3798676413082327, "mse": 0.0029299866295721005}
+1         train   17401/31702 199:36/164:02       4.609   {"mlm": 3.3708854531663217, "mse": 0.002920605356091744}
+1         train   17501/31702 200:43/162:52       4.601   {"mlm": 3.363734789326698, "mse": 0.0029113072527201475}
+1         train   17601/31702 201:50/161:42       4.593   {"mlm": 3.355110690118669, "mse": 0.002903640359089821}
+1         train   17701/31702 202:58/160:32       4.586   {"mlm": 3.3491747344262035, "mse": 0.0028962366157559037}
+1         train   17801/31702 204:05/159:22       4.579   {"mlm": 3.3463015153896536, "mse": 0.002891005488730003}
+1         train   17901/31702 205:12/158:12       4.571   {"mlm": 3.343427065609004, "mse": 0.002886090211830896}
+
+1         valid   1/15         0:12/ 2:51         3.434   
+1         valid   15/15        0:28/ 0:00         3.426   {"mlm": 3.425, "mse": 3.325, "train": 0.0}
+1         train   18001/31702 206:51/157:27       4.564   {"mlm": 3.1562912464141846, "mse": 0.0028537227772176266}
+1         train   18101/31702 207:59/156:16       4.557   {"mlm": 3.3052776449977763, "mse": 0.002803206805711483}
+1         train   18201/31702 209:06/155:06       4.550   {"mlm": 3.2933116575971764, "mse": 0.0027942911221353864}
+1         train   18301/31702 210:13/153:56       4.544   {"mlm": 3.2919623289393427, "mse": 0.0027934946189402446}
+1         train   18401/31702 211:21/152:46       4.537   {"mlm": 3.293101294676859, "mse": 0.002787258264671389}
+1         train   18501/31702 212:28/151:36       4.530   {"mlm": 3.2939401443846927, "mse": 0.002786308212834085}
+1         train   18601/31702 213:35/150:26       4.524   {"mlm": 3.296299883212504, "mse": 0.002782831993573864}
+1         train   18701/31702 214:42/149:16       4.517   {"mlm": 3.2949950572597486, "mse": 0.0027826510717861154}
+1         train   18801/31702 215:50/148:06       4.510   {"mlm": 3.2934630658296165, "mse": 0.0027826793329643732}
+1         train   18901/31702 216:57/146:56       4.504   {"mlm": 3.292118357765291, "mse": 0.0027814770272967058}
+1         train   19001/31702 218:04/145:46       4.497   {"mlm": 3.2885947044079122, "mse": 0.0027772868726659307}
+1         train   19101/31702 219:11/144:36       4.491   {"mlm": 3.283419955545507, "mse": 0.0027712539855989675}
+1         train   19201/31702 220:19/143:26       4.484   {"mlm": 3.2794561608447124, "mse": 0.0027677553682995157}
+1         train   19301/31702 221:26/142:16       4.478   {"mlm": 3.275614718122724, "mse": 0.002765972377713784}
+1         train   19401/31702 222:33/141:06       4.472   {"mlm": 3.274590823924346, "mse": 0.002763585794084226}
+1         train   19501/31702 223:41/139:57       4.465   {"mlm": 3.274662660647042, "mse": 0.002761422536415926}
+1         train   19601/31702 224:48/138:47       4.459   {"mlm": 3.2756801801201405, "mse": 0.002760798297182591}
+1         train   19701/31702 225:55/137:37       4.453   {"mlm": 3.2761136828136053, "mse": 0.002758582034884683}
+1         train   19801/31702 227:03/136:27       4.448   {"mlm": 3.2762029598581335, "mse": 0.002755950988326708}
+1         train   19901/31702 228:10/135:18       4.442   {"mlm": 3.2755489354381933, "mse": 0.0027531314273068447}
+
+1         valid   1/15         0:12/ 2:54         3.404   
+1         valid   15/15        0:29/ 0:00         3.352   {"mlm": 3.35, "mse": 3.2666666666666666, "train": 0.0}
+1         train   20001/31702 229:49/134:27       4.436   {"mlm": 3.1200320720672607, "mse": 0.0027960450388491154}
+1         train   20101/31702 230:57/133:17       4.429   {"mlm": 3.206119667185415, "mse": 0.0026894626691753025}
+1         train   20201/31702 232:04/132:07       4.423   {"mlm": 3.204373070256627, "mse": 0.002694552739970942}
+1         train   20301/31702 233:11/130:57       4.417   {"mlm": 3.202280737632929, "mse": 0.0026910475894585993}
+1         train   20401/31702 234:18/129:47       4.412   {"mlm": 3.2074782985106967, "mse": 0.002697643980109818}
+1         train   20501/31702 235:26/128:38       4.406   {"mlm": 3.2178317548748026, "mse": 0.0027025051925242127}
+1         train   20601/31702 236:33/127:28       4.400   {"mlm": 3.226255415680008, "mse": 0.0027036175399882327}
+1         train   20701/31702 237:40/126:18       4.395   {"mlm": 3.2306497855465355, "mse": 0.0027058292861188234}
+1         train   20801/31702 238:48/125:08       4.389   {"mlm": 3.2331436740027533, "mse": 0.002705933651729916}
+1         train   20901/31702 239:55/123:59       4.384   {"mlm": 3.2355450006753834, "mse": 0.002705910762763695}
+1         train   21001/31702 241:02/122:49       4.379   {"mlm": 3.239097826726191, "mse": 0.002706537311375662}
+1         train   21101/31702 242:10/121:39       4.374   {"mlm": 3.242296663010586, "mse": 0.002708898231490337}
+1         train   21201/31702 243:17/120:30       4.368   {"mlm": 3.244869980387247, "mse": 0.002709795975612537}
+1         train   21301/31702 244:24/119:20       4.363   {"mlm": 3.2469837868974176, "mse": 0.0027096944672845126}
+1         train   21401/31702 245:31/118:10       4.358   {"mlm": 3.249196656681145, "mse": 0.002711708451535481}
+1         train   21501/31702 246:39/117:01       4.353   {"mlm": 3.2546749929838543, "mse": 0.0027147233374491286}
+1         train   21601/31702 247:46/115:51       4.349   {"mlm": 3.259401088353621, "mse": 0.002718452857208114}
+1         train   21701/31702 248:53/114:42       4.344   {"mlm": 3.263369025376739, "mse": 0.002721347808449155}
+1         train   21801/31702 250:00/113:32       4.339   {"mlm": 3.2673209419123403, "mse": 0.002722779609886583}
+1         train   21901/31702 251:08/112:23       4.335   {"mlm": 3.2684878932997026, "mse": 0.002721344738701914}
+
+1         valid   1/15         0:12/ 2:48         3.321   
+1         valid   15/15        0:28/ 0:00         3.307   {"mlm": 3.3, "mse": 3.216666666666667, "train": 0.0}
+1         train   22001/31702 252:47/111:27       4.329   {"mlm": 3.268599271774292, "mse": 0.002935849828645587}
+1         train   22101/31702 253:54/110:18       4.324   {"mlm": 3.1637376157364043, "mse": 0.002589076561484449}
+1         train   22201/31702 255:01/109:08       4.319   {"mlm": 3.158661446168055, "mse": 0.0025849529780651356}
+1         train   22301/31702 256:09/107:58       4.314   {"mlm": 3.1575484806517036, "mse": 0.0025882249824900764}
+1         train   22401/31702 257:16/106:49       4.309   {"mlm": 3.16039852192277, "mse": 0.0025944976528590904}
+1         train   22501/31702 258:23/105:39       4.304   {"mlm": 3.163982114868012, "mse": 0.002597851325997603}
+1         train   22601/31702 259:31/104:30       4.299   {"mlm": 3.1663241676006857, "mse": 0.002599164990773316}
+1         train   22701/31702 260:38/103:20       4.294   {"mlm": 3.1661752913035612, "mse": 0.0026013118360382896}
+1         train   22801/31702 261:45/102:11       4.289   {"mlm": 3.1653881382555253, "mse": 0.002602249016803916}
+1         train   22901/31702 262:52/101:01       4.284   {"mlm": 3.1644390529056765, "mse": 0.0026003982172503686}
+1         train   23001/31702 264:00/99:52        4.279   {"mlm": 3.1630029463982368, "mse": 0.002599887093054605}
+1         train   23101/31702 265:07/98:42        4.274   {"mlm": 3.161250364553051, "mse": 0.0025970549845000515}
+1         train   23201/31702 266:14/97:33        4.269   {"mlm": 3.160176444907272, "mse": 0.0025949636854225152}
+1         train   23301/31702 267:21/96:23        4.264   {"mlm": 3.158975268949645, "mse": 0.002591436655460345}
+1         train   23401/31702 268:29/95:14        4.259   {"mlm": 3.158150174633083, "mse": 0.0025890120306782836}
+1         train   23501/31702 269:36/94:05        4.255   {"mlm": 3.158385830192388, "mse": 0.002588823699218027}
+1         train   23601/31702 270:43/92:55        4.250   {"mlm": 3.1596476386890493, "mse": 0.002585266331247962}
+1         train   23701/31702 271:51/91:46        4.246   {"mlm": 3.160050603377686, "mse": 0.0025824927779649334}
+1         train   23801/31702 272:58/90:36        4.241   {"mlm": 3.1607372804458507, "mse": 0.0025802256750446567}
+1         train   23901/31702 274:05/89:27        4.237   {"mlm": 3.15926330419417, "mse": 0.002577457439202398}
+
+1         valid   1/15         0:12/ 2:49         3.171   
+1         valid   15/15        0:28/ 0:00         3.254   {"mlm": 3.25, "mse": 3.183333333333333, "train": 0.0}
+1         train   24001/31702 275:44/88:28        4.232   {"mlm": 3.1240522861480713, "mse": 0.0025609349831938744}
+1         train   24101/31702 276:52/87:19        4.227   {"mlm": 3.1172436511162482, "mse": 0.002531477114148807}
+1         train   24201/31702 277:59/86:09        4.223   {"mlm": 3.1170019735744345, "mse": 0.00253745659708569}
+1         train   24301/31702 279:06/85:00        4.218   {"mlm": 3.118594786653487, "mse": 0.0025372957660695942}
+1         train   24401/31702 280:14/83:50        4.214   {"mlm": 3.125762647524142, "mse": 0.0025357254699541446}
+1         train   24501/31702 281:21/82:41        4.210   {"mlm": 3.1296541924010257, "mse": 0.002533711629181714}
+1         train   24601/31702 282:28/81:32        4.205   {"mlm": 3.1331478002265767, "mse": 0.0025306997093187643}
+1         train   24701/31702 283:35/80:22        4.201   {"mlm": 3.136047113979084, "mse": 0.002528695609505566}
+1         train   24801/31702 284:43/79:13        4.197   {"mlm": 3.1361275883054316, "mse": 0.0025270792420781433}
+1         train   24901/31702 285:50/78:04        4.192   {"mlm": 3.135476092519559, "mse": 0.002523493832886864}
+1         train   25001/31702 286:57/76:54        4.188   {"mlm": 3.134353059155124, "mse": 0.002520976088276797}
+1         train   25101/31702 288:05/75:45        4.184   {"mlm": 3.1331943062410694, "mse": 0.0025195517817463093}
+1         train   25201/31702 289:12/74:36        4.180   {"mlm": 3.132395829884436, "mse": 0.0025186003680161815}
+1         train   25301/31702 290:19/73:27        4.176   {"mlm": 3.1316899239879494, "mse": 0.002516070217234895}
+1         train   25401/31702 291:27/72:17        4.171   {"mlm": 3.1306755811635467, "mse": 0.0025138874944740856}
+1         train   25501/31702 292:34/71:08        4.167   {"mlm": 3.1306079267899567, "mse": 0.002513232452454893}
+1         train   25601/31702 293:41/69:59        4.163   {"mlm": 3.129815672875046, "mse": 0.002512628399010173}
+1         train   25701/31702 294:48/68:50        4.159   {"mlm": 3.1289572792849354, "mse": 0.0025106149336606757}
+1         train   25801/31702 295:56/67:41        4.155   {"mlm": 3.128696321580623, "mse": 0.0025074095586764687}
+1         train   25901/31702 297:03/66:31        4.151   {"mlm": 3.1275937705213055, "mse": 0.002505825064426728}
+
+1         valid   1/15         0:11/ 2:47         3.205   
+1         valid   15/15        0:28/ 0:00         3.231   {"mlm": 3.225, "mse": 3.15, "train": 0.0}
+1         train   26001/31702 298:42/65:29        4.147   {"mlm": 3.1303446292877197, "mse": 0.00234207883477211}
+1         train   26101/31702 299:50/64:20        4.143   {"mlm": 3.1058663118003618, "mse": 0.002462469232683577}
+1         train   26201/31702 300:57/63:11        4.139   {"mlm": 3.1068239306929097, "mse": 0.002467702815902248}
+1         train   26301/31702 302:04/62:01        4.135   {"mlm": 3.1065955621459556, "mse": 0.0024748473370949}
+1         train   26401/31702 303:12/60:52        4.131   {"mlm": 3.108016700815976, "mse": 0.002475242857400913}
+1         train   26501/31702 304:19/59:43        4.128   {"mlm": 3.1042740359277783, "mse": 0.002475775904235934}
+1         train   26601/31702 305:26/58:34        4.124   {"mlm": 3.1022969188785394, "mse": 0.002476448684809931}
+1         train   26701/31702 306:33/57:25        4.120   {"mlm": 3.1016672749322085, "mse": 0.0024783493679936194}
+1         train   26801/31702 307:41/56:15        4.116   {"mlm": 3.096955306223418, "mse": 0.002473502912583032}
+1         train   26901/31702 308:48/55:06        4.112   {"mlm": 3.088388251940762, "mse": 0.002470433935274956}
+1         train   27001/31702 309:55/53:57        4.108   {"mlm": 3.082200815627625, "mse": 0.002467224662369871}
+1         train   27101/31702 311:03/52:48        4.104   {"mlm": 3.0753058744061543, "mse": 0.002464368851427378}
+1         train   27201/31702 312:10/51:39        4.100   {"mlm": 3.071143575552401, "mse": 0.00246024760650277}
+1         train   27301/31702 313:17/50:30        4.096   {"mlm": 3.072884441246719, "mse": 0.0024595098494108966}
+1         train   27401/31702 314:24/49:21        4.093   {"mlm": 3.0755925416776235, "mse": 0.0024580016046188116}
+1         train   27501/31702 315:32/48:12        4.089   {"mlm": 3.076779038170669, "mse": 0.0024581641484012233}
+1         train   27601/31702 316:39/47:02        4.085   {"mlm": 3.0782161113398288, "mse": 0.002458843060953544}
+1         train   27701/31702 317:46/45:53        4.082   {"mlm": 3.078503722096106, "mse": 0.0024573999286784205}
+1         train   27801/31702 318:53/44:44        4.078   {"mlm": 3.0765231031632836, "mse": 0.002455151624753161}
+1         train   27901/31702 320:01/43:35        4.074   {"mlm": 3.074399674835486, "mse": 0.00245351193294905}
+
+1         valid   1/15         0:12/ 2:50         3.139   
+1         valid   15/15        0:28/ 0:00         3.191   {"mlm": 3.183333333333333, "mse": 3.1166666666666667, "train": 0.0}
+1         train   28001/31702 321:40/42:31        4.070   {"mlm": 3.0601446628570557, "mse": 0.0022851082030683756}
+1         train   28101/31702 322:47/41:21        4.067   {"mlm": 3.0194819469263057, "mse": 0.0024251648787372185}
+1         train   28201/31702 323:55/40:12        4.063   {"mlm": 3.019223299785633, "mse": 0.0024166607462444262}
+1         train   28301/31702 325:02/39:03        4.059   {"mlm": 3.0237407082339063, "mse": 0.0024149335605213014}
+1         train   28401/31702 326:10/37:54        4.056   {"mlm": 3.027671230701437, "mse": 0.002413109890731084}
+1         train   28501/31702 327:17/36:45        4.052   {"mlm": 3.027657223318865, "mse": 0.0024123770169014046}
+1         train   28601/31702 328:24/35:36        4.049   {"mlm": 3.030251921115818, "mse": 0.002411947854889089}
+1         train   28701/31702 329:31/34:27        4.045   {"mlm": 3.0368936976760668, "mse": 0.002416993531872772}
+1         train   28801/31702 330:39/33:18        4.042   {"mlm": 3.0472089336457175, "mse": 0.0024291435529834845}
+1         train   28901/31702 331:46/32:09        4.039   {"mlm": 3.057087629140416, "mse": 0.0024398474795919545}
+1         train   29001/31702 332:53/31:00        4.036   {"mlm": 3.0659978839900943, "mse": 0.002447883218673842}
+1         train   29101/31702 334:01/29:51        4.033   {"mlm": 3.0726368076469983, "mse": 0.0024542225316271766}
+1         train   29201/31702 335:08/28:42        4.030   {"mlm": 3.078588293355073, "mse": 0.0024568869547761797}
+1         train   29301/31702 336:15/27:33        4.027   {"mlm": 3.0794872011614247, "mse": 0.0024547902607701885}
+1         train   29401/31702 337:23/26:24        4.023   {"mlm": 3.0793566021384895, "mse": 0.002452957612907063}
+1         train   29501/31702 338:30/25:15        4.020   {"mlm": 3.0793466351971, "mse": 0.002450754507063211}
+1         train   29601/31702 339:38/24:06        4.017   {"mlm": 3.0787299249709807, "mse": 0.0024484425520223054}
+1         train   29701/31702 340:45/22:57        4.014   {"mlm": 3.077563344556258, "mse": 0.002446190317323993}
+1         train   29801/31702 341:53/21:48        4.011   {"mlm": 3.077548931731839, "mse": 0.002444722289312579}
+1         train   29901/31702 343:00/20:39        4.008   {"mlm": 3.0787047675131247, "mse": 0.002443797428426438}
+
+1         valid   1/15         0:12/ 2:49         3.113   
+1         valid   15/15        0:29/ 0:00         3.164   {"mlm": 3.158333333333333, "mse": 3.091666666666667, "train": 0.0}
+1         train   30001/31702 344:39/19:32        4.005   {"mlm": 3.0709545612335205, "mse": 0.002298843814060092}
+1         train   30101/31702 345:47/18:23        4.001   {"mlm": 3.0822827438316724, "mse": 0.0024553904780140606}
+1         train   30201/31702 346:54/17:14        3.998   {"mlm": 3.085456033251179, "mse": 0.0024474415724253774}
+1         train   30301/31702 348:01/16:05        3.995   {"mlm": 3.0891792465286003, "mse": 0.0024556478360154206}
+1         train   30401/31702 349:09/14:56        3.993   {"mlm": 3.0944791101755347, "mse": 0.0024586928528768388}
+1         train   30501/31702 350:16/13:47        3.990   {"mlm": 3.094383398691813, "mse": 0.00245888850943533}
+1         train   30601/31702 351:23/12:38        3.987   {"mlm": 3.095321530311953, "mse": 0.0024608582589068697}
+1         train   30701/31702 352:31/11:29        3.984   {"mlm": 3.0952197127947625, "mse": 0.0024600323135519505}
+1         train   30801/31702 353:38/10:20        3.981   {"mlm": 3.0921373989400496, "mse": 0.0024526889834752988}
+1         train   30901/31702 354:45/ 9:11        3.978   {"mlm": 3.087319617795362, "mse": 0.0024469106630747774}
+1         train   31001/31702 355:53/ 8:02        3.975   {"mlm": 3.0849298128000386, "mse": 0.0024389169157038888}
+1         train   31101/31702 357:00/ 6:53        3.972   {"mlm": 3.082114945965177, "mse": 0.00243362079126647}
+1         train   31201/31702 358:07/ 5:45        3.969   {"mlm": 3.0813661544745807, "mse": 0.0024314201458261893}
+1         train   31301/31702 359:14/ 4:36        3.966   {"mlm": 3.085626884390078, "mse": 0.002436093649942196}
+1         train   31401/31702 360:22/ 3:27        3.964   {"mlm": 3.0856582383272224, "mse": 0.0024399292769294754}
+1         train   31501/31702 361:29/ 2:18        3.961   {"mlm": 3.0846055804055026, "mse": 0.0024428735665547635}
+1         train   31601/31702 362:36/ 1:09        3.958   {"mlm": 3.0862301843453763, "mse": 0.0024463960784269286}
+1         train   31701/31702 363:44/ 0:00        3.955   {"mlm": 3.0863545118956477, "mse": 0.0024486007312611666}
+True False
+skip validation
+2         train   1/31702      0:21/11176:32      3.019   {"mlm": 3.0170836448669434, "mse": 0.002187133301049471}
+2         train   101/31702    1:30/470:31        3.017   {"mlm": 3.0142010721829857, "mse": 0.0023717934975750967}
+2         train   201/31702    2:37/411:55        3.026   {"mlm": 3.023832806307285, "mse": 0.0023747027946626814}
+2         train   301/31702    3:45/391:30        3.030   {"mlm": 3.027670529197617, "mse": 0.0023727761713039142}
+2         train   401/31702    4:52/380:45        3.027   {"mlm": 3.0245590424002553, "mse": 0.0023718337183516298}
+2         train   501/31702    5:59/373:37        3.027   {"mlm": 3.024794424841266, "mse": 0.0023719905517779723}
+2         train   601/31702    7:07/368:29        3.028   {"mlm": 3.025644020708944, "mse": 0.002375925559094935}
+2         train   701/31702    8:14/364:36        3.027   {"mlm": 3.024631512148064, "mse": 0.0023797971894632436}
+2         train   801/31702    9:21/361:18        3.027   {"mlm": 3.024478775433982, "mse": 0.0023786727700628963}
+2         train   901/31702   10:29/358:29        3.026   {"mlm": 3.0231551674177064, "mse": 0.0023791798574955398}
+2         train   1001/31702  11:36/356:01        3.025   {"mlm": 3.0222406454019612, "mse": 0.0023799701342610393}
+2         train   1101/31702  12:43/353:47        3.025   {"mlm": 3.0229664760541093, "mse": 0.0023787393277810444}
+2         train   1201/31702  13:51/351:45        3.025   {"mlm": 3.022742105264846, "mse": 0.002378034124501378}
+2         train   1301/31702  14:58/349:52        3.025   {"mlm": 3.0226252124824495, "mse": 0.002377079902495974}
+2         train   1401/31702  16:05/348:07        3.025   {"mlm": 3.0226962234529746, "mse": 0.0023765286278155107}
+2         train   1501/31702  17:13/346:24        3.025   {"mlm": 3.0227304715303323, "mse": 0.002377535496806747}
+2         train   1601/31702  18:20/344:50        3.024   {"mlm": 3.0219500096122744, "mse": 0.0023761465412557013}
+2         train   1701/31702  19:27/343:15        3.024   {"mlm": 3.0214521984434493, "mse": 0.0023749662813145242}
+2         train   1801/31702  20:35/341:45        3.024   {"mlm": 3.0213936255548743, "mse": 0.0023744434908421286}
+2         train   1901/31702  21:42/340:17        3.023   {"mlm": 3.020352489505549, "mse": 0.0023728852947318495}
+
+2         valid   1/15         0:12/ 2:53         3.147   
+2         valid   15/15        0:29/ 0:00         3.122   {"mlm": 3.1166666666666667, "mse": 3.05, "train": 0.0}
+2         train   2001/31702  23:21/346:39        3.022   {"mlm": 2.935027599334717, "mse": 0.0022690966725349426}
+2         train   2101/31702  24:28/344:50        3.021   {"mlm": 3.0053505637858176, "mse": 0.0023637897874422297}
+2         train   2201/31702  25:35/343:07        3.022   {"mlm": 3.0224081354947825, "mse": 0.002368464257419851}
+2         train   2301/31702  26:43/341:26        3.022   {"mlm": 3.023140399558996, "mse": 0.002371401634327201}
+2         train   2401/31702  27:50/339:46        3.022   {"mlm": 3.0232140197420954, "mse": 0.0023727960329493532}
+2         train   2501/31702  28:57/338:11        3.023   {"mlm": 3.024562503525359, "mse": 0.002371235765951747}
+2         train   2601/31702  30:05/336:38        3.023   {"mlm": 3.025615423570655, "mse": 0.0023727715774725954}
+2         train   2701/31702  31:12/335:06        3.024   {"mlm": 3.0275110242710306, "mse": 0.002378627827282086}
+2         train   2801/31702  32:19/333:36        3.025   {"mlm": 3.029385271441475, "mse": 0.002382595164726922}
+2         train   2901/31702  33:27/332:08        3.025   {"mlm": 3.028965398818089, "mse": 0.002385027666052144}
+2         train   3001/31702  34:34/330:42        3.026   {"mlm": 3.0306895126948703, "mse": 0.0023864380734787507}
+2         train   3101/31702  35:42/329:17        3.025   {"mlm": 3.0294547999154213, "mse": 0.0023872536223476497}
+2         train   3201/31702  36:49/327:52        3.024   {"mlm": 3.0258084651731036, "mse": 0.0023829776172965863}
+2         train   3301/31702  37:56/326:28        3.024   {"mlm": 3.023818098884835, "mse": 0.0023807579426697637}
+2         train   3401/31702  39:04/325:05        3.022   {"mlm": 3.021119938842915, "mse": 0.0023788691983278377}
+2         train   3501/31702  40:11/323:43        3.022   {"mlm": 3.0188850379641416, "mse": 0.002375936247333934}
+2         train   3601/31702  41:18/322:22        3.021   {"mlm": 3.017024465533512, "mse": 0.0023748936795622}
+2         train   3701/31702  42:25/321:01        3.021   {"mlm": 3.0173377103485968, "mse": 0.0023763110048944094}
+2         train   3801/31702  43:33/319:41        3.021   {"mlm": 3.0172357315622653, "mse": 0.0023776325923357076}
+2         train   3901/31702  44:40/318:22        3.020   {"mlm": 3.0167379073253873, "mse": 0.0023790385380832147}
+
+2         valid   1/15         0:12/ 2:49         3.103   
+2         valid   15/15        0:28/ 0:00         3.089   {"mlm": 3.0833333333333335, "mse": 3.033333333333333, "train": 0.0}
+2         train   4001/31702  46:19/320:43        3.020   {"mlm": 2.941340446472168, "mse": 0.0022380659356713295}
+2         train   4101/31702  47:26/319:19        3.019   {"mlm": 2.983952555325952, "mse": 0.002393629136818028}
+2         train   4201/31702  48:34/317:56        3.017   {"mlm": 2.95220434131907, "mse": 0.0023638620933249073}
+2         train   4301/31702  49:41/316:34        3.015   {"mlm": 2.93648978166802, "mse": 0.002347093109548884}
+2         train   4401/31702  50:48/315:12        3.012   {"mlm": 2.9320759666233585, "mse": 0.0023346884620893847}
+2         train   4501/31702  51:56/313:51        3.010   {"mlm": 2.9268817654150925, "mse": 0.002329323078764086}
+2         train   4601/31702  53:03/312:30        3.008   {"mlm": 2.9231825243811835, "mse": 0.0023219292675812856}
+2         train   4701/31702  54:10/311:10        3.006   {"mlm": 2.9255965289987955, "mse": 0.0023227325719004013}
+2         train   4801/31702  55:17/309:50        3.005   {"mlm": 2.928308264890711, "mse": 0.0023209663932345407}
+2         train   4901/31702  56:25/308:31        3.005   {"mlm": 2.932960699189384, "mse": 0.0023214158232010627}
+2         train   5001/31702  57:32/307:12        3.004   {"mlm": 2.934814662723751, "mse": 0.002320872249452027}
+2         train   5101/31702  58:39/305:54        3.003   {"mlm": 2.9370017027876574, "mse": 0.002320956353979569}
+2         train   5201/31702  59:46/304:36        3.002   {"mlm": 2.93744216096292, "mse": 0.002321776351406798}
+2         train   5301/31702  60:54/303:19        3.001   {"mlm": 2.93830960095616, "mse": 0.0023219383883287844}
+2         train   5401/31702  62:01/302:03        3.000   {"mlm": 2.938367399805193, "mse": 0.0023208220343409287}
+2         train   5501/31702  63:08/300:46        2.999   {"mlm": 2.939280162407191, "mse": 0.0023202226848728076}
+2         train   5601/31702  64:16/299:30        2.998   {"mlm": 2.9399948169260304, "mse": 0.0023195177220973855}
+2         train   5701/31702  65:23/298:14        2.997   {"mlm": 2.940104760540576, "mse": 0.002318837921102824}
+2         train   5801/31702  66:31/296:59        2.996   {"mlm": 2.9404323792073677, "mse": 0.0023187586386377267}
+2         train   5901/31702  67:38/295:44        2.995   {"mlm": 2.9408052638604225, "mse": 0.002318684264614802}
+
+2         valid   1/15         0:12/ 2:50         2.942   
+2         valid   15/15        0:29/ 0:00         3.076   {"mlm": 3.075, "mse": 3.0083333333333333, "train": 0.0}
+2         train   6001/31702  69:17/296:45        2.995   {"mlm": 3.0082144737243652, "mse": 0.0023281555622816086}
+2         train   6101/31702  70:24/295:28        2.993   {"mlm": 2.8974584211217294, "mse": 0.002320813579890545}
+2         train   6201/31702  71:32/294:10        2.991   {"mlm": 2.877859607857851, "mse": 0.0023090555274683}
+2         train   6301/31702  72:39/292:53        2.988   {"mlm": 2.861272243170247, "mse": 0.0023000699319440463}
+2         train   6401/31702  73:46/291:36        2.986   {"mlm": 2.854316916548998, "mse": 0.0022942034505595665}
+2         train   6501/31702  74:53/290:20        2.984   {"mlm": 2.852425825096176, "mse": 0.002290893376278812}
+2         train   6601/31702  76:01/289:04        2.982   {"mlm": 2.8496114826837116, "mse": 0.0022880406763571967}
+2         train   6701/31702  77:08/287:48        2.979   {"mlm": 2.8473994694490745, "mse": 0.002286654263973959}
+2         train   6801/31702  78:15/286:33        2.977   {"mlm": 2.8446472664450884, "mse": 0.002285304242110208}
+2         train   6901/31702  79:23/285:17        2.975   {"mlm": 2.8432751765658666, "mse": 0.0022847030733553868}
+2         train   7001/31702  80:30/284:02        2.971   {"mlm": 2.8273172221340976, "mse": 0.002285006823814609}
+2         train   7101/31702  81:37/282:47        2.961   {"mlm": 2.7741858439484472, "mse": 0.0022938050774622245}
+2         train   7201/31702  82:44/281:33        2.948   {"mlm": 2.7138367419834437, "mse": 0.0023008490157322174}
+2         train   7301/31702  83:52/280:19        2.934   {"mlm": 2.6537823181350264, "mse": 0.002308042081778756}
+2         train   7401/31702  84:59/279:04        2.921   {"mlm": 2.605929872293629, "mse": 0.002313915720384975}
+2         train   7501/31702  86:06/277:50        2.908   {"mlm": 2.5611098892763406, "mse": 0.0023193448972140627}
+2         train   7601/31702  87:14/276:36        2.901   {"mlm": 2.5490973681527924, "mse": 0.002320421760585357}
+2         train   7701/31702  88:21/275:22        2.900   {"mlm": 2.5646410059186024, "mse": 0.002319216827995011}
+2         train   7801/31702  89:28/274:09        2.900   {"mlm": 2.583613393506628, "mse": 0.0023175010533650706}
+2         train   7901/31702  90:36/272:55        2.901   {"mlm": 2.602541533161125, "mse": 0.0023177844638309626}
+
+2         valid   1/15         0:11/ 2:47         2.994   
+2         valid   15/15        0:28/ 0:00         3.039   {"mlm": 3.033333333333333, "mse": 2.9833333333333334, "train": 0.0}
+2         train   8001/31702  92:15/273:16        2.901   {"mlm": 2.8654191493988037, "mse": 0.0023354056756943464}
+2         train   8101/31702  93:22/272:01        2.901   {"mlm": 2.8750017161416537, "mse": 0.002290606090688322}
+2         train   8201/31702  94:29/270:46        2.906   {"mlm": 3.0859128871367347, "mse": 0.002931123672386826}
+2         train   8301/31702  95:36/269:32        2.905   {"mlm": 3.015341734965378, "mse": 0.00273222980426742}
+2         train   8401/31702  96:44/268:18        2.904   {"mlm": 2.971547833107356, "mse": 0.0026213604616619032}
+2         train   8501/31702  97:51/267:04        2.904   {"mlm": 2.9455077900382096, "mse": 0.002558838475696341}
+2         train   8601/31702  98:58/265:50        2.904   {"mlm": 2.936862059321856, "mse": 0.002519309617572785}
+2         train   8701/31702  100:06/264:36       2.904   {"mlm": 2.931980475549521, "mse": 0.0024905305069481977}
+2         train   8801/31702  101:13/263:23       2.904   {"mlm": 2.926978096384532, "mse": 0.002468998834011744}
+2         train   8901/31702  102:20/262:09       2.903   {"mlm": 2.922771957949978, "mse": 0.0024503145266642646}
+2         train   9001/31702  103:27/260:56       2.904   {"mlm": 2.921714138913226, "mse": 0.002432277124211356}
+2         train   9101/31702  104:35/259:43       2.904   {"mlm": 2.9212092047491254, "mse": 0.0024164415691656947}
+2         train   9201/31702  105:42/258:30       2.904   {"mlm": 2.9197611957664393, "mse": 0.002399389640382374}
+2         train   9301/31702  106:49/257:17       2.904   {"mlm": 2.917812201355532, "mse": 0.0023821406458346293}
+2         train   9401/31702  107:56/256:04       2.904   {"mlm": 2.91668585502276, "mse": 0.002366052158070538}
+2         train   9501/31702  109:04/254:51       2.903   {"mlm": 2.913637444307453, "mse": 0.0023494960875470663}
+2         train   9601/31702  110:11/253:38       2.902   {"mlm": 2.9069506761656934, "mse": 0.002331891393729327}
+2         train   9701/31702  111:18/252:26       2.902   {"mlm": 2.9016118091670715, "mse": 0.002314924819765614}
+2         train   9801/31702  112:25/251:14       2.901   {"mlm": 2.896104926602302, "mse": 0.0022991523844087037}
+2         train   9901/31702  113:33/250:01       2.900   {"mlm": 2.892608156083823, "mse": 0.0022843940593699078}
+
+2         valid   1/15         0:12/ 2:49         2.897   
+2         valid   15/15        0:28/ 0:00         2.986   {"mlm": 2.9833333333333334, "mse": 2.941666666666667, "train": 0.0}
+2         train   10001/31702 115:12/249:58       2.900   {"mlm": 2.896306037902832, "mse": 0.0021311985328793526}
+2         train   10101/31702 116:19/248:45       2.900   {"mlm": 2.941564397056504, "mse": 0.0020762063230913464}
+2         train   10201/31702 117:26/247:32       2.901   {"mlm": 2.936310038637759, "mse": 0.002069073165674226}
+2         train   10301/31702 118:33/246:19       2.901   {"mlm": 2.9430589359068, "mse": 0.0020646999572307813}
+2         train   10401/31702 119:40/245:06       2.902   {"mlm": 2.9396070417323314, "mse": 0.0020539897689688716}
+2         train   10501/31702 120:48/243:53       2.901   {"mlm": 2.9273221031158507, "mse": 0.0020364610133915694}
+2         train   10601/31702 121:55/242:40       2.901   {"mlm": 2.9191557254251745, "mse": 0.0020213081071791725}
+2         train   10701/31702 123:02/241:28       2.901   {"mlm": 2.9089053092091297, "mse": 0.0020086696205697903}
+2         train   10801/31702 124:09/240:15       2.900   {"mlm": 2.9009917142537054, "mse": 0.0019990655353185854}
+2         train   10901/31702 125:16/239:02       2.900   {"mlm": 2.8942898481455814, "mse": 0.0019902736850426045}
+2         train   11001/31702 126:23/237:50       2.899   {"mlm": 2.887901384513695, "mse": 0.001983267469815426}
+2         train   11101/31702 127:30/236:38       2.899   {"mlm": 2.8838383566781025, "mse": 0.0019778874394002556}
+2         train   11201/31702 128:38/235:26       2.898   {"mlm": 2.878865537198755, "mse": 0.0019722094977054306}
+2         train   11301/31702 129:45/234:13       2.897   {"mlm": 2.8741752078769576, "mse": 0.001967487195299095}
+2         train   11401/31702 130:52/233:01       2.897   {"mlm": 2.870149572094707, "mse": 0.0019641846485188674}
+2         train   11501/31702 131:59/231:49       2.897   {"mlm": 2.8719042837421234, "mse": 0.001965653722724821}
+2         train   11601/31702 133:06/230:38       2.897   {"mlm": 2.8732948499795126, "mse": 0.0019679451704509255}
+2         train   11701/31702 134:13/229:26       2.897   {"mlm": 2.874714155606422, "mse": 0.0019696712507447475}
+2         train   11801/31702 135:20/228:14       2.897   {"mlm": 2.8761085460478566, "mse": 0.0019717670714421644}
+2         train   11901/31702 136:27/227:02       2.897   {"mlm": 2.877962566563357, "mse": 0.0019730143500114746}
+
+2         valid   1/15         0:11/ 2:46         2.925   
+2         valid   15/15        0:28/ 0:00         2.943   {"mlm": 2.941666666666667, "mse": 2.9, "train": 0.0}
+2         train   12001/31702 138:06/226:42       2.897   {"mlm": 2.8909928798675537, "mse": 0.001967119984328747}
+2         train   12101/31702 139:13/225:30       2.897   {"mlm": 2.874690280102267, "mse": 0.0019704445477316877}
+2         train   12201/31702 140:20/224:18       2.896   {"mlm": 2.8746141912925305, "mse": 0.0019692631898244}
+2         train   12301/31702 141:27/223:06       2.896   {"mlm": 2.874251046450035, "mse": 0.0019753592381210523}
+2         train   12401/31702 142:34/221:54       2.896   {"mlm": 2.8731243907662103, "mse": 0.0019764075586409715}
+2         train   12501/31702 143:41/220:42       2.896   {"mlm": 2.8647687016371006, "mse": 0.0019725772360257967}
+2         train   12601/31702 144:49/219:31       2.895   {"mlm": 2.857781469326051, "mse": 0.001967331311842132}
+2         train   12701/31702 145:56/218:19       2.894   {"mlm": 2.8510659268171064, "mse": 0.001962590946207426}
+2         train   12801/31702 147:03/217:07       2.894   {"mlm": 2.845502792375067, "mse": 0.001959012014403028}
+2         train   12901/31702 148:10/215:56       2.893   {"mlm": 2.8423514916550174, "mse": 0.00195709259425508}
+2         train   13001/31702 149:17/214:44       2.893   {"mlm": 2.8472344363247837, "mse": 0.0019618370124817146}
+2         train   13101/31702 150:24/213:33       2.893   {"mlm": 2.855285722271731, "mse": 0.0019698318513364046}
+2         train   13201/31702 151:32/212:22       2.894   {"mlm": 2.8627507134738512, "mse": 0.00197797288238416}
+2         train   13301/31702 152:39/211:11       2.894   {"mlm": 2.8685081215843065, "mse": 0.0019842143157829204}
+2         train   13401/31702 153:46/210:00       2.894   {"mlm": 2.871862762575061, "mse": 0.00198886713631608}
+2         train   13501/31702 154:53/208:49       2.894   {"mlm": 2.8721537690095946, "mse": 0.0019889412333644048}
+2         train   13601/31702 156:00/207:38       2.894   {"mlm": 2.8704228302897845, "mse": 0.0019875966664869046}
+2         train   13701/31702 157:08/206:27       2.894   {"mlm": 2.868705562252917, "mse": 0.0019861201869038046}
+2         train   13801/31702 158:15/205:16       2.893   {"mlm": 2.866758134880045, "mse": 0.0019846436668958913}
+2         train   13901/31702 159:22/204:05       2.893   {"mlm": 2.8651969071628542, "mse": 0.001983601166849573}
+
+2         valid   1/15         0:12/ 2:51         2.845   
+2         valid   15/15        0:29/ 0:00         2.926   {"mlm": 2.925, "mse": 2.8666666666666667, "train": 0.0}
+2         train   14001/31702 161:01/203:35       2.892   {"mlm": 2.8667333126068115, "mse": 0.001910644001327455}
+2         train   14101/31702 162:08/202:23       2.892   {"mlm": 2.823690983328489, "mse": 0.001931475688666474}
+2         train   14201/31702 163:16/201:12       2.891   {"mlm": 2.8211316469296888, "mse": 0.001930580384084093}
+2         train   14301/31702 164:23/200:01       2.891   {"mlm": 2.81712524597827, "mse": 0.0019295688875582675}
+2         train   14401/31702 165:30/198:50       2.890   {"mlm": 2.8153886676131936, "mse": 0.0019291100780853532}
+2         train   14501/31702 166:37/197:39       2.890   {"mlm": 2.8121910452128884, "mse": 0.0019288578678569395}
+2         train   14601/31702 167:44/196:28       2.889   {"mlm": 2.804463210002753, "mse": 0.0019245349425131364}
+2         train   14701/31702 168:51/195:17       2.888   {"mlm": 2.798222207819004, "mse": 0.0019211867347907025}
+2         train   14801/31702 169:59/194:06       2.887   {"mlm": 2.794274667377924, "mse": 0.0019187866893251625}
+2         train   14901/31702 171:06/192:55       2.886   {"mlm": 2.789883784263433, "mse": 0.0019172625096781505}
+2         train   15001/31702 172:13/191:44       2.886   {"mlm": 2.7965490029646562, "mse": 0.0019245443196472276}
+2         train   15101/31702 173:20/190:33       2.886   {"mlm": 2.8057388154947143, "mse": 0.0019341927110771567}
+2         train   15201/31702 174:27/189:22       2.886   {"mlm": 2.811604682055242, "mse": 0.0019423743508497158}
+2         train   15301/31702 175:34/188:12       2.886   {"mlm": 2.8180502663201135, "mse": 0.0019502629495356848}
+2         train   15401/31702 176:42/187:01       2.886   {"mlm": 2.8211388436493747, "mse": 0.0019564317409873147}
+2         train   15501/31702 177:49/185:51       2.886   {"mlm": 2.821087921563186, "mse": 0.0019569340482140725}
+2         train   15601/31702 178:56/184:40       2.885   {"mlm": 2.819003025641075, "mse": 0.0019550400075393913}
+2         train   15701/31702 180:03/183:30       2.884   {"mlm": 2.8172904515813055, "mse": 0.001953506211176414}
+2         train   15801/31702 181:10/182:19       2.884   {"mlm": 2.8160628324611396, "mse": 0.0019516899211793467}
+2         train   15901/31702 182:18/181:09       2.883   {"mlm": 2.8151302567160426, "mse": 0.001950225989769817}
+
+2         valid   1/15         0:11/ 2:47         2.877   
+2         valid   15/15        0:28/ 0:00         2.908   {"mlm": 2.9, "mse": 2.8583333333333334, "train": 0.0}
+2         train   16001/31702 183:56/180:30       2.883   {"mlm": 2.702965497970581, "mse": 0.0019409982487559319}
+2         train   16101/31702 185:04/179:19       2.882   {"mlm": 2.8119996609074054, "mse": 0.0019370580338734654}
+2         train   16201/31702 186:11/178:08       2.882   {"mlm": 2.812562236738442, "mse": 0.0019402063726239017}
+2         train   16301/31702 187:18/176:58       2.882   {"mlm": 2.8102769392273355, "mse": 0.0019448896826699722}
+2         train   16401/31702 188:25/175:47       2.881   {"mlm": 2.8115835171982533, "mse": 0.001950806642283321}
+2         train   16501/31702 189:33/174:37       2.881   {"mlm": 2.8209847238011463, "mse": 0.0019679702616235365}
+2         train   16601/31702 190:40/173:26       2.881   {"mlm": 2.832220175103618, "mse": 0.0019833097455576806}
+2         train   16701/31702 191:47/172:16       2.881   {"mlm": 2.840505315981986, "mse": 0.00199505002699532}
+2         train   16801/31702 192:54/171:05       2.881   {"mlm": 2.847411464067285, "mse": 0.002004084789331365}
+2         train   16901/31702 194:01/169:55       2.881   {"mlm": 2.849326532503609, "mse": 0.0020091461867133317}
+2         train   17001/31702 195:08/168:44       2.881   {"mlm": 2.8425122305348918, "mse": 0.0020051825156372103}
+2         train   17101/31702 196:16/167:34       2.880   {"mlm": 2.8336029137187824, "mse": 0.0019993403031753816}
+2         train   17201/31702 197:23/166:24       2.879   {"mlm": 2.8251452475761396, "mse": 0.0019943095845628613}
+2         train   17301/31702 198:30/165:14       2.878   {"mlm": 2.8174924520599576, "mse": 0.00198985118673775}
+2         train   17401/31702 199:37/164:03       2.877   {"mlm": 2.8100659335025457, "mse": 0.001985241569077422}
+2         train   17501/31702 200:44/162:53       2.876   {"mlm": 2.8036302853075368, "mse": 0.0019818353538043417}
+2         train   17601/31702 201:52/161:43       2.875   {"mlm": 2.79617931915774, "mse": 0.001977691365866052}
+2         train   17701/31702 202:59/160:33       2.874   {"mlm": 2.791723267321444, "mse": 0.0019752606080197838}
+2         train   17801/31702 204:06/159:23       2.874   {"mlm": 2.7901255358993047, "mse": 0.0019736955944124994}
+2         train   17901/31702 205:13/158:13       2.873   {"mlm": 2.7899486272351357, "mse": 0.0019728602780379953}
+
+2         valid   1/15         0:11/ 2:47         2.895   
+2         valid   15/15        0:28/ 0:00         2.880   {"mlm": 2.875, "mse": 2.8333333333333335, "train": 0.0}
+2         train   18001/31702 206:52/157:27       2.873   {"mlm": 2.733461856842041, "mse": 0.0019641309045255184}
+2         train   18101/31702 207:59/156:17       2.872   {"mlm": 2.7790935440818862, "mse": 0.0019413469967865709}
+2         train   18201/31702 209:06/155:06       2.872   {"mlm": 2.7815680088688484, "mse": 0.001951988637030347}
+2         train   18301/31702 210:13/153:56       2.871   {"mlm": 2.776354042002529, "mse": 0.001954023580862042}
+2         train   18401/31702 211:21/152:46       2.871   {"mlm": 2.78020940635567, "mse": 0.0019574160478600393}
+2         train   18501/31702 212:28/151:36       2.870   {"mlm": 2.7842554360806586, "mse": 0.001960755833805708}
+2         train   18601/31702 213:35/150:26       2.870   {"mlm": 2.7859983079246993, "mse": 0.0019623116400641406}
+2         train   18701/31702 214:42/149:16       2.870   {"mlm": 2.7869794929928853, "mse": 0.0019655860721342236}
+2         train   18801/31702 215:49/148:06       2.869   {"mlm": 2.785211541977119, "mse": 0.0019672853298387614}
+2         train   18901/31702 216:57/146:56       2.869   {"mlm": 2.784458409138975, "mse": 0.0019677747317489555}
+2         train   19001/31702 218:04/145:46       2.868   {"mlm": 2.7816822733674256, "mse": 0.0019674131209002836}
+2         train   19101/31702 219:11/144:36       2.867   {"mlm": 2.7785613658101207, "mse": 0.0019659291617453883}
+2         train   19201/31702 220:18/143:26       2.867   {"mlm": 2.7746521749663215, "mse": 0.001965252726282971}
+2         train   19301/31702 221:26/142:16       2.866   {"mlm": 2.7716298632947964, "mse": 0.0019646651937635607}
+2         train   19401/31702 222:33/141:06       2.866   {"mlm": 2.7723351995235337, "mse": 0.001965933241718565}
+2         train   19501/31702 223:40/139:56       2.865   {"mlm": 2.773722849870665, "mse": 0.001967488757975593}
+2         train   19601/31702 224:47/138:46       2.865   {"mlm": 2.77618678609406, "mse": 0.001969047900007748}
+2         train   19701/31702 225:54/137:37       2.865   {"mlm": 2.777338634723078, "mse": 0.0019706507121841875}
+2         train   19801/31702 227:02/136:27       2.864   {"mlm": 2.778940972720564, "mse": 0.001972085523454246}
+2         train   19901/31702 228:09/135:17       2.864   {"mlm": 2.7795700090048125, "mse": 0.001973137093954345}
+
+2         valid   1/15         0:11/ 2:47         2.875   
+2         valid   15/15        0:28/ 0:00         2.880   {"mlm": 2.875, "mse": 2.8333333333333335, "train": 0.0}
+2         train   20001/31702 229:48/134:26       2.864   {"mlm": 2.657949447631836, "mse": 0.0019349901704117656}
+2         train   20101/31702 230:55/133:16       2.863   {"mlm": 2.7307347850044175, "mse": 0.0019516750633034228}
+2         train   20201/31702 232:02/132:06       2.862   {"mlm": 2.731122678785182, "mse": 0.001964300193833141}
+2         train   20301/31702 233:09/130:56       2.862   {"mlm": 2.72979296719117, "mse": 0.0019662431646231254}
+2         train   20401/31702 234:16/129:46       2.861   {"mlm": 2.7320381709167787, "mse": 0.0019785514240155456}
+2         train   20501/31702 235:23/128:36       2.861   {"mlm": 2.744431111151111, "mse": 0.0019891831817982824}
+2         train   20601/31702 236:30/127:26       2.860   {"mlm": 2.754045147665725, "mse": 0.0019978252136862887}
+2         train   20701/31702 237:37/126:16       2.860   {"mlm": 2.7606628839027523, "mse": 0.0020048026787316407}
+2         train   20801/31702 238:45/125:07       2.860   {"mlm": 2.7636664214354476, "mse": 0.002010295150706198}
+2         train   20901/31702 239:52/123:57       2.859   {"mlm": 2.7676842300000124, "mse": 0.0020150517430838682}
+2         train   21001/31702 240:59/122:47       2.859   {"mlm": 2.7726205640977675, "mse": 0.0020210026120478577}
+2         train   21101/31702 242:06/121:38       2.859   {"mlm": 2.777550987283497, "mse": 0.002025666844174198}
+2         train   21201/31702 243:14/120:28       2.859   {"mlm": 2.78132282149087, "mse": 0.0020306036903753218}
+2         train   21301/31702 244:21/119:18       2.859   {"mlm": 2.784566235853836, "mse": 0.002034103838429084}
+2         train   21401/31702 245:28/118:09       2.859   {"mlm": 2.787824307059833, "mse": 0.00203873332208295}
+2         train   21501/31702 246:35/116:59       2.859   {"mlm": 2.7949780992155944, "mse": 0.0020458013324040937}
+2         train   21601/31702 247:43/115:50       2.859   {"mlm": 2.800892498402354, "mse": 0.0020532949656296958}
+2         train   21701/31702 248:50/114:40       2.859   {"mlm": 2.805758418229522, "mse": 0.002059980937012026}
+2         train   21801/31702 249:57/113:31       2.859   {"mlm": 2.809888982296255, "mse": 0.002065582359251026}
+2         train   21901/31702 251:04/112:21       2.859   {"mlm": 2.8107155826705057, "mse": 0.0020683997791791546}
+
+2         valid   1/15         0:12/ 2:48         2.763   
+2         valid   15/15        0:28/ 0:00         2.850   {"mlm": 2.85, "mse": 2.8, "train": 0.0}
+2         train   22001/31702 252:43/111:26       2.859   {"mlm": 2.698547601699829, "mse": 0.0020660508889704943}
+2         train   22101/31702 253:50/110:16       2.858   {"mlm": 2.721514553126722, "mse": 0.0020001749196873592}
+2         train   22201/31702 254:57/109:06       2.857   {"mlm": 2.722213682250597, "mse": 0.0020063478408140403}
+2         train   22301/31702 256:04/107:57       2.857   {"mlm": 2.716355771321395, "mse": 0.0020066371459848066}
+2         train   22401/31702 257:12/106:47       2.856   {"mlm": 2.721313074045348, "mse": 0.002013073183196664}
+2         train   22501/31702 258:19/105:37       2.856   {"mlm": 2.726965213726143, "mse": 0.0020181869125056886}
+2         train   22601/31702 259:26/104:28       2.855   {"mlm": 2.731538610331429, "mse": 0.0020224857120813428}
+2         train   22701/31702 260:33/103:18       2.855   {"mlm": 2.7329346347977532, "mse": 0.002025164760112465}
+2         train   22801/31702 261:41/102:09       2.854   {"mlm": 2.7345059236486007, "mse": 0.0020275991008885568}
+2         train   22901/31702 262:48/100:59       2.854   {"mlm": 2.7323510091127488, "mse": 0.0020288654265059086}
+2         train   23001/31702 263:55/99:50        2.853   {"mlm": 2.7338530033618422, "mse": 0.0020280333675935375}
+2         train   23101/31702 265:02/98:40        2.853   {"mlm": 2.732456363405995, "mse": 0.0020278159772797906}
+2         train   23201/31702 266:09/97:31        2.852   {"mlm": 2.731112118466113, "mse": 0.002028177143753096}
+2         train   23301/31702 267:16/96:21        2.852   {"mlm": 2.730770718767311, "mse": 0.0020284346638778533}
+2         train   23401/31702 268:23/95:12        2.851   {"mlm": 2.731998563068071, "mse": 0.002028668448970461}
+2         train   23501/31702 269:30/94:03        2.851   {"mlm": 2.7333904693001196, "mse": 0.002029180589167998}
+2         train   23601/31702 270:38/92:53        2.850   {"mlm": 2.735423847707192, "mse": 0.002029812241279678}
+2         train   23701/31702 271:45/91:44        2.850   {"mlm": 2.7371353337794173, "mse": 0.0020315121457025603}
+2         train   23801/31702 272:52/90:35        2.850   {"mlm": 2.7383648319286746, "mse": 0.0020311383833267883}
+2         train   23901/31702 273:59/89:25        2.849   {"mlm": 2.7381660677394635, "mse": 0.0020307998617778854}
+
+2         valid   1/15         0:12/ 2:49         2.731   
+2         valid   15/15        0:28/ 0:00         2.836   {"mlm": 2.8333333333333335, "mse": 2.8, "train": 0.0}
+2         train   24001/31702 275:38/88:26        2.849   {"mlm": 2.7291250228881836, "mse": 0.0020558375399559736}
+2         train   24101/31702 276:46/87:17        2.848   {"mlm": 2.7155454984985954, "mse": 0.0020353798477882796}
+2         train   24201/31702 277:53/86:07        2.848   {"mlm": 2.7160647034052, "mse": 0.0020354997948164224}
+2         train   24301/31702 279:00/84:58        2.847   {"mlm": 2.7160544886541524, "mse": 0.002038543569728534}
+2         train   24401/31702 280:07/83:49        2.847   {"mlm": 2.720644673801717, "mse": 0.0020426949050667653}
+2         train   24501/31702 281:14/82:39        2.846   {"mlm": 2.724714718417017, "mse": 0.0020449372094882997}
+2         train   24601/31702 282:22/81:30        2.846   {"mlm": 2.725906664440517, "mse": 0.0020475855973485653}
+2         train   24701/31702 283:29/80:20        2.845   {"mlm": 2.7284965783825275, "mse": 0.002049394201164462}
+2         train   24801/31702 284:36/79:11        2.845   {"mlm": 2.729107686791676, "mse": 0.0020518144721993143}
+2         train   24901/31702 285:43/78:02        2.844   {"mlm": 2.72809591753766, "mse": 0.0020530439913789686}
+2         train   25001/31702 286:51/76:53        2.844   {"mlm": 2.728336085329999, "mse": 0.0020541392240466757}
+2         train   25101/31702 287:58/75:43        2.844   {"mlm": 2.7294054325876402, "mse": 0.0020559634709879622}
+2         train   25201/31702 289:05/74:34        2.843   {"mlm": 2.7300143087039284, "mse": 0.0020570679447364736}
+2         train   25301/31702 290:12/73:25        2.843   {"mlm": 2.730521798958511, "mse": 0.0020591469235871442}
+2         train   25401/31702 291:20/72:16        2.842   {"mlm": 2.7305493079109926, "mse": 0.002059767235450707}
+2         train   25501/31702 292:27/71:06        2.842   {"mlm": 2.7318060610947175, "mse": 0.002061177517748441}
+2         train   25601/31702 293:34/69:57        2.842   {"mlm": 2.73204242163044, "mse": 0.0020619318977598655}
+2         train   25701/31702 294:41/68:48        2.841   {"mlm": 2.7321431577941517, "mse": 0.0020627370223962535}
+2         train   25801/31702 295:49/67:39        2.841   {"mlm": 2.732679567490598, "mse": 0.0020643506579976043}
+2         train   25901/31702 296:56/66:30        2.840   {"mlm": 2.7321481573023587, "mse": 0.002064851272803707}
+
+2         valid   1/15         0:12/ 2:48         2.809   
+2         valid   15/15        0:28/ 0:00         2.820   {"mlm": 2.816666666666667, "mse": 2.7666666666666666, "train": 0.0}
+2         train   26001/31702 298:35/65:28        2.840   {"mlm": 2.5986573696136475, "mse": 0.0020405056420713663}
+2         train   26101/31702 299:42/64:18        2.840   {"mlm": 2.724472473163416, "mse": 0.0020846614849264963}
+2         train   26201/31702 300:49/63:09        2.839   {"mlm": 2.7268570750506957, "mse": 0.0020944840536540866}
+2         train   26301/31702 301:56/62:00        2.839   {"mlm": 2.724039978363189, "mse": 0.0021004804968524516}
+2         train   26401/31702 303:04/60:51        2.838   {"mlm": 2.722672377441292, "mse": 0.0021027478980518263}
+2         train   26501/31702 304:11/59:41        2.838   {"mlm": 2.7216575269451635, "mse": 0.002105474201571977}
+2         train   26601/31702 305:18/58:32        2.837   {"mlm": 2.7198599920098276, "mse": 0.0021060174877310604}
+2         train   26701/31702 306:25/57:23        2.837   {"mlm": 2.721352542858151, "mse": 0.002108278190756958}
+2         train   26801/31702 307:32/56:14        2.836   {"mlm": 2.716298463490423, "mse": 0.0021065302709403558}
+2         train   26901/31702 308:39/55:05        2.836   {"mlm": 2.7100569778488954, "mse": 0.0021047421018350106}
+2         train   27001/31702 309:47/53:56        2.835   {"mlm": 2.7059455172760742, "mse": 0.002102565517384823}
+2         train   27101/31702 310:54/52:46        2.834   {"mlm": 2.6998422704535545, "mse": 0.002101977383692518}
+2         train   27201/31702 312:01/51:37        2.834   {"mlm": 2.696153213539092, "mse": 0.0021018360155579527}
+2         train   27301/31702 313:08/50:28        2.833   {"mlm": 2.6978991410990663, "mse": 0.002102495898792576}
+2         train   27401/31702 314:16/49:19        2.833   {"mlm": 2.700750836638533, "mse": 0.0021043124884236697}
+2         train   27501/31702 315:23/48:10        2.833   {"mlm": 2.7025803722277395, "mse": 0.002106040364365868}
+2         train   27601/31702 316:30/47:01        2.832   {"mlm": 2.7037354516357572, "mse": 0.0021077939253917044}
+2         train   27701/31702 317:37/45:52        2.832   {"mlm": 2.705847871927287, "mse": 0.002109829662723586}
+2         train   27801/31702 318:44/44:43        2.831   {"mlm": 2.7046115190568467, "mse": 0.002110405490764193}
+2         train   27901/31702 319:52/43:34        2.831   {"mlm": 2.702697967115921, "mse": 0.002110472669274297}
+
+2         valid   1/15         0:12/ 2:53         2.820   
+2         valid   15/15        0:29/ 0:00         2.817   {"mlm": 2.816666666666667, "mse": 2.7666666666666666, "train": 0.0}
+2         train   28001/31702 321:31/42:29        2.830   {"mlm": 2.6405587196350098, "mse": 0.0021684758830815554}
+2         train   28101/31702 322:38/41:20        2.830   {"mlm": 2.6712058817986213, "mse": 0.0021226371057552866}
+2         train   28201/31702 323:45/40:11        2.829   {"mlm": 2.6601197304417243, "mse": 0.002121790451233956}
+2         train   28301/31702 324:52/39:02        2.828   {"mlm": 2.666548656070747, "mse": 0.0021239664332873102}
+2         train   28401/31702 326:00/37:53        2.828   {"mlm": 2.668281704410353, "mse": 0.002122993276749466}
+2         train   28501/31702 327:07/36:44        2.827   {"mlm": 2.668731733710466, "mse": 0.0021236542186619874}
+2         train   28601/31702 328:14/35:35        2.827   {"mlm": 2.6687995209273403, "mse": 0.0021236470029588647}
+2         train   28701/31702 329:21/34:26        2.826   {"mlm": 2.6760671233994815, "mse": 0.002131410352965437}
+2         train   28801/31702 330:29/33:17        2.826   {"mlm": 2.6856754171416704, "mse": 0.0021484561610999476}
+2         train   28901/31702 331:36/32:08        2.826   {"mlm": 2.697150090690723, "mse": 0.002163731620970547}
+2         train   29001/31702 332:43/30:59        2.826   {"mlm": 2.705741777763024, "mse": 0.0021772693561671022}
+2         train   29101/31702 333:50/29:50        2.826   {"mlm": 2.713810085925484, "mse": 0.002188215276892961}
+2         train   29201/31702 334:58/28:41        2.826   {"mlm": 2.7189921244892052, "mse": 0.00219453104149758}
+2         train   29301/31702 336:05/27:32        2.825   {"mlm": 2.7210913877318585, "mse": 0.002195210801867008}
+2         train   29401/31702 337:12/26:23        2.825   {"mlm": 2.7207905003890067, "mse": 0.0021946128254369444}
+2         train   29501/31702 338:19/25:14        2.825   {"mlm": 2.72112877173554, "mse": 0.0021942899632841585}
+2         train   29601/31702 339:27/24:05        2.824   {"mlm": 2.7209379555358506, "mse": 0.002194097718173902}
+2         train   29701/31702 340:34/22:56        2.824   {"mlm": 2.720771719749222, "mse": 0.0021947347838267343}
+2         train   29801/31702 341:41/21:47        2.824   {"mlm": 2.721552093051527, "mse": 0.002196079218420906}
+2         train   29901/31702 342:48/20:38        2.824   {"mlm": 2.723036135704125, "mse": 0.002197834690160724}
+
+2         valid   1/15         0:12/ 2:50         2.809   
+2         valid   15/15        0:28/ 0:00         2.795   {"mlm": 2.7916666666666665, "mse": 2.75, "train": 0.0}
+2         train   30001/31702 344:28/19:31        2.823   {"mlm": 2.826382637023926, "mse": 0.0022881273180246353}
+2         train   30101/31702 345:35/18:22        2.823   {"mlm": 2.738690739811057, "mse": 0.002257631303244593}
+2         train   30201/31702 346:42/17:13        2.823   {"mlm": 2.7430142858135165, "mse": 0.0022586585562305514}
+2         train   30301/31702 347:49/16:04        2.823   {"mlm": 2.7512647891757496, "mse": 0.002269128043563461}
+2         train   30401/31702 348:57/14:55        2.822   {"mlm": 2.754716248286335, "mse": 0.0022754616189998877}
+2         train   30501/31702 350:04/13:47        2.822   {"mlm": 2.755695330644558, "mse": 0.002279758109932323}
+2         train   30601/31702 351:11/12:38        2.822   {"mlm": 2.7579364455281796, "mse": 0.0022838324414544463}
+2         train   30701/31702 352:18/11:29        2.822   {"mlm": 2.7584437619942572, "mse": 0.0022850851402133067}
+2         train   30801/31702 353:26/10:20        2.821   {"mlm": 2.753142135717747, "mse": 0.0022771674090328996}
+2         train   30901/31702 354:33/ 9:11        2.821   {"mlm": 2.749605993054948, "mse": 0.002270639657490493}
+2         train   31001/31702 355:40/ 8:02        2.821   {"mlm": 2.747181185475596, "mse": 0.002264714836804466}
+2         train   31101/31702 356:47/ 6:53        2.821   {"mlm": 2.744908871377846, "mse": 0.0022600139865565447}
+2         train   31201/31702 357:55/ 5:44        2.820   {"mlm": 2.7443922538741443, "mse": 0.002258943320158171}
+2         train   31301/31702 359:02/ 4:35        2.820   {"mlm": 2.748071040674689, "mse": 0.0022662086682544475}
+2         train   31401/31702 360:09/ 3:27        2.820   {"mlm": 2.747288858779918, "mse": 0.002273562333369089}
+2         train   31501/31702 361:16/ 2:18        2.820   {"mlm": 2.7456339881231115, "mse": 0.0022806004628223887}
+2         train   31601/31702 362:24/ 1:09        2.819   {"mlm": 2.746577401074821, "mse": 0.0022870348536669464}
+2         train   31701/31702 363:31/ 0:00        2.819   {"mlm": 2.7475020029066872, "mse": 0.0022920239881022686}
+True False
+skip validation
+3         train   1/31702      0:21/11112:57      2.595   {"mlm": 2.592716693878174, "mse": 0.0021505283657461405}
+3         train   101/31702    1:29/467:50        2.693   {"mlm": 2.691154876557907, "mse": 0.0022193381152493825}
+3         train   201/31702    2:36/409:48        2.695   {"mlm": 2.693039225108588, "mse": 0.0022225338694597803}
+3         train   301/31702    3:44/389:36        2.691   {"mlm": 2.6890113821061346, "mse": 0.0022275571640197225}
+3         train   401/31702    4:51/378:59        2.692   {"mlm": 2.689811500825192, "mse": 0.0022299658586073696}
+3         train   501/31702    5:58/372:17        2.691   {"mlm": 2.688913851203081, "mse": 0.002231956504196107}
+3         train   601/31702    7:05/367:15        2.693   {"mlm": 2.6908580126262542, "mse": 0.002238828973990312}
+3         train   701/31702    8:12/363:19        2.695   {"mlm": 2.6932083131923483, "mse": 0.0022432253973029776}
+3         train   801/31702    9:20/360:09        2.695   {"mlm": 2.6932160366191695, "mse": 0.0022474801761985345}
+3         train   901/31702   10:27/357:26        2.696   {"mlm": 2.6937480306254904, "mse": 0.0022511434644154715}
+3         train   1001/31702  11:34/354:59        2.697   {"mlm": 2.694613918319687, "mse": 0.002255178162256827}
+3         train   1101/31702  12:41/352:51        2.698   {"mlm": 2.6957649199341125, "mse": 0.0022572491180107715}
+3         train   1201/31702  13:48/350:53        2.700   {"mlm": 2.6976595010288946, "mse": 0.002259480043257789}
+3         train   1301/31702  14:56/349:02        2.702   {"mlm": 2.699264355754046, "mse": 0.0022608601465981615}
+3         train   1401/31702  16:03/347:18        2.702   {"mlm": 2.699826412929287, "mse": 0.002263175700688143}
+3         train   1501/31702  17:10/345:39        2.703   {"mlm": 2.7006380705734956, "mse": 0.0022661658486340204}
+3         train   1601/31702  18:17/344:03        2.702   {"mlm": 2.699766226219878, "mse": 0.0022672688283682393}
+3         train   1701/31702  19:25/342:31        2.702   {"mlm": 2.6995592047227683, "mse": 0.0022687114986521505}
+3         train   1801/31702  20:32/341:01        2.702   {"mlm": 2.6994359168921624, "mse": 0.0022699761771695737}
+3         train   1901/31702  21:39/339:31        2.701   {"mlm": 2.698738621135312, "mse": 0.002271335476961404}
+
+3         valid   1/15         0:12/ 2:50         2.774   
+3         valid   15/15        0:29/ 0:00         2.780   {"mlm": 2.775, "mse": 2.7333333333333334, "train": 0.0}
+3         train   2001/31702  23:18/345:52        2.701   {"mlm": 2.6062169075012207, "mse": 0.0022433081176131964}
+3         train   2101/31702  24:24/344:00        2.701   {"mlm": 2.699016537996802, "mse": 0.002321208071074273}
+3         train   2201/31702  25:32/342:17        2.702   {"mlm": 2.7079871993752853, "mse": 0.0023261318724620995}
+3         train   2301/31702  26:39/340:37        2.703   {"mlm": 2.7142408345624855, "mse": 0.002331562786582746}
+3         train   2401/31702  27:46/339:00        2.704   {"mlm": 2.7155503768873333, "mse": 0.0023389808390001554}
+3         train   2501/31702  28:53/337:25        2.704   {"mlm": 2.71555792500159, "mse": 0.0023411280311041783}
+3         train   2601/31702  30:01/335:53        2.705   {"mlm": 2.7149932027458155, "mse": 0.002344737772344799}
+3         train   2701/31702  31:08/334:22        2.705   {"mlm": 2.715812819830531, "mse": 0.002353771056942695}
+3         train   2801/31702  32:15/332:54        2.706   {"mlm": 2.7169830462756974, "mse": 0.0023590719008169483}
+3         train   2901/31702  33:22/331:24        2.707   {"mlm": 2.7182162514537342, "mse": 0.0023642350608414735}
+3         train   3001/31702  34:30/329:58        2.708   {"mlm": 2.718950893971827, "mse": 0.002368955042345317}
+3         train   3101/31702  35:37/328:33        2.708   {"mlm": 2.7190372928719864, "mse": 0.002371360111785384}
+3         train   3201/31702  36:44/327:09        2.707   {"mlm": 2.716145243275473, "mse": 0.002369667728509844}
+3         train   3301/31702  37:51/325:47        2.707   {"mlm": 2.7144169341958917, "mse": 0.0023671931141184257}
+3         train   3401/31702  38:59/324:25        2.707   {"mlm": 2.712890596069837, "mse": 0.002365517234569316}
+3         train   3501/31702  40:06/323:04        2.706   {"mlm": 2.7116503213581287, "mse": 0.00236408098266993}
+3         train   3601/31702  41:13/321:44        2.706   {"mlm": 2.710601537842664, "mse": 0.00236353217763739}
+3         train   3701/31702  42:20/320:24        2.707   {"mlm": 2.711100784348853, "mse": 0.002366454417853978}
+3         train   3801/31702  43:28/319:05        2.707   {"mlm": 2.712024905958287, "mse": 0.0023703123269595418}
+3         train   3901/31702  44:35/317:47        2.707   {"mlm": 2.7116718511716873, "mse": 0.002373476674401058}
+
+3         valid   1/15         0:11/ 2:46         2.838   
+3         valid   15/15        0:28/ 0:00         2.776   {"mlm": 2.775, "mse": 2.7333333333333334, "train": 0.0}
+3         train   4001/31702  46:14/320:08        2.707   {"mlm": 2.74350905418396, "mse": 0.0024860624689608812}
+3         train   4101/31702  47:21/318:44        2.707   {"mlm": 2.6972015446955613, "mse": 0.002441787024923038}
+3         train   4201/31702  48:28/317:22        2.705   {"mlm": 2.6698125571160767, "mse": 0.0024022593484978325}
+3         train   4301/31702  49:36/316:00        2.703   {"mlm": 2.6525390758070837, "mse": 0.002381240091196871}
+3         train   4401/31702  50:43/314:37        2.702   {"mlm": 2.644094829844715, "mse": 0.002366590967977842}
+3         train   4501/31702  51:50/313:16        2.699   {"mlm": 2.6361804370156783, "mse": 0.0023581181116543426}
+3         train   4601/31702  52:57/311:56        2.698   {"mlm": 2.632903610807092, "mse": 0.0023541098197894217}
+3         train   4701/31702  54:04/310:36        2.697   {"mlm": 2.6353181353989408, "mse": 0.0023560602106313393}
+3         train   4801/31702  55:11/309:15        2.696   {"mlm": 2.6385927896821095, "mse": 0.0023560493027026323}
+3         train   4901/31702  56:18/307:56        2.696   {"mlm": 2.643394526313333, "mse": 0.0023587186242992287}
+3         train   5001/31702  57:25/306:37        2.695   {"mlm": 2.645618357263007, "mse": 0.0023600826331588265}
+3         train   5101/31702  58:32/305:18        2.695   {"mlm": 2.64774265904301, "mse": 0.0023617294587814108}
+3         train   5201/31702  59:40/304:01        2.696   {"mlm": 2.656374661154195, "mse": 0.0023668589340685733}
+3         train   5301/31702  60:47/302:43        2.696   {"mlm": 2.6592781279840256, "mse": 0.002366182032820814}
+3         train   5401/31702  61:53/301:25        2.696   {"mlm": 2.6607851553269577, "mse": 0.00236240178389843}
+3         train   5501/31702  63:00/300:07        2.695   {"mlm": 2.66169282105031, "mse": 0.0023569916711585334}
+3         train   5601/31702  64:07/298:50        2.695   {"mlm": 2.66285495070053, "mse": 0.002351907159269861}
+3         train   5701/31702  65:14/297:34        2.695   {"mlm": 2.6636713187460477, "mse": 0.002346309957103798}
+3         train   5801/31702  66:21/296:18        2.694   {"mlm": 2.6641552495929943, "mse": 0.0023412372957530335}
+3         train   5901/31702  67:28/295:02        2.694   {"mlm": 2.6646012596429367, "mse": 0.0023364078561907173}
+
+3         valid   1/15         0:12/ 2:49         2.747   
+3         valid   15/15        0:28/ 0:00         2.777   {"mlm": 2.775, "mse": 2.7416666666666667, "train": 0.0}
+3         train   6001/31702  69:07/296:01        2.694   {"mlm": 2.6372125148773193, "mse": 0.002263198373839259}
+3         train   6101/31702  70:14/294:43        2.693   {"mlm": 2.637533152457511, "mse": 0.0022293422232833827}
+3         train   6201/31702  71:21/293:25        2.691   {"mlm": 2.612271813017812, "mse": 0.0022208634034188383}
+3         train   6301/31702  72:28/292:08        2.689   {"mlm": 2.597260620902939, "mse": 0.0022089836795650348}
+3         train   6401/31702  73:35/290:51        2.687   {"mlm": 2.5897712749138733, "mse": 0.00220583825653182}
+3         train   6501/31702  74:42/289:34        2.686   {"mlm": 2.587611639571047, "mse": 0.0022044488467729676}
+3         train   6601/31702  75:49/288:18        2.684   {"mlm": 2.5844696238513, "mse": 0.002203207923651064}
+3         train   6701/31702  76:55/287:01        2.682   {"mlm": 2.5835195822314425, "mse": 0.0022035107510124524}
+3         train   6801/31702  78:02/285:45        2.681   {"mlm": 2.580792132983642, "mse": 0.0022020757552375842}
+3         train   6901/31702  79:09/284:29        2.679   {"mlm": 2.5799987858593396, "mse": 0.0022006943048216757}
+3         train   7001/31702  80:16/283:14        2.676   {"mlm": 2.563891722129418, "mse": 0.0022023741935531457}
+3         train   7101/31702  81:23/281:59        2.666   {"mlm": 2.509316826927781, "mse": 0.0022118287879997335}
+3         train   7201/31702  82:30/280:43        2.700   {"mlm": 2.7306324575068452, "mse": 0.0030737747789145783}
+3         train   7301/31702  83:36/279:27        2.765   {"mlm": 3.0925712089736495, "mse": 0.0030868479281915876}
+3         train   7401/31702  84:43/278:11        2.824   {"mlm": 3.3772953861020105, "mse": 0.003042009640830721}
+3         train   7501/31702  85:49/276:55        2.880   {"mlm": 3.6227279293147983, "mse": 0.002998732770144751}
+3         train   7601/31702  86:56/275:39        2.938   {"mlm": 3.8524804620873847, "mse": 0.002955968667410412}
+3         train   7701/31702  88:02/274:24        2.999   {"mlm": 4.070896311201536, "mse": 0.0029176757020765213}
+3         train   7801/31702  89:09/273:08        3.058   {"mlm": 4.266658885091096, "mse": 0.0028797226167050732}
+3         train   7901/31702  90:15/271:53        3.116   {"mlm": 4.447284797754243, "mse": 0.0028449744024097935}
+
+3         valid   1/15         0:12/ 2:49         7.571   
+3         valid   15/15        0:28/ 0:00         7.506   {"mlm": 7.5, "mse": 7.5, "train": 0.0}
+3         train   8001/31702  91:53/272:11        3.173   {"mlm": 7.582422733306885, "mse": 0.0021339179947972298}
+3         train   8101/31702  92:59/270:55        3.227   {"mlm": 7.587307519251757, "mse": 0.0021211231717526324}
+3         train   8201/31702  94:06/269:39        3.280   {"mlm": 7.58902394830884, "mse": 0.002099382740894879}
+3         train   8301/31702  95:12/268:24        3.332   {"mlm": 7.575261805144655, "mse": 0.0020840411249275917}
+3         train   8401/31702  96:19/267:08        3.383   {"mlm": 7.584161898739023, "mse": 0.0020709945341256305}
+3         train   8501/31702  97:25/265:53        3.433   {"mlm": 7.600066575223576, "mse": 0.0020587588014441753}
+3         train   8601/31702  98:31/264:38        3.482   {"mlm": 7.601646776405627, "mse": 0.0020488825587543368}
+3         train   8701/31702  99:38/263:23        3.529   {"mlm": 7.600322460822134, "mse": 0.0020421395639951385}
+3         train   8801/31702  100:44/262:08       3.576   {"mlm": 7.604174056154363, "mse": 0.0020341660508237194}
+3         train   8901/31702  101:50/260:53       3.621   {"mlm": 7.601255054346861, "mse": 0.002025153616093901}
+3         train   9001/31702  102:57/259:39       3.665   {"mlm": 7.598814094935978, "mse": 0.0020165242882516166}
+3         train   9101/31702  104:03/258:25       3.708   {"mlm": 7.595723874129348, "mse": 0.002007679468918284}
+3         train   9201/31702  105:10/257:11       3.750   {"mlm": 7.59508875387098, "mse": 0.001999518318570139}
+3         train   9301/31702  106:16/255:57       3.791   {"mlm": 7.597095634642241, "mse": 0.00199220000750469}
+3         train   9401/31702  107:22/254:43       3.831   {"mlm": 7.593039682471352, "mse": 0.0019853698914181934}
+3         train   9501/31702  108:29/253:30       3.871   {"mlm": 7.590655359564266, "mse": 0.001977051168507701}
+3         train   9601/31702  109:35/252:16       3.909   {"mlm": 7.589387416243926, "mse": 0.001968630289962558}
+3         train   9701/31702  110:42/251:03       3.946   {"mlm": 7.585178229754144, "mse": 0.001960079483991748}
+3         train   9801/31702  111:48/249:50       3.983   {"mlm": 7.58305977424736, "mse": 0.0019522652975405084}
+slurmstepd: error: *** JOB 168047 ON g0009 CANCELLED AT 2022-04-05T11:48:17 ***

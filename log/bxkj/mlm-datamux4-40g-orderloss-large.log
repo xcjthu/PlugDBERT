@@ -1,0 +1,222 @@
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+NoneNoneNone
+None
+
+NoneNone
+
+
+None
+None
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+04/05/2022 22:03:28 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+04/05/2022 22:03:28 - INFO - __main__ -   CUDA available: True
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/kara_storage/abc/kara.py:15: UserWarning: KaraStorage.open is deprecated, and will be removed in the future.
+Please use KaraStorage.open_dataset instead.
+  warnings.warn(
+04/05/2022 22:03:29 - INFO - tools.init_tool -   Begin to initialize models...
+ignore 0 parameters
+ignore parameters with nograd in name, and only 398 parameters are turned
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/transformers/optimization.py:321: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+None
+None
+None
+None
+None
+None
+04/05/2022 22:03:44 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+04/05/2022 22:03:44 - INFO - tools.init_tool -   Initialize done.
+None[train]
+
+epoch: 20
+batch_size: 32
+shuffle: True
+reader_num: 8
+grad_accumulate: 4
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mux_num: 4
+mlm_prob: 0.15
+reuse_num: 4
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 64
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: kara
+train_formatter_type: mlm
+train_data_path: /data/home/scv0540/xcj/datamux/data/wiki-webtext
+kara_namespace: pretrain
+kara_dataset: corpus
+kara_version: 1st
+valid_dataset_type: Raw
+valid_formatter_type: mlm
+valid_data_path: /data/home/scv0540/xcj/datamux/data/valid_text.jsonl
+========
+[model]
+model_name: mlm
+pretrained_model: /data/home/scv0540/xcj/PLMs/bert-large-uncased
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: /data/home/scv0540/xcj/datamux/checkpoint
+model_name: mlm-webtext-large
+output_function: avgloss
+========
+None
+04/05/2022 22:03:44 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+valid_mode step no_valid False
+step_epoch 1000
+04/05/2022 22:03:44 - INFO - tools.train_tool -   Start training
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+1         train   1/63405      0:22/23550:20      13.074  {"mlm": 12.664667129516602, "mse": 0.4092065095901489}
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+04/05/2022 22:04:06 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data/home/scv0540/xcj/envs/miniconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+1         train   101/63405    1:29/937:04        12.088  {"mlm": 11.751301236671976, "mse": 0.33710975037647944}
+1         train   201/63405    2:37/826:15        10.674  {"mlm": 10.363379853281808, "mse": 0.31104901114209965}
+1         train   301/63405    3:45/788:18        9.801   {"mlm": 9.549598779393193, "mse": 0.2515790313110993}
+1         train   401/63405    4:53/768:58        9.280   {"mlm": 9.073779477145607, "mse": 0.2060961977316257}
+1         train   501/63405    6:01/756:38        8.949   {"mlm": 8.773204876753146, "mse": 0.1753826584376975}
+1         train   601/63405    7:09/747:53        8.714   {"mlm": 8.561383996350992, "mse": 0.15279722493064407}
+1         train   701/63405    8:17/741:11        8.539   {"mlm": 8.403704646650633, "mse": 0.1357246188031039}
+1         train   801/63405    9:24/735:47        8.406   {"mlm": 8.282970166533776, "mse": 0.12255320324156707}
+1         train   901/63405   10:32/731:25        8.301   {"mlm": 8.188869200588993, "mse": 0.11172960662478364}
+1         train   1001/63405  11:40/727:37        8.213   {"mlm": 8.10986511523907, "mse": 0.10272002232388466}
+1         train   1101/63405  12:47/724:13        8.137   {"mlm": 8.042413924630397, "mse": 0.09503590611006717}
+1         train   1201/63405  13:55/721:09        8.073   {"mlm": 7.985074275538486, "mse": 0.08838439230953686}
+1         train   1301/63405  15:03/718:25        8.020   {"mlm": 7.936872550838274, "mse": 0.08262795496941025}
+1         train   1401/63405  16:10/715:54        7.973   {"mlm": 7.89568982747178, "mse": 0.07760585067118335}
+1         train   1501/63405  17:18/713:34        7.933   {"mlm": 7.859980137804046, "mse": 0.07318454914615254}
+1         train   1601/63405  18:25/711:22        7.897   {"mlm": 7.828104400396496, "mse": 0.0692417084612883}
+1         train   1701/63405  19:33/709:16        7.866   {"mlm": 7.800207353072753, "mse": 0.06571052084950131}
+1         train   1801/63405  20:40/707:18        7.837   {"mlm": 7.774933958238923, "mse": 0.06252632015537282}
+1         train   1901/63405  21:48/705:23        7.812   {"mlm": 7.752165618035619, "mse": 0.05964206059368769}
+1         train   2001/63405  22:55/703:33        7.789   {"mlm": 7.731931861074849, "mse": 0.05702552430518809}
+1         train   2101/63405  24:03/701:47        7.767   {"mlm": 7.328865914344788, "mse": 0.007017867593094707}
+slurmstepd: error: *** JOB 168477 ON g0001 CANCELLED AT 2022-04-05T22:28:10 ***

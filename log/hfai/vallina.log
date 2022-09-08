@@ -1,0 +1,2015 @@
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/07/2022 23:33:03 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/07/2022 23:33:03 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/07/2022 23:33:03 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/07/2022 23:33:03 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/07/2022 23:33:03 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/07/2022 23:33:03 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/07/2022 23:33:04 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/07/2022 23:33:04 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    if use_hfai():
+NameError: name 'use_hfai' is not defined
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:00:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:00:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:00:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:00:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:00:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:00:50 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:00:50 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: Pile
+train_formatter_type: vallina
+valid_dataset_type: Pile
+valid_formatter_type: vallina
+data_path: /private_dataset/pile_hf
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 3 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 21, in init_all
+    result["train_dataset"], result["valid_dataset"] = init_dataset(config, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./reader/reader.py", line 100, in init_dataset
+    train_dataset = init_one_dataset(config, "train", *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./reader/reader.py", line 72, in init_one_dataset
+    sampler = DistributedSampler(dataset)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/distributed.py", line 89, in __init__
+    self.num_samples = math.ceil(len(self.dataset) / self.num_replicas)
+TypeError: 'str' object cannot be interpreted as an integer
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:02:47 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:02:48 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:02:48 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+09/08/2022 00:02:48 - INFO - tools.init_tool -   Begin to initialize models...
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+You are using a model of type roberta to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+09/08/2022 00:03:15 - WARNING - tools.init_tool -   Cannot load checkpoint file with error [Errno 2] No such file or directory: 'checkpoints/'
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: Pile
+train_formatter_type: vallina
+valid_dataset_type: Pile
+valid_formatter_type: vallina
+data_path: /private_dataset/pile_hf
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+ignore 0 parameters
+ignore parameters with nograd in name, and only 204 parameters are turned
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 6 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 79, in init_all
+    result["step"] = step
+UnboundLocalError: local variable 'step' referenced before assignment
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:05:50 - INFO - tools.init_tool -   Begin to initialize models...
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+09/08/2022 00:06:16 - WARNING - tools.init_tool -   Cannot load checkpoint file with error [Errno 2] No such file or directory: 'checkpoints/'
+09/08/2022 00:06:16 - INFO - tools.init_tool -   Initialize done.
+09/08/2022 00:06:16 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: Pile
+train_formatter_type: vallina
+valid_dataset_type: Pile
+valid_formatter_type: vallina
+data_path: /private_dataset/pile_hf
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+ignore 0 parameters
+ignore parameters with nograd in name, and only 204 parameters are turned
+None
+valid_mode step no_valid False
+step_epoch 1000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/transformers/optimization.py:311: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super().__init__(params, defaults)
+Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 66, in _wrap
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 318, in _bootstrap
+    util._exit_function()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 16566) is killed by signal: Terminated. 
+Process SpawnProcess-5:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 66, in _wrap
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 318, in _bootstrap
+    util._exit_function()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 16568) is killed by signal: Terminated. 
+Process SpawnProcess-3:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 66, in _wrap
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 318, in _bootstrap
+    util._exit_function()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 16567) is killed by signal: Terminated. 
+Process SpawnProcess-8:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 66, in _wrap
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 318, in _bootstrap
+    util._exit_function()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 16565) is killed by signal: Terminated. 
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 66, in _wrap
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 318, in _bootstrap
+    util._exit_function()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 16823) is killed by signal: Terminated. 
+Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 66, in _wrap
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 318, in _bootstrap
+    util._exit_function()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 16563) is killed by signal: Terminated. 
+Process SpawnProcess-7:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 66, in _wrap
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 318, in _bootstrap
+    util._exit_function()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/hf_shared/hfai_envs/xiaochaojun/xcj_env_0/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 16564) is killed by signal: Terminated. 
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 2 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 97, in train
+    for step, data in enumerate(dataset):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in process
+    ctxs = [d["text"] for d in data]
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./formatter/mlm/VallinaFormatter.py", line 24, in <listcomp>
+    ctxs = [d["text"] for d in data]
+TypeError: string indices must be integers
+
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:12:12 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:12:12 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:12:12 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:12:13 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 00:12:45 - WARNING - tools.init_tool -   Cannot load checkpoint file with error invalid literal for int() with base 10: 'BERT'
+09/08/2022 00:12:45 - INFO - tools.init_tool -   Initialize done.
+09/08/2022 00:12:45 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 00:12:45 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: Pile
+train_formatter_type: vallina
+valid_dataset_type: Pile
+valid_formatter_type: vallina
+data_path: /private_dataset/pile_hf
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+None
+valid_mode step no_valid False
+step_epoch 1000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+1         train   1/78         1:31/117:50        0.052   {"mlm": 0.052216093987226486, "mse": 0.0}
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 131, in main_hfai
+    train(parameters, config, gpu_list, args.do_test, args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/train_tool.py", line 165, in train
+    global_step += 1
+UnboundLocalError: local variable 'global_step' referenced before assignment
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:22:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:22:45 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 00:23:12 - WARNING - tools.init_tool -   Cannot load checkpoint file with error invalid literal for int() with base 10: 'BERT'
+09/08/2022 00:23:12 - INFO - tools.init_tool -   Initialize done.
+09/08/2022 00:23:12 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 00:23:12 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: Pile
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: Pile
+valid_formatter_type: vallina
+test_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+None
+valid_mode step no_valid False
+step_epoch 1000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:24:48 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+1         train   1/78         1:36/123:12        0.060   {"mlm": 0.06038716807961464, "mse": 0.0}
+True False
+skip validation
+2         train   1/78         1:37/125:07        0.000   {"mlm": 0.00012243707897141576, "mse": 0.0}
+True False
+skip validation
+3         train   1/78         1:33/120:26        0.000   {"mlm": 1.5513751350226812e-05, "mse": 0.0}
+True False
+skip validation
+4         train   1/78         1:33/119:32        0.000   {"mlm": 1.2954337762494106e-05, "mse": 0.0}
+True False
+skip validation
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:32:34 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:32:34 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:32:34 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:32:35 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:32:35 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+test_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 2 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 21, in init_all
+    result["train_dataset"], result["valid_dataset"] = init_dataset(config, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./reader/reader.py", line 100, in init_dataset
+    train_dataset = init_one_dataset(config, "train", *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./reader/reader.py", line 47, in init_one_dataset
+    dataset = dataset_list[which](config, mode, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./dataset/FFRecordDataset.py", line 11, in __init__
+    self.reader = FFRecordReader(config.get("data", "%s_data_path" % mode))
+NameError: name 'FFRecordReader' is not defined
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:33:50 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:33:50 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+test_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 3 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 21, in init_all
+    result["train_dataset"], result["valid_dataset"] = init_dataset(config, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./reader/reader.py", line 101, in init_dataset
+    valid_dataset = init_one_dataset(config, "valid", *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./reader/reader.py", line 47, in init_one_dataset
+    dataset = dataset_list[which](config, mode, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./dataset/FFRecordDataset.py", line 11, in __init__
+    self.reader = FileReader(config.get("data", "%s_data_path" % mode))
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/ffrecord/fileio.py", line 37, in __init__
+    assert f.is_file(), f'{f} is not a file'
+AssertionError: data is not a file
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:51 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:51 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 00:35:53 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 00:36:19 - WARNING - tools.init_tool -   Cannot load checkpoint file with error invalid literal for int() with base 10: 'BERT'
+09/08/2022 00:36:19 - INFO - tools.init_tool -   Initialize done.
+09/08/2022 00:36:19 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 00:36:19 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+None
+valid_mode step no_valid False
+step_epoch 1000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 1 step: 0
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:38:03 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 00:42:14 - INFO - tools.train_tool -   Checkpoint saved to checkpoints/BERT/1.pkl
+1         train   1/51233      1:43/88778:32      1.466   {"mlm": 1.4657821655273438, "mse": 0.0}
+1         train   101/51233    2:08/1087:09       1.482   {"mlm": 1.4816758302178714, "mse": 0.0}
+1         train   201/51233    2:33/650:37        1.460   {"mlm": 1.460149298259868, "mse": 0.0}
+1         train   301/51233    2:59/507:26        1.451   {"mlm": 1.4511909445258866, "mse": 0.0}
+1         train   401/51233    3:24/432:52        1.444   {"mlm": 1.4438611132248382, "mse": 0.0}
+1         train   501/51233    3:49/387:38        1.441   {"mlm": 1.440570979775069, "mse": 0.0}
+1         train   601/51233    4:14/357:21        1.438   {"mlm": 1.4383781384707688, "mse": 0.0}
+1         train   701/51233    4:39/335:32        1.437   {"mlm": 1.4366634740639006, "mse": 0.0}
+1         train   801/51233    5:03/318:59        1.435   {"mlm": 1.4348038347175207, "mse": 0.0}
+1         train   901/51233    5:28/306:06        1.427   {"mlm": 1.4265670401936235, "mse": 0.0}
+
+09/08/2022 00:47:43 - INFO - tools.train_tool -   Checkpoint saved to checkpoints/BERT/1.pkl
+1         valid   1/390        0:49/319:36        1.220   
+1         valid   101/390      0:56/ 2:41         1.292   
+1         valid   201/390      1:04/ 1:00         1.298   
+1         valid   301/390      1:11/ 0:21         1.297   
+1         valid   390/390      1:19/ 0:00         1.291   {"mlm": 1.291346153846154, "mse": 0.0, "train": 0.0}
+1         train   1001/51233   7:15/363:49        1.426   {"mlm": 1.5826303958892822, "mse": 0.0}
+1         train   1101/51233   7:39/348:51        1.421   {"mlm": 1.3746119454355523, "mse": 0.0}
+1         train   1201/51233   8:04/336:20        1.416   {"mlm": 1.3715544316306043, "mse": 0.0}
+1         train   1301/51233   8:29/325:38        1.414   {"mlm": 1.3746958887854288, "mse": 0.0}
+1         train   1401/51233   8:53/316:30        1.411   {"mlm": 1.3739966014376899, "mse": 0.0}
+1         train   1501/51233   9:18/308:27        1.408   {"mlm": 1.373935539803343, "mse": 0.0}
+1         train   1601/51233   9:43/301:25        1.405   {"mlm": 1.37113327789624, "mse": 0.0}
+1         train   1701/51233  10:08/295:10        1.403   {"mlm": 1.3698317577767474, "mse": 0.0}
+1         train   1801/51233  10:33/289:34        1.399   {"mlm": 1.3650308079487377, "mse": 0.0}
+1         train   1901/51233  10:58/284:36        1.397   {"mlm": 1.3652234662253901, "mse": 0.0}
+
+09/08/2022 00:53:14 - INFO - tools.train_tool -   Checkpoint saved to checkpoints/BERT/1.pkl
+1         valid   1/390        0:49/322:09        1.383   
+1         valid   101/390      0:57/ 2:44         1.272   
+1         valid   201/390      1:05/ 1:01         1.271   
+1         valid   301/390      1:12/ 0:21         1.271   
+1         valid   390/390      1:20/ 0:00         1.261   {"mlm": 1.2612179487179487, "mse": 0.0, "train": 0.0}
+1         train   2001/51233  12:45/313:46        1.394   {"mlm": 1.3007121086120605, "mse": 0.0}
+1         train   2101/51233  13:10/307:55        1.392   {"mlm": 1.3396312753752906, "mse": 0.0}
+1         train   2201/51233  13:34/302:31        1.391   {"mlm": 1.3640735190899218, "mse": 0.0}
+1         train   2301/51233  13:59/297:34        1.390   {"mlm": 1.3593732958220168, "mse": 0.0}
+1         train   2401/51233  14:24/293:02        1.388   {"mlm": 1.35885189477345, "mse": 0.0}
+1         train   2501/51233  14:49/288:46        1.386   {"mlm": 1.3527762002335812, "mse": 0.0}
+1         train   2601/51233  15:14/284:50        1.385   {"mlm": 1.3525447603470078, "mse": 0.0}
+1         train   2701/51233  15:38/281:08        1.383   {"mlm": 1.3514417891155466, "mse": 0.0}
+1         train   2801/51233  16:03/277:43        1.382   {"mlm": 1.3501167959637113, "mse": 0.0}
+1         train   2901/51233  16:28/274:31        1.380   {"mlm": 1.3495024102641793, "mse": 0.0}
+
+09/08/2022 00:58:47 - INFO - tools.train_tool -   Checkpoint saved to checkpoints/BERT/1.pkl
+1         valid   1/390        0:52/338:36        1.219   
+1         valid   101/390      0:59/ 2:51         1.254   
+1         valid   201/390      1:07/ 1:03         1.257   
+1         valid   301/390      1:15/ 0:22         1.252   
+1         valid   390/390      1:23/ 0:00         1.246   {"mlm": 1.2455128205128205, "mse": 0.0, "train": 0.0}
+1         train   3001/51233  18:18/294:14        1.379   {"mlm": 1.4498281478881836, "mse": 0.0}
+1         train   3101/51233  18:43/290:32        1.377   {"mlm": 1.3314429568772268, "mse": 0.0}
+1         train   3201/51233  19:07/287:05        1.376   {"mlm": 1.3332910425034328, "mse": 0.0}
+1         train   3301/51233  19:32/283:47        1.375   {"mlm": 1.3392417228895168, "mse": 0.0}
+1         train   3401/51233  19:57/280:40        1.374   {"mlm": 1.3409997082113327, "mse": 0.0}
+1         train   3501/51233  20:22/277:43        1.373   {"mlm": 1.3414623932448213, "mse": 0.0}
+1         train   3601/51233  20:46/274:53        1.372   {"mlm": 1.3386784190941174, "mse": 0.0}
+1         train   3701/51233  21:11/272:10        1.371   {"mlm": 1.336087838729336, "mse": 0.0}
+1         train   3801/51233  21:36/269:36        1.369   {"mlm": 1.3348495549476995, "mse": 0.0}
+1         train   3901/51233  22:01/267:11        1.368   {"mlm": 1.3333275922792205, "mse": 0.0}
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 01:02:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 01:02:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 01:02:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:56 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:56 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:02:58 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 01:03:26 - WARNING - tools.init_tool -   Cannot load checkpoint file with error invalid literal for int() with base 10: 'BERT'
+09/08/2022 01:03:26 - INFO - tools.init_tool -   Initialize done.
+09/08/2022 01:03:26 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 01:03:26 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+None
+valid_mode step no_valid False
+step_epoch 1000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 1 step: 0
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 01:06:48 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:49 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:49 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:06:51 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 01:07:19 - WARNING - tools.init_tool -   Cannot load checkpoint file with error invalid literal for int() with base 10: 'BERT'
+09/08/2022 01:07:19 - INFO - tools.init_tool -   Initialize done.
+09/08/2022 01:07:19 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 01:07:19 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/ ['BERT']
+None
+valid_mode step no_valid False
+step_epoch 1000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 1 step: 0
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 01:09:43 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:44 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:44 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:09:46 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 01:10:11 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/1.pkl
+09/08/2022 01:10:13 - INFO - tools.init_tool -   Initialize done.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 01:10:13 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 01:10:13 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 1000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 1000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 2 step: 4000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:14:42 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:08 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:08 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 01:20:10 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 01:20:38 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/1.pkl
+09/08/2022 01:20:40 - INFO - tools.init_tool -   Initialize done.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 01:20:40 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 01:20:40 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 1 step: 4000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:25:16 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/08/2022 01:29:29 - INFO - tools.train_tool -   Checkpoint saved to checkpoints/BERT/1.pkl
+1         train   4001/51233   4:35/54:14         0.000   {"mlm": 1.3681079149246216, "mse": 0.0}
+1         train   4101/51233   5:01/57:49         0.032   {"mlm": 1.3032295042925541, "mse": 0.0}
+1         train   4201/51233   5:26/60:56         0.062   {"mlm": 1.2971910072203299, "mse": 0.0}
+1         train   4301/51233   5:51/63:54         0.090   {"mlm": 1.2850809657692512, "mse": 0.0}
+1         train   4401/51233   6:16/66:43         0.117   {"mlm": 1.2828694632523077, "mse": 0.0}
+1         train   4501/51233   6:41/69:23         0.143   {"mlm": 1.2809324789190006, "mse": 0.0}
+1         train   4601/51233   7:05/71:55         0.167   {"mlm": 1.2780780364788709, "mse": 0.0}
+1         train   4701/51233   7:30/74:19         0.190   {"mlm": 1.2761980877623238, "mse": 0.0}
+1         train   4801/51233   7:55/76:38         0.212   {"mlm": 1.2736371848615964, "mse": 0.0}
+1         train   4901/51233   8:20/78:48         0.234   {"mlm": 1.2715165394789372, "mse": 0.0}
+
