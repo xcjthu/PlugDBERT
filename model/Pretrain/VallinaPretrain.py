@@ -28,25 +28,36 @@ class VallinaPretrain(nn.Module):
         return {"loss": out["loss"], "acc_result": cal_loss(out["loss"], None, acc_result)}
 
 
-class VallinaDeltaPretrain(VallinaPretrain):
+class VallinaDeltaPretrain(nn.Module):
     def __init__(self, config, gpu_list, *args, **params):
         super(VallinaDeltaPretrain, self).__init__()
         self.plm = config.get("model", "pretrained_model")
 
         self.plm_config = AutoConfig.from_pretrained(self.plm)
-        model = AutoModelForMaskedLM.from_pretrained(self.plm)
-        Visualization(model).structure_graph()
+        self.model = AutoModelForMaskedLM.from_pretrained(self.plm)
+        Visualization(self.model).structure_graph()
 
-        self.model = AdapterModel(backbone_model=model,
+        delta_model = AdapterModel(backbone_model=self.model,
                 bottleneck_dim=config.getint("train", "bottleneck_dim"),
                 modified_modules=["[r]encoder.layer.(\d)+\.attention.output.LayerNorm",
                                 "[r]encoder.layer.(\d)+\.output.LayerNorm"]
             )
-        self.model.freeze_module(set_state_dict=True, exclude=["deltas"])
-        self.model.log(delta_ratio=True, trainable_ratio=True, visualization=True)
+        delta_model.freeze_module(set_state_dict=True, exclude=["deltas"])
+        delta_model.log(delta_ratio=True, trainable_ratio=True, visualization=True)
 
         self.hidden_size = self.model.config.hidden_size
         self.layer_num = self.model.config.num_hidden_layers
+
+    def forward(self, data, config, gpu_list, acc_result, mode):
+        total_batch_size, ctx_len = data["input_ids"].size()
+
+        out = self.model(
+            input_ids=data["input_ids"],
+            attention_mask=data["attention_mask"],
+            labels=data["labels"]
+        )
+
+        return {"loss": out["loss"], "acc_result": cal_loss(out["loss"], None, acc_result)}
 
 
 def cal_loss(mlm_loss, mse_loss, acc_result):

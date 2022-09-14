@@ -1,0 +1,1767 @@
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 13:51:59 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 13:51:59 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 13:51:59 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 13:51:59 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 13:51:59 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:00 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:00 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:52:03 - INFO - tools.init_tool -   Begin to initialize models...
+read config from config/hfai/VallinaAdapter.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-3
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+bottleneck_dim: 256
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina_delta
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT-Adapter
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 28, in init_all
+    model = get_model(config.get("model", "model_name"))(config, gpu_list, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./model/Pretrain/VallinaPretrain.py", line 33, in __init__
+    super(VallinaDeltaPretrain, self).__init__()
+TypeError: __init__() missing 2 required positional arguments: 'config' and 'gpu_list'
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 13:54:24 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 13:54:24 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 13:54:24 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 13:54:24 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:25 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:25 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:54:27 - INFO - tools.init_tool -   Begin to initialize models...
+read config from config/hfai/VallinaAdapter.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-3
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+bottleneck_dim: 256
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina_delta
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT-Adapter
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,451 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,451 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,451 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,528 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,528 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,528 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,594 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,595 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,595 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,595 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,596 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,596 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,650 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,650 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,650 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,678 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,679 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,679 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,686 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,686 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,686 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 13:54:44,690 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 13:54:44,690 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 13:54:44,690 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 2 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 28, in init_all
+    model = get_model(config.get("model", "model_name"))(config, gpu_list, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./model/Pretrain/VallinaPretrain.py", line 48, in __init__
+    self.hidden_size = self.model.config.hidden_size
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1177, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'AdapterModel' object has no attribute 'config'
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 13:58:54 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 13:58:54 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 13:58:54 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:55 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:55 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 13:58:57 - INFO - tools.init_tool -   Begin to initialize models...
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-3
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+bottleneck_dim: 256
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina_delta
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT-Adapter
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 3 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 28, in init_all
+    model = get_model(config.get("model", "model_name"))(config, gpu_list, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./model/Pretrain/VallinaPretrain.py", line 38, in __init__
+    Visualization(model).structure_graph()
+NameError: name 'model' is not defined
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 18:25:28 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:29 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:29 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 18:25:31 - INFO - tools.init_tool -   Begin to initialize models...
+read config from config/hfai/VallinaAdapter.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-3
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+bottleneck_dim: 256
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina_delta
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT-Adapter
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 230, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in start_processes
+    while not context.join():
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 150, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 59, in _wrap
+    fn(i, *args)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/train.py", line 128, in main_hfai
+    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./tools/init_tool.py", line 28, in init_all
+    model = get_model(config.get("model", "model_name"))(config, gpu_list, *args, **params)
+  File "/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux/./model/Pretrain/VallinaPretrain.py", line 38, in __init__
+    Visualization(self.extra_reprmodel).structure_graph()
+  File "/opt/hf_venvs/python3.8/202111/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1177, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'VallinaDeltaPretrain' object has no attribute 'extra_reprmodel'
+
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:05 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:05 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 19:10:09 - INFO - tools.init_tool -   Begin to initialize models...
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-3
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+bottleneck_dim: 256
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina_delta
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT-Adapter
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+read config from config/hfai/VallinaAdapter.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,548 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,548 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,548 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,677 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,678 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,678 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,690 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,690 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,690 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,705 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,705 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,705 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,827 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,828 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,828 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,828 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,828 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,828 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,832 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,832 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,832 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[256, 768] 
+│               │                   │   bias:[256]
+│               │                   └── up_proj (Linear) weight:[768, 256] 
+│               │                       bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[256, 768] 
+│                               │   bias:[256]
+│                               └── up_proj (Linear) weight:[768, 256] 
+│                                   bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-09-09 19:10:27,843 >> Trainable Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:677]2022-09-09 19:10:27,843 >> Delta Parameter Ratio: 7.052636%
+[INFO|(OpenDelta)basemodel:679]2022-09-09 19:10:27,843 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+09/09/2022 19:11:00 - WARNING - tools.init_tool -   Cannot load checkpoint file with error [Errno 2] No such file or directory: 'checkpoints/BERT-Adapter'
+09/09/2022 19:11:00 - INFO - tools.init_tool -   Initialize done.
+09/09/2022 19:11:00 - INFO - tools.train_tool -   Start training
+all parameters are turned
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 0 step: 0
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:13:00 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/09/2022 19:27:20 - INFO - tools.train_tool -   Checkpoint saved to checkpoints/BERT-Adapter/0.pkl
+0         train   1/51233      2:00/102983:44     1.626   {"mlm": 1.6264015436172485, "mse": 0.0}
+0         train   101/51233    2:17/1162:56       1.489   {"mlm": 1.4894969746617988, "mse": 0.0}
+0         train   201/51233    2:34/655:26        1.478   {"mlm": 1.4776129675148733, "mse": 0.0}
+0         train   301/51233    2:52/485:10        1.469   {"mlm": 1.4690653814429857, "mse": 0.0}
+0         train   401/51233    3:09/399:45        1.465   {"mlm": 1.4647352558716278, "mse": 0.0}
+0         train   501/51233    3:26/348:15        1.466   {"mlm": 1.4657974357376555, "mse": 0.0}
+0         train   601/51233    3:43/313:49        1.461   {"mlm": 1.4609115665248547, "mse": 0.0}
+0         train   701/51233    4:00/289:13        1.462   {"mlm": 1.4620516448150178, "mse": 0.0}
+0         train   801/51233    4:18/270:45        1.462   {"mlm": 1.4615688193008098, "mse": 0.0}
+0         train   901/51233    4:35/256:20        1.461   {"mlm": 1.4608366537041193, "mse": 0.0}
+0         train   1001/51233   4:52/244:39        1.459   {"mlm": 1.4587143542883279, "mse": 0.0}
+0         train   1101/51233   5:09/235:01        1.459   {"mlm": 1.458618724378643, "mse": 0.0}
+0         train   1201/51233   5:26/226:56        1.461   {"mlm": 1.4614312281517263, "mse": 0.0}
+0         train   1301/51233   5:44/220:03        1.463   {"mlm": 1.4628252954688281, "mse": 0.0}
+0         train   1401/51233   6:01/214:08        1.463   {"mlm": 1.4634542774932884, "mse": 0.0}
+0         train   1501/51233   6:18/208:58        1.463   {"mlm": 1.462991591138414, "mse": 0.0}
+0         train   1601/51233   6:35/204:23        1.463   {"mlm": 1.4626828094782642, "mse": 0.0}
+0         train   1701/51233   6:52/200:18        1.463   {"mlm": 1.4633443810391749, "mse": 0.0}
+0         train   1801/51233   7:09/196:40        1.463   {"mlm": 1.4631894587940935, "mse": 0.0}
+0         train   1901/51233   7:27/193:24        1.463   {"mlm": 1.4633269785956795, "mse": 0.0}
+0         train   2001/51233   7:44/190:24        1.465   {"mlm": 1.4650266810931425, "mse": 0.0}
+0         train   2101/51233   8:01/187:40        1.466   {"mlm": 1.4753635430335998, "mse": 0.0}
+0         train   2201/51233   8:18/185:09        1.466   {"mlm": 1.4757451367378236, "mse": 0.0}
+0         train   2301/51233   8:35/182:51        1.467   {"mlm": 1.4803700272242228, "mse": 0.0}
+0         train   2401/51233   8:53/180:44        1.468   {"mlm": 1.482616480588913, "mse": 0.0}
+0         train   2501/51233   9:10/178:44        1.469   {"mlm": 1.4838087615966797, "mse": 0.0}
+0         train   2601/51233   9:27/176:56        1.470   {"mlm": 1.4851738174756368, "mse": 0.0}
+0         train   2701/51233   9:45/175:11        1.470   {"mlm": 1.4850021524088723, "mse": 0.0}
+0         train   2801/51233  10:02/173:32        1.471   {"mlm": 1.4874210786819457, "mse": 0.0}
+0         train   2901/51233  10:19/171:59        1.472   {"mlm": 1.4883016248544056, "mse": 0.0}
+0         train   3001/51233  10:36/170:31        1.473   {"mlm": 1.4875773305892945, "mse": 0.0}
+0         train   3101/51233  10:53/169:08        1.472   {"mlm": 1.4853940684145148, "mse": 0.0}
+0         train   3201/51233  11:11/167:50        1.472   {"mlm": 1.4843033966422081, "mse": 0.0}
+0         train   3301/51233  11:28/166:35        1.472   {"mlm": 1.4831109529275162, "mse": 0.0}
+0         train   3401/51233  11:45/165:22        1.472   {"mlm": 1.481397036739758, "mse": 0.0}
+0         train   3501/51233  12:02/164:13        1.472   {"mlm": 1.4809198629061382, "mse": 0.0}
+0         train   3601/51233  12:19/163:06        1.472   {"mlm": 1.4798389978706836, "mse": 0.0}
+0         train   3701/51233  12:37/162:02        1.471   {"mlm": 1.479033026975744, "mse": 0.0}
+0         train   3801/51233  12:54/161:01        1.471   {"mlm": 1.4771324196789, "mse": 0.0}
+0         train   3901/51233  13:11/160:01        1.470   {"mlm": 1.4759739787955033, "mse": 0.0}
+0         train   4001/51233  13:28/159:04        1.470   {"mlm": 1.474523564696312, "mse": 0.0}
+0         train   4101/51233  13:45/158:11        1.469   {"mlm": 1.4427671878024786, "mse": 0.0}
+0         train   4201/51233  14:03/157:18        1.468   {"mlm": 1.4360785460352299, "mse": 0.0}
+0         train   4301/51233  14:20/156:26        1.467   {"mlm": 1.4341749582800978, "mse": 0.0}
+0         train   4401/51233  14:37/155:37        1.466   {"mlm": 1.4298012104249538, "mse": 0.0}
+0         train   4501/51233  14:54/154:48        1.465   {"mlm": 1.4287832502372757, "mse": 0.0}
+0         train   4601/51233  15:11/154:01        1.464   {"mlm": 1.425950147671771, "mse": 0.0}
+0         train   4701/51233  15:29/153:15        1.464   {"mlm": 1.4279379917998853, "mse": 0.0}
+0         train   4801/51233  15:46/152:31        1.463   {"mlm": 1.4281578216146915, "mse": 0.0}
+0         train   4901/51233  16:03/151:49        1.462   {"mlm": 1.427933388345101, "mse": 0.0}
+
+09/09/2022 19:43:15 - INFO - tools.train_tool -   Checkpoint saved to checkpoints/BERT-Adapter/0.pkl
+0         valid   1/390        0:58/378:33        1.217   
+0         valid   101/390      1:07/ 3:12         1.328   
+0         valid   201/390      1:16/ 1:11         1.334   
+0         valid   301/390      1:25/ 0:25         1.330   
+0         valid   390/390      1:34/ 0:00         1.322   {"mlm": 1.3221153846153846, "mse": 0.0, "train": 0.0}
+0         train   5001/51233  17:55/165:43        1.461   {"mlm": 1.4099218845367432, "mse": 0.0}
+0         train   5101/51233  18:12/164:43        1.461   {"mlm": 1.4274752505935064, "mse": 0.0}
+0         train   5201/51233  18:30/163:44        1.460   {"mlm": 1.4272848260936453, "mse": 0.0}
+0         train   5301/51233  18:47/162:47        1.459   {"mlm": 1.4262744188308716, "mse": 0.0}
+0         train   5401/51233  19:04/161:50        1.459   {"mlm": 1.423071837484688, "mse": 0.0}
+0         train   5501/51233  19:21/160:56        1.458   {"mlm": 1.4200031671695366, "mse": 0.0}
+0         train   5601/51233  19:38/160:05        1.457   {"mlm": 1.418132513017702, "mse": 0.0}
+0         train   5701/51233  19:56/159:13        1.456   {"mlm": 1.414633895463168, "mse": 0.0}
+0         train   5801/51233  20:13/158:22        1.455   {"mlm": 1.4117823767751343, "mse": 0.0}
+0         train   5901/51233  20:30/157:33        1.454   {"mlm": 1.4130229785889552, "mse": 0.0}
+0         train   6001/51233  20:47/156:45        1.453   {"mlm": 1.4117879326884206, "mse": 0.0}
+0         train   6101/51233  21:05/155:57        1.453   {"mlm": 1.4123640832415936, "mse": 0.0}
+0         train   6201/51233  21:22/155:10        1.452   {"mlm": 1.4120023120551384, "mse": 0.0}
+0         train   6301/51233  21:39/154:25        1.451   {"mlm": 1.410230910567299, "mse": 0.0}
+0         train   6401/51233  21:56/153:40        1.450   {"mlm": 1.4108644234632102, "mse": 0.0}
+0         train   6501/51233  22:13/152:56        1.449   {"mlm": 1.4077428365690878, "mse": 0.0}
+0         train   6601/51233  22:30/152:13        1.448   {"mlm": 1.4065349292635991, "mse": 0.0}
+0         train   6701/51233  22:48/151:32        1.447   {"mlm": 1.4058639279258454, "mse": 0.0}
+0         train   6801/51233  23:05/150:50        1.446   {"mlm": 1.40417615338738, "mse": 0.0}
+0         train   6901/51233  23:22/150:09        1.445   {"mlm": 1.403666285011155, "mse": 0.0}
+0         train   7001/51233  23:39/149:29        1.445   {"mlm": 1.402918851119408, "mse": 0.0}
+0         train   7101/51233  23:56/148:49        1.444   {"mlm": 1.4002765727043152, "mse": 0.0}
+0         train   7201/51233  24:14/148:11        1.443   {"mlm": 1.3947988319396973, "mse": 0.0}
+0         train   7301/51233  24:31/147:33        1.443   {"mlm": 1.397577539285024, "mse": 0.0}
+0         train   7401/51233  24:48/146:56        1.442   {"mlm": 1.398765467107296, "mse": 0.0}
+0         train   7501/51233  25:05/146:18        1.442   {"mlm": 1.3976471023559571, "mse": 0.0}
+0         train   7601/51233  25:22/145:42        1.441   {"mlm": 1.3930514242251715, "mse": 0.0}
+0         train   7701/51233  25:40/145:06        1.440   {"mlm": 1.3938837703636715, "mse": 0.0}
+0         train   7801/51233  25:57/144:30        1.439   {"mlm": 1.392273690700531, "mse": 0.0}
+0         train   7901/51233  26:14/143:55        1.439   {"mlm": 1.3922921453581916, "mse": 0.0}
+0         train   8001/51233  26:31/143:20        1.438   {"mlm": 1.3924356845617294, "mse": 0.0}
+0         train   8101/51233  26:48/142:45        1.437   {"mlm": 1.3896006639437242, "mse": 0.0}
+0         train   8201/51233  27:05/142:11        1.437   {"mlm": 1.3897555354237556, "mse": 0.0}
+0         train   8301/51233  27:23/141:37        1.436   {"mlm": 1.388126561825092, "mse": 0.0}
+0         train   8401/51233  27:40/141:04        1.435   {"mlm": 1.3863009519236429, "mse": 0.0}
+0         train   8501/51233  27:57/140:31        1.434   {"mlm": 1.384514063278834, "mse": 0.0}
+0         train   8601/51233  28:14/139:59        1.433   {"mlm": 1.3833811835199594, "mse": 0.0}
+0         train   8701/51233  28:31/139:27        1.433   {"mlm": 1.3845087344506208, "mse": 0.0}
+0         train   8801/51233  28:49/138:56        1.432   {"mlm": 1.3835751612318887, "mse": 0.0}
+0         train   8901/51233  29:06/138:24        1.431   {"mlm": 1.3823595186283715, "mse": 0.0}
+0         train   9001/51233  29:23/137:54        1.431   {"mlm": 1.381269384920597, "mse": 0.0}
+0         train   9101/51233  29:40/137:23        1.430   {"mlm": 1.3734781465145072, "mse": 0.0}
+0         train   9201/51233  29:58/136:53        1.429   {"mlm": 1.377535181428919, "mse": 0.0}
+0         train   9301/51233  30:15/136:23        1.429   {"mlm": 1.3847832185368874, "mse": 0.0}
+0         train   9401/51233  30:32/135:53        1.428   {"mlm": 1.379433030173892, "mse": 0.0}
+0         train   9501/51233  30:49/135:24        1.428   {"mlm": 1.376110379586, "mse": 0.0}
+0         train   9601/51233  31:06/134:54        1.427   {"mlm": 1.3759735327133154, "mse": 0.0}
+0         train   9701/51233  31:23/134:25        1.427   {"mlm": 1.3754186224357594, "mse": 0.0}
+0         train   9801/51233  31:41/133:56        1.426   {"mlm": 1.375931768602364, "mse": 0.0}
+0         train   9901/51233  31:58/133:27        1.426   {"mlm": 1.3765096993281924, "mse": 0.0}
+

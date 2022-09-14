@@ -15,7 +15,7 @@ def gen_time_str(t):
     return '%2d:%02d' % (minute, second)
 
 
-def output_value(epoch, mode, step, time, loss, info, end, config):
+def output_value(epoch, mode, step, time, loss, info, end, config, max_norm=None):
     try:
         delimiter = config.get("output", "delimiter")
     except Exception as e:
@@ -34,7 +34,8 @@ def output_value(epoch, mode, step, time, loss, info, end, config):
     while len(s) < 50:
         s += " "
     s += str(loss)
-    while len(s) < 58:
+    s += "  " + str(max_norm)
+    while len(s) < 64:
         s += " "
     s += str(info)
     s = s.replace(" ", delimiter)

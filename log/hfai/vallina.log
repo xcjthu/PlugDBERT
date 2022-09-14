@@ -2013,3 +2013,671 @@ formatter /private_dataset/PLMs/roberta-base/
 1         train   4801/51233   7:55/76:38         0.212   {"mlm": 1.2736371848615964, "mse": 0.0}
 1         train   4901/51233   8:20/78:48         0.234   {"mlm": 1.2715165394789372, "mse": 0.0}
 
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 23:08:19 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 23:08:19 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:20 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:20 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:08:22 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 23:09:00 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/2.pkl
+09/08/2022 23:09:02 - INFO - tools.init_tool -   Initialize done.
+09/08/2022 23:09:02 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 23:09:02 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['2.pkl', '0.pkl', '1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 2 step: 50000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 23:24:14 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 23:24:14 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 23:24:14 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 23:24:14 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:15 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:15 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:24:16 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 23:24:51 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/2.pkl
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 23:24:53 - INFO - tools.init_tool -   Initialize done.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 23:24:53 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 23:24:53 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['2.pkl', '0.pkl', '1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 2 step: 50000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/08/2022 23:42:04 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/08/2022 23:42:04 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/08/2022 23:42:04 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/08/2022 23:42:04 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/08/2022 23:42:04 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:05 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:05 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/08/2022 23:42:07 - INFO - tools.init_tool -   Begin to initialize models...
+09/08/2022 23:42:43 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/2.pkl
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 23:42:45 - INFO - tools.init_tool -   Initialize done.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/08/2022 23:42:45 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/08/2022 23:42:45 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['2.pkl', '0.pkl', '1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 2 step: 50000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:32 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:32 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 00:48:33 - INFO - tools.init_tool -   Begin to initialize models...
+09/09/2022 00:49:09 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/2.pkl
+09/09/2022 00:49:11 - INFO - tools.init_tool -   Initialize done.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/09/2022 00:49:11 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/09/2022 00:49:11 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['2.pkl', '0.pkl', '1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 2 step: 50000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 01:17:56 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 01:17:56 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:57 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:57 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:17:58 - INFO - tools.init_tool -   Begin to initialize models...
+09/09/2022 01:18:27 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/2.pkl
+09/09/2022 01:18:28 - INFO - tools.init_tool -   Initialize done.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/09/2022 01:18:28 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/09/2022 01:18:28 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['2.pkl', '0.pkl', '1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 2 step: 50000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+/Users/xcj/Desktop/thunlp/huanfang/workspace/datamux
+09/09/2022 01:39:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+09/09/2022 01:39:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/09/2022 01:39:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/09/2022 01:39:29 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:30 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:30 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+09/09/2022 01:39:31 - INFO - tools.init_tool -   Begin to initialize models...
+09/09/2022 01:39:59 - INFO - tools.init_tool -   Begin to load checkpoint... from checkpoints/BERT/2.pkl
+09/09/2022 01:40:01 - INFO - tools.init_tool -   Initialize done.
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+09/09/2022 01:40:01 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/09/2022 01:40:01 - INFO - tools.train_tool -   Start training
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+read config from config/hfai/VallinaPile.config
+None
+[train]
+epoch: 20
+batch_size: 16
+shuffle: True
+reader_num: 8
+optimizer: AdamW
+learning_rate: 1e-4
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 3000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: True
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+========
+[eval]
+batch_size: 16
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: FFRecord
+train_formatter_type: vallina
+train_data_path: /private_dataset/biomed_corpus/train.ffr
+valid_dataset_type: FFRecord
+valid_formatter_type: vallina
+valid_data_path: /private_dataset/biomed_corpus/valid.ffr
+========
+[model]
+model_name: vallina
+pretrained_model: /private_dataset/PLMs/roberta-base/
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT
+output_function: avgloss
+========
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/
+all parameters are turned
+may load from checkpoints/BERT ['2.pkl', '0.pkl', '1.pkl']
+None
+valid_mode step no_valid False
+step_epoch 5000
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 2 step: 50000
+read config from config/hfai/VallinaPile.config
+None
+formatter /private_dataset/PLMs/roberta-base/
+formatter /private_dataset/PLMs/roberta-base/

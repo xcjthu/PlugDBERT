@@ -126,20 +126,20 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
             #     if step % 100 == 0:
             #         print("att_mat1", model.module.att_mat1)
             #         print("======")
-
+            max_norm = None
             if (step + 1) % grad_accumulate == 0:
                 if max_grad_norm is not None and max_grad_norm > 0:
                     if fp16:
                         scaler.unscale_(optimizer)
                     if hasattr(optimizer, "clip_grad_norm"):
                         # Some optimizers (like the sharded optimizer) have a specific way to do gradient clipping
-                        optimizer.clip_grad_norm(max_grad_norm)
+                        max_norm = optimizer.clip_grad_norm(max_grad_norm)
                     elif hasattr(model, "clip_grad_norm_"):
                         # Some models (like FullyShardedDDP) have a specific way to do gradient clipping
-                        model.clip_grad_norm_(max_grad_norm)
+                        max_norm = model.clip_grad_norm_(max_grad_norm)
                     else:
                         # Revert to normal clipping otherwise, handling Apex or full precision
-                        torch.nn.utils.clip_grad_norm_(
+                        max_norm = torch.nn.utils.clip_grad_norm_(
                             model.parameters(),
                             max_grad_norm
                         )
@@ -164,7 +164,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
 
                 output_value(current_epoch, "train", "%d/%d" % (step + 1, total_len), "%s/%s" % (
                     gen_time_str(delta_t), gen_time_str(delta_t * (total_len - step - 1) / (step + 1))),
-                             "%.3lf" % (total_loss / (step + 1)), output_info, None, config)
+                             "%.3lf" % (total_loss / (step + 1)), output_info, None, config, max_norm)
 
             # global_step += 1
             if (step + 1) % grad_accumulate == 0 and valid_mode == 'step' and int((step + 1) / grad_accumulate) % step_epoch == 0:
