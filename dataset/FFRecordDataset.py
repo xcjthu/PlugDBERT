@@ -1,7 +1,9 @@
 import json
 import os
 from torch.utils.data import Dataset
-from ffrecord import FileReader
+from tools import use_hfai
+if use_hfai():
+    from ffrecord import FileReader
 import pickle
 
 class FFRecordDataset(Dataset):

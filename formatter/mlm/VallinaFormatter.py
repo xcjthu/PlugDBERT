@@ -21,7 +21,7 @@ class VallinaMLMFormatter:
         self.masker = DataCollatorForLanguageModeling(tokenizer=self.tokenizer, mlm=True, mlm_probability=self.mlm_prob, return_tensors="pt")
 
     def process(self, data):
-        ctxs = [d["text"] for d in data]
+        ctxs = data#[d["text"] for d in data]
         # else:
         #     ctxs = data #[d["doc"] for d in data]
 

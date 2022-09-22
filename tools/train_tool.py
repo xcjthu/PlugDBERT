@@ -94,8 +94,8 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
         step = -1
         if isinstance(dataset.dataset, KaraPytorchDatasetBase):
             dataset.dataset.set_epoch(epoch_num)
-        if dataset.sampler is not None:
-            dataset.sampler.set_epoch(epoch_num)
+        # if dataset.sampler is not None:
+        #     dataset.sampler.set_epoch(epoch_num)
         for step, data in enumerate(dataset):
             if step < load_step:
                 if step % 1000 == 0:
@@ -143,6 +143,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
                             model.parameters(),
                             max_grad_norm
                         )
+                    max_norm = round(float(max_norm), 4)
 
                 optimizer_was_run = True
                 if fp16:
@@ -157,7 +158,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
                     lr_scheduler.step()
                 optimizer.zero_grad()
 
-            if step % output_time == 0 and local_rank <= 0:
+            if (step + 1) % output_time == 0 and local_rank <= 0:
                 output_info = output_function(acc_result, config)
 
                 delta_t = timer() - start_time

@@ -34,10 +34,10 @@ def output_value(epoch, mode, step, time, loss, info, end, config, max_norm=None
     while len(s) < 50:
         s += " "
     s += str(loss)
-    s += "  " + str(max_norm)
     while len(s) < 64:
         s += " "
     s += str(info)
+    s += "  " + str(max_norm)
     s = s.replace(" ", delimiter)
     if not (end is None):
         print(s, end=end)
