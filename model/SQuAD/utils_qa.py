@@ -7,7 +7,9 @@ from typing import Optional, Tuple
 
 import numpy as np
 from tqdm.auto import tqdm
-
+import string
+from collections import Counter
+import re
 
 def postprocess_qa_predictions(
     examples,
@@ -42,12 +44,9 @@ def postprocess_qa_predictions(
             each feature: all features must be aligned on the fact they `want` to predict a null answer).
             Only useful when :obj:`version_2_with_negative` is :obj:`True`.
     """
-
-    if len(all_start_logits) != len(features):
-        raise ValueError(f"Got {len(predictions[0])} predictions and {len(features)} features.")
-
+    all_start_logits, all_end_logits = all_start_logits.cpu().numpy(), all_end_logits.cpu().numpy()
     # Build a map example to its corresponding features.
-    example_id_to_index = {k["example_id"]: i for i, k in enumerate(examples)}
+    example_id_to_index = {k["id"]: i for i, k in enumerate(examples)}
     features_per_example = collections.defaultdict(list)
     for i, feature in enumerate(features["example_id"]):
         features_per_example[example_id_to_index[feature]].append(i)
@@ -187,5 +186,67 @@ def start_end_acc(positions, logits, acc_result):
     predict = torch.argmax(logits, dim=1)
     acc_result["right"] += int((positions == predict).sum())
     acc_result["total"] += int(positions.size(0))
+    return acc_result
+
+
+def normalize_answer(s):
+    """Lower text and remove punctuation, articles and extra whitespace."""
+
+    def remove_articles(text):
+        return re.sub(r"\b(a|an|the)\b", " ", text)
+
+    def white_space_fix(text):
+        return " ".join(text.split())
+
+    def remove_punc(text):
+        exclude = set(string.punctuation)
+        return "".join(ch for ch in text if ch not in exclude)
+
+    def lower(text):
+        return text.lower()
+
+    return white_space_fix(remove_articles(remove_punc(lower(s))))
+
+def squad_em(predict, answers):
+    em = 0
+    for pre, ans in zip(predict, answers):
+        if pre in ans:
+            em += 1
+    return em
+
+def squad_f1(predict, answers):
+    ret = 0
+    for pred, ans in zip(predict, answers):
+        # if pred == "no answer":
+        #     continue
+        prediction_tokens = pred.split()
+        cpred_token = Counter(prediction_tokens)
+        curf1 = []
+        for a in ans:
+            ground_truth_tokens = a.split()
+            common = cpred_token & Counter(ground_truth_tokens)
+            num_same = sum(common.values())
+            if num_same == 0:
+                curf1.append(0)
+            else:
+                precision = 1.0 * num_same / len(prediction_tokens)
+                recall = 1.0 * num_same / len(ground_truth_tokens)
+                f1 = (2 * precision * recall) / (precision + recall)
+                curf1.append(f1)
+        ret += max(curf1)
+    return ret
+
+def squad_metric(predict, id2ans, acc_result):
+    if acc_result is None:
+        acc_result = {"train": False, "total": 0, "em_sum": 0, "f1_sum": 0.}
+    pred = [normalize_answer(predict[p]) for p in predict]
+    ground = [{normalize_answer(a) for a in id2ans[p]} for p in predict]
+    # print(pred)
+    # print(ground)
+    # print("==" * 10)
+
+    acc_result["em_sum"] += squad_em(pred, ground)
+    acc_result["f1_sum"] += squad_f1(pred, ground)
+    acc_result["total"] += len(pred)
     return acc_result
 

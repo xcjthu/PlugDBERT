@@ -45,7 +45,7 @@ class SQuAD(nn.Module):
                 attention_mask=data["attention_mask"],
                 # token_type_ids=data["token_type_ids"],
             )
-            predict = postprocess_qa_predictions(data["oridata"], out["start_logits"], out["end_logits"])
-            return {"loss": 0, "acc_result": None}
+            predict = postprocess_qa_predictions(data["oridata"], data, out["start_logits"], out["end_logits"])
+            return {"loss": 0, "acc_result": squad_metric(predict, data["id2ans"], acc_result)}
 
 

@@ -76,7 +76,6 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
     print_rank('step_epoch', step_epoch)
     output_log(logger, "Start training", logging.INFO)
 
-
     print_rank("Epoch  Stage  Iterations  Time Usage    Loss    Output Information")
     print_rank("training from epoch: %s step: %s" % (trained_epoch, load_step))
     total_len = len(dataset)
@@ -183,6 +182,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
                         valid(model, parameters["valid_dataset"], current_epoch, config, gpu_list, output_function)
 
             # break
+            load_step = -1
 
         if step == -1:
             output_log(logger, "No data in this epoch", logging.ERROR)

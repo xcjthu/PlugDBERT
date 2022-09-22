@@ -12,45 +12,40 @@ WARNING:torch.distributed.run:
 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
 *****************************************
 /data_new/private/xiaochaojun/DomainPlugin/DomainPlugin/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
-/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
 
 /data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
-read config fromread config from  config/SQuAD/LoRa.configconfig/SQuAD/LoRa.config
+/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
+read config from config/SQuAD/LoRa.config
+read config from config/SQuAD/LoRa.config
+read config from config/SQuAD/LoRa.config
+read config from config/SQuAD/LoRa.config
+NoneNoneNone
 
-read config from config/SQuAD/LoRa.config
-read config from config/SQuAD/LoRa.config
+
 None
-None
-None
-None
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 15:25:01 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 15:25:01 - INFO - __main__ -   CUDA available: True
-09/22/2022 15:25:01 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
-09/22/2022 15:25:01 - INFO - __main__ -   CUDA available: True
-formatter09/22/2022 15:25:01 - INFO - __main__ -   CUDA available: True
- roberta-base
-09/22/2022 15:25:01 - INFO - __main__ -   CUDA available: True
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
+09/22/2022 16:38:45 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
+09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
+formatter roberta-base
+formatter roberta-base
+formatter roberta-base
+09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
 formatter roberta-base
 formatter roberta-base
 formatter roberta-base
 formatter roberta-base
 formatter roberta-base
-formatter roberta-base
-formatter roberta-base
-09/22/2022 15:25:32 - INFO - tools.init_tool -   Begin to initialize models...
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.bias', 'lm_head.dense.weight', 'lm_head.decoder.weight', 'lm_head.layer_norm.bias', 'lm_head.layer_norm.weight']
-- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-- This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
-You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.layer_norm.bias', 'lm_head.dense.weight', 'lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.dense.bias', 'lm_head.decoder.weight']
+09/22/2022 16:39:12 - INFO - tools.init_tool -   Begin to initialize models...
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.dense.weight', 'lm_head.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.bias']
 - This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
@@ -77,88 +72,12 @@ root
 │                   ├── dense (Linear) weight:[768, 3072] bias:[768]
 │                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
 └── qa_outputs (Linear) weight:[2, 768] bias:[2]
-root
-├── roberta (RobertaModel)
-│   ├── embeddings (RobertaEmbeddings)
-│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
-│   │   ├── position_embeddings (Embedding) weight:[514, 768]
-│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
-│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│   └── encoder (RobertaEncoder)
-│       └── layer (ModuleList)
-│           └── 0-11(RobertaLayer)
-│               ├── attention (RobertaAttention)
-│               │   ├── self (RobertaSelfAttention)
-│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
-│               │   └── output (RobertaSelfOutput)
-│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
-│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│               ├── intermediate (RobertaIntermediate)
-│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
-│               └── output (RobertaOutput)
-│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
-│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-└── qa_outputs (Linear) weight:[2, 768] bias:[2]
-root
-├── roberta (RobertaModel)
-│   ├── embeddings (RobertaEmbeddings)
-│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
-│   │   ├── position_embeddings (Embedding) weight:[514, 768]
-│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
-│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│   └── encoder (RobertaEncoder)
-│       └── layer (ModuleList)
-│           └── 0-11(RobertaLayer)
-│               ├── attention (RobertaAttention)
-│               │   ├── self (RobertaSelfAttention)
-│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
-│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
-│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
-│               │   └── output (RobertaSelfOutput)
-│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
-│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│               ├── intermediate (RobertaIntermediate)
-│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
-│               └── output (RobertaOutput)
-│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
-│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-└── qa_outputs (Linear) weight:[2, 768] bias:[2]
-root
-├── roberta (RobertaModel)
-│   ├── embeddings (RobertaEmbeddings)
-│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
-│   │   ├── position_embeddings (Embedding) weight:[514, 768]
-│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
-│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│   └── encoder (RobertaEncoder)
-│       └── layer (ModuleList)
-│           └── 0-11(RobertaLayer)
-│               ├── attention (RobertaAttention)
-│               │   ├── self (RobertaSelfAttention)
-│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
-│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
-│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
-│               │   └── output (RobertaSelfOutput)
-│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
-│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│               ├── intermediate (RobertaIntermediate)
-│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
-│               └── output (RobertaOutput)
-│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
-│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-└── qa_outputs (Linear) weight:[2, 768] bias:[2]
-[INFO|(OpenDelta)basemodel:675]2022-09-22 15:25:39,149 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 15:25:39,149 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 15:25:39,149 >> Static Memory 0.00 GB, Max Memory 0.00 GB
-[INFO|(OpenDelta)basemodel:675]2022-09-22 15:25:39,152 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 15:25:39,152 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 15:25:39,152 >> Static Memory 0.00 GB, Max Memory 0.00 GB
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.bias', 'lm_head.bias', 'lm_head.dense.weight', 'lm_head.layer_norm.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight']
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.weight', 'lm_head.decoder.weight', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.bias']
 - This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.dense.bias', 'lm_head.dense.weight', 'lm_head.bias', 'lm_head.layer_norm.bias']
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.weight']
 - This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
@@ -231,10 +150,91 @@ root
 │                   ├── dense (Linear) weight:[768, 3072] bias:[768]
 │                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
 └── qa_outputs (Linear) weight:[2, 768] bias:[2]
-[INFO|(OpenDelta)basemodel:675]2022-09-22 15:25:41,221 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 15:25:41,221 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 15:25:41,221 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:20,457 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:20,457 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:20,457 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
+│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
+│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── qa_outputs (Linear) weight:[2, 768] bias:[2]
+[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:20,532 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:20,532 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:20,532 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
+│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
+│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── qa_outputs (Linear) weight:[2, 768] bias:[2]
+[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:20,538 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:20,539 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:20,539 >> Static Memory 0.00 GB, Max Memory 0.00 GB
 all parameters are turned
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.weight', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.bias']
+- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── qa_outputs (Linear) weight:[2, 768] bias:[2]
 root
 ├── roberta (RobertaModel)
 │   ├── embeddings (RobertaEmbeddings)
@@ -259,12 +259,12 @@ root
 │                   ├── dense (Linear) weight:[768, 3072] bias:[768]
 │                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
 └── qa_outputs (Linear) weight:[2, 768] bias:[2]
-[INFO|(OpenDelta)basemodel:675]2022-09-22 15:25:41,241 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 15:25:41,242 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 15:25:41,242 >> Static Memory 0.00 GB, Max Memory 0.00 GB
-may load from /data_new/private/xiaochaojun/DomainPlugin/checkpoints/roberta-Adapter []
-09/22/2022 15:25:46 - WARNING - tools.init_tool -   Cannot load checkpoint file with error max() arg is an empty sequence
-09/22/2022 15:25:46 - INFO - tools.init_tool -   Initialize done.
+[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:21,087 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:21,087 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:21,087 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+09/22/2022 16:39:28 - INFO - tools.init_tool -   Begin to load checkpoint... from None
+09/22/2022 16:39:28 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+09/22/2022 16:39:28 - INFO - tools.init_tool -   Initialize done.
 [train]
 epoch: 20
 batch_size: 8
@@ -281,8 +281,7 @@ training_steps: 20000
 max_grad_norm: 1.0
 fp16: False
 mlm_prob: 0.15
-valid_mode: step
-step_epoch: 5000
+valid_mode: batch
 lora_r: 32
 lora_alpha: 64
 question_first: True
@@ -314,16 +313,20 @@ pretrained_model: roberta-base
 output_time: 100
 test_time: 1
 model_path: /data_new/private/xiaochaojun/DomainPlugin/checkpoints
-model_name: roberta-Adapter
-output_function: binary
+model_name: SQuAD-Lora
+output_function: squad1
 ========
-09/22/2022 15:25:46 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
-valid_mode step no_valid False
-step_epoch 5000
-09/22/2022 15:25:46 - INFO - tools.train_tool -   Start training
+09/22/2022 16:39:28 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+valid_mode batch no_valid False
+step_epoch None
+09/22/2022 16:39:28 - INFO - tools.train_tool -   Start training
 Epoch  Stage  Iterations  Time Usage    Loss    Output Information
 training from epoch: 0 step: 0
-09/22/2022 15:26:01 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-09/22/2022 15:26:01 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-09/22/2022 15:26:01 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-09/22/2022 15:26:01 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+0         train   100/2737     0:39/17:22         5.996         {"position_acc": 0.0138}  3.7648
+0         train   200/2737     1:05/13:52         5.282         {"position_acc": 0.0334}  4.1346
+0         train   300/2737     1:32/12:28         4.555         {"position_acc": 0.1041}  7.0997
+0         train   400/2737     1:58/11:32         3.934         {"position_acc": 0.1985}  8.9082

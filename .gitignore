@@ -5,6 +5,7 @@
 __pycache__
 *un~
 data/
+checkpoints/
 
 PLMConfig/roberta-converted-lfm
 

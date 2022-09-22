@@ -68,6 +68,17 @@ def squad_output_function(data, config, *args, **params):
             }
         )
 
+def squad1_output_function(data, config, *args, **params):
+    if "right" in data:
+        acc = round(data["right"] / data["total"], 4)
+        return json.dumps({"position_acc": acc})
+    else:
+        return json.dumps({
+            "EM": round(data["em_sum"] / data["total"], 4),
+            "F1": round(data["f1_sum"] / data["total"], 4)
+            }
+        )
+
 
 def avgloss_output_function(data, config, *args, **params):
     return json.dumps({key: data[key] / data["step"] for key in data if key != "step"})

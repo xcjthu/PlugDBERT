@@ -41,7 +41,7 @@ def init_all(config, gpu_list, checkpoint, mode, *args, **params):
             output_log(logger, "No init_multi_gpu implemented in the model, use single gpu instead.", logging.WARNING)
 
     try:
-        if checkpoint is None:
+        if checkpoint is None and config.getboolean("output", "load_from_path"):
             path = os.path.join(config.get("output", "model_path"), config.get("output", "model_name"))
             files = os.listdir(path)
             print_rank("may load from", path, files)

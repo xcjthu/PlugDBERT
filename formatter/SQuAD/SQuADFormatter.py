@@ -114,9 +114,10 @@ class SQuADFormatter:
                     for k, o in enumerate(tokenized_examples["offset_mapping"][i])
                 ]
             tokenized_examples["oridata"] = data
+            tokenized_examples["id2ans"] = {d["id"]: [a["text"] for a in d["answers"]] for d in data}
 
         for key in tokenized_examples:
-            if key not in ["example_id", "oridata"]:
+            if key not in ["example_id", "oridata", "offset_mapping", "id2ans"]:
                 tokenized_examples[key] = torch.LongTensor(tokenized_examples[key])
 
         return tokenized_examples

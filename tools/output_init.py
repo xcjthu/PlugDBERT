@@ -1,5 +1,5 @@
 from .output_tool import basic_output_function, null_output_function, output_function1, binary_output_function
-from .output_tool import squad_output_function, avgloss_output_function
+from .output_tool import squad_output_function, avgloss_output_function,squad1_output_function
 
 output_function_dic = {
     "Basic": basic_output_function,
@@ -7,6 +7,7 @@ output_function_dic = {
     "out1": output_function1,
     "binary": binary_output_function,
     "squad": squad_output_function,
+    "squad1": squad1_output_function,
     "avgloss": avgloss_output_function
 }
 
