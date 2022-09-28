@@ -11,73 +11,56 @@ WARNING:torch.distributed.run:
 *****************************************
 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
 *****************************************
-/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
-
-/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
-/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
-read config from config/SQuAD/LoRa.config
-read config from config/SQuAD/LoRa.config
-read config from config/SQuAD/LoRa.config
-read config from config/SQuAD/LoRa.config
-NoneNoneNone
+/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin/data_new/private/xiaochaojun/DomainPlugin/DomainPlugin
 
 
+
+read config fromread config from read config fromconfig/SQuAD/LoRa.config 
+ config/SQuAD/LoRa.configconfig/SQuAD/LoRa.config
+
+read config from config/SQuAD/LoRa.config
 None
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
-09/22/2022 16:38:45 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
-09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
-09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
+None
+None
+None
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/23/2022 08:02:15 - INFO - __main__ -   CUDA available: True
+09/23/2022 08:02:15 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+09/23/2022 08:02:15 - INFO - __main__ -   CUDA available: True
+formatter roberta-base
+formatter roberta-base
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/23/2022 08:02:15 - INFO - __main__ -   CUDA available: True
+formatter roberta-base
+09/23/2022 08:02:15 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+09/23/2022 08:02:15 - INFO - __main__ -   CUDA available: True
 formatter roberta-base
 formatter roberta-base
 formatter roberta-base
-09/22/2022 16:38:45 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
-09/22/2022 16:38:45 - INFO - __main__ -   CUDA available: True
 formatter roberta-base
 formatter roberta-base
-formatter roberta-base
-formatter roberta-base
-formatter roberta-base
-09/22/2022 16:39:12 - INFO - tools.init_tool -   Begin to initialize models...
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.dense.weight', 'lm_head.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.bias']
+09/23/2022 08:02:38 - INFO - tools.init_tool -   Begin to initialize models...
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.layer_norm.bias', 'lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.decoder.weight']
 - This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-root
-├── roberta (RobertaModel)
-│   ├── embeddings (RobertaEmbeddings)
-│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
-│   │   ├── position_embeddings (Embedding) weight:[514, 768]
-│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
-│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│   └── encoder (RobertaEncoder)
-│       └── layer (ModuleList)
-│           └── 0-11(RobertaLayer)
-│               ├── attention (RobertaAttention)
-│               │   ├── self (RobertaSelfAttention)
-│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
-│               │   └── output (RobertaSelfOutput)
-│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
-│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│               ├── intermediate (RobertaIntermediate)
-│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
-│               └── output (RobertaOutput)
-│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
-│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-└── qa_outputs (Linear) weight:[2, 768] bias:[2]
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.weight', 'lm_head.decoder.weight', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.bias']
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.bias']
 - This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.weight']
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.dense.weight', 'lm_head.bias', 'lm_head.layer_norm.bias']
+- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.dense.weight']
 - This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
@@ -138,9 +121,7 @@ root
 │           └── 0-11(RobertaLayer)
 │               ├── attention (RobertaAttention)
 │               │   ├── self (RobertaSelfAttention)
-│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
-│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
-│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
 │               │   └── output (RobertaSelfOutput)
 │               │       ├── dense (Linear) weight:[768, 768] bias:[768]
 │               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
@@ -150,69 +131,6 @@ root
 │                   ├── dense (Linear) weight:[768, 3072] bias:[768]
 │                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
 └── qa_outputs (Linear) weight:[2, 768] bias:[2]
-[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:20,457 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:20,457 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:20,457 >> Static Memory 0.00 GB, Max Memory 0.00 GB
-root
-├── roberta (RobertaModel)
-│   ├── embeddings (RobertaEmbeddings)
-│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
-│   │   ├── position_embeddings (Embedding) weight:[514, 768]
-│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
-│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│   └── encoder (RobertaEncoder)
-│       └── layer (ModuleList)
-│           └── 0-11(RobertaLayer)
-│               ├── attention (RobertaAttention)
-│               │   ├── self (RobertaSelfAttention)
-│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
-│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
-│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
-│               │   └── output (RobertaSelfOutput)
-│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
-│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│               ├── intermediate (RobertaIntermediate)
-│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
-│               └── output (RobertaOutput)
-│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
-│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-└── qa_outputs (Linear) weight:[2, 768] bias:[2]
-[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:20,532 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:20,532 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:20,532 >> Static Memory 0.00 GB, Max Memory 0.00 GB
-root
-├── roberta (RobertaModel)
-│   ├── embeddings (RobertaEmbeddings)
-│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
-│   │   ├── position_embeddings (Embedding) weight:[514, 768]
-│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
-│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│   └── encoder (RobertaEncoder)
-│       └── layer (ModuleList)
-│           └── 0-11(RobertaLayer)
-│               ├── attention (RobertaAttention)
-│               │   ├── self (RobertaSelfAttention)
-│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
-│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
-│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
-│               │   └── output (RobertaSelfOutput)
-│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
-│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-│               ├── intermediate (RobertaIntermediate)
-│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
-│               └── output (RobertaOutput)
-│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
-│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
-└── qa_outputs (Linear) weight:[2, 768] bias:[2]
-[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:20,538 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:20,539 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:20,539 >> Static Memory 0.00 GB, Max Memory 0.00 GB
-all parameters are turned
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaForQuestionAnswering: ['lm_head.dense.weight', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.bias']
-- This IS expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-- This IS NOT expected if you are initializing RobertaForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-Some weights of RobertaForQuestionAnswering were not initialized from the model checkpoint at roberta-base and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
-You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
 root
 ├── roberta (RobertaModel)
 │   ├── embeddings (RobertaEmbeddings)
@@ -259,12 +177,94 @@ root
 │                   ├── dense (Linear) weight:[768, 3072] bias:[768]
 │                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
 └── qa_outputs (Linear) weight:[2, 768] bias:[2]
-[INFO|(OpenDelta)basemodel:675]2022-09-22 16:39:21,087 >> Trainable Ratio: 0.943166%
-[INFO|(OpenDelta)basemodel:677]2022-09-22 16:39:21,087 >> Delta Parameter Ratio: 0.941938%
-[INFO|(OpenDelta)basemodel:679]2022-09-22 16:39:21,087 >> Static Memory 0.00 GB, Max Memory 0.00 GB
-09/22/2022 16:39:28 - INFO - tools.init_tool -   Begin to load checkpoint... from None
-09/22/2022 16:39:28 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
-09/22/2022 16:39:28 - INFO - tools.init_tool -   Initialize done.
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
+│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
+│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── qa_outputs (Linear) weight:[2, 768] bias:[2]
+[INFO|(OpenDelta)basemodel:675]2022-09-23 08:02:46,621 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-23 08:02:46,622 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-23 08:02:46,622 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+[INFO|(OpenDelta)basemodel:675]2022-09-23 08:02:46,622 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-23 08:02:46,622 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-23 08:02:46,622 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+all parameters are turned
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
+│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
+│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── qa_outputs (Linear) weight:[2, 768] bias:[2]
+[INFO|(OpenDelta)basemodel:675]2022-09-23 08:02:46,635 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-23 08:02:46,635 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-23 08:02:46,635 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
+│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
+│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── qa_outputs (Linear) weight:[2, 768] bias:[2]
+[INFO|(OpenDelta)basemodel:675]2022-09-23 08:02:46,641 >> Trainable Ratio: 0.943166%
+[INFO|(OpenDelta)basemodel:677]2022-09-23 08:02:46,641 >> Delta Parameter Ratio: 0.941938%
+[INFO|(OpenDelta)basemodel:679]2022-09-23 08:02:46,641 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+09/23/2022 08:02:53 - INFO - tools.init_tool -   Begin to load checkpoint... from None
+09/23/2022 08:02:53 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+09/23/2022 08:02:53 - INFO - tools.init_tool -   Initialize done.
 [train]
 epoch: 20
 batch_size: 8
@@ -304,6 +304,9 @@ train_data_path: /data_new/private/xiaochaojun/DomainPlugin/data/SQuAD/train-v1.
 valid_dataset_type: SQuAD
 valid_formatter_type: SQuAD
 valid_data_path: /data_new/private/xiaochaojun/DomainPlugin/data/SQuAD/dev-v1.1.json
+test_dataset_type: SQuAD
+test_formatter_type: SQuAD
+test_data_path: /data_new/private/xiaochaojun/DomainPlugin/data/BioSAQ/BioASQ-6b/train/Appended-Snippet/BioASQ-train-factoid-6b-snippet-2sent.json
 ========
 [model]
 model_name: SQuAD
@@ -316,17 +319,733 @@ model_path: /data_new/private/xiaochaojun/DomainPlugin/checkpoints
 model_name: SQuAD-Lora
 output_function: squad1
 ========
-09/22/2022 16:39:28 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+09/23/2022 08:02:53 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
 valid_mode batch no_valid False
 step_epoch None
-09/22/2022 16:39:28 - INFO - tools.train_tool -   Start training
+09/23/2022 08:02:53 - INFO - tools.train_tool -   Start training
 Epoch  Stage  Iterations  Time Usage    Loss    Output Information
 training from epoch: 0 step: 0
-09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-09/22/2022 16:39:41 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-0         train   100/2737     0:39/17:22         5.996         {"position_acc": 0.0138}  3.7648
-0         train   200/2737     1:05/13:52         5.282         {"position_acc": 0.0334}  4.1346
-0         train   300/2737     1:32/12:28         4.555         {"position_acc": 0.1041}  7.0997
-0         train   400/2737     1:58/11:32         3.934         {"position_acc": 0.1985}  8.9082
+09/23/2022 08:03:08 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/23/2022 08:03:08 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/23/2022 08:03:08 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+09/23/2022 08:03:08 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+0         train   100/2737     0:40/17:39         6.095         {"position_acc": 0.005}  5.7715
+0         train   200/2737     1:06/13:57         5.196         {"position_acc": 0.0381}  9.6933
+0         train   300/2737     1:32/12:29         4.250         {"position_acc": 0.1558}  7.5752
+0         train   400/2737     1:58/11:30         3.652         {"position_acc": 0.2475}  10.5183
+0         train   500/2737     2:24/10:46         3.237         {"position_acc": 0.3135}  5.3887
+0         train   600/2737     2:50/10:07         2.934         {"position_acc": 0.3646}  4.2566
+0         train   700/2737     3:16/ 9:32         2.705         {"position_acc": 0.4031}  4.9999
+0         train   800/2737     3:42/ 8:59         2.525         {"position_acc": 0.4342}  5.3298
+0         train   900/2737     4:08/ 8:28         2.391         {"position_acc": 0.4578}  6.0072
+0         train   1000/2737    4:35/ 7:58         2.269         {"position_acc": 0.479}  6.5686
+0         train   1100/2737    5:01/ 7:28         2.166         {"position_acc": 0.4957}  4.2827
+0         train   1200/2737    5:28/ 7:00         2.089         {"position_acc": 0.5096}  4.6244
+0         train   1300/2737    5:54/ 6:31         2.028         {"position_acc": 0.5195}  7.138
+0         train   1400/2737    6:20/ 6:03         1.969         {"position_acc": 0.5293}  5.1283
+0         train   1500/2737    6:47/ 5:35         1.918         {"position_acc": 0.5378}  7.1164
+0         train   1600/2737    7:13/ 5:08         1.868         {"position_acc": 0.5463}  6.0572
+0         train   1700/2737    7:40/ 4:40         1.833         {"position_acc": 0.5522}  6.8984
+0         train   1800/2737    8:06/ 4:13         1.803         {"position_acc": 0.5575}  5.6456
+0         train   1900/2737    8:33/ 3:46         1.773         {"position_acc": 0.5622}  5.6176
+0         train   2000/2737    9:00/ 3:19         1.745         {"position_acc": 0.5673}  5.2286
+0         train   2100/2737    9:26/ 2:51         1.718         {"position_acc": 0.5722}  8.5636
+0         train   2200/2737    9:53/ 2:24         1.693         {"position_acc": 0.5764}  6.3068
+0         train   2300/2737   10:20/ 1:57         1.671         {"position_acc": 0.5805}  8.105
+0         train   2400/2737   10:46/ 1:30         1.650         {"position_acc": 0.5839}  7.5531
+0         train   2500/2737   11:13/ 1:03         1.630         {"position_acc": 0.5873}  7.0616
+0         train   2600/2737   11:40/ 0:36         1.610         {"position_acc": 0.591}  9.2516
+0         train   2700/2737   12:06/ 0:09         1.596         {"position_acc": 0.5932}  9.0659
+False False
+==================== begin saving model and validation ====================
+0         train   2737/2737   12:17/ 0:00         1.591         {"position_acc": 0.5942}  None
+09/23/2022 08:15:11 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/0.pkl
+0         valid   1/330        0:12/66:51         0.000           None
+0         valid   101/330      0:23/ 0:53         0.000           None
+0         valid   201/330      0:35/ 0:22         0.000           None
+0         valid   301/330      0:46/ 0:04         0.000           None
+0         valid   330/330      0:51/ 0:00         0.000         {"EM": 0.7979, "F1": 0.8744}  None
+1         train   100/2737     0:39/17:23         1.106         {"position_acc": 0.6919}  7.305
+1         train   200/2737     1:05/13:52         1.090         {"position_acc": 0.6941}  6.086
+1         train   300/2737     1:32/12:29         1.117         {"position_acc": 0.6891}  9.0322
+1         train   400/2737     1:58/11:33         1.123         {"position_acc": 0.6854}  5.8136
+1         train   500/2737     2:25/10:49         1.121         {"position_acc": 0.6852}  5.9134
+1         train   600/2737     2:51/10:10         1.129         {"position_acc": 0.6846}  7.5124
+1         train   700/2737     3:17/ 9:35         1.126         {"position_acc": 0.685}  7.1041
+1         train   800/2737     3:44/ 9:03         1.123         {"position_acc": 0.6846}  9.2718
+1         train   900/2737     4:10/ 8:31         1.121         {"position_acc": 0.6848}  6.7185
+1         train   1000/2737    4:37/ 8:01         1.115         {"position_acc": 0.6854}  8.869
+1         train   1100/2737    5:03/ 7:31         1.113         {"position_acc": 0.6851}  8.8703
+1         train   1200/2737    5:29/ 7:02         1.117         {"position_acc": 0.6841}  7.9289
+1         train   1300/2737    5:56/ 6:33         1.120         {"position_acc": 0.6823}  11.1527
+1         train   1400/2737    6:22/ 6:05         1.119         {"position_acc": 0.6822}  9.6396
+1         train   1500/2737    6:48/ 5:37         1.119         {"position_acc": 0.6824}  10.7555
+1         train   1600/2737    7:15/ 5:09         1.116         {"position_acc": 0.6832}  10.0269
+1         train   1700/2737    7:41/ 4:41         1.117         {"position_acc": 0.6823}  10.1276
+1         train   1800/2737    8:07/ 4:13         1.119         {"position_acc": 0.6816}  6.6394
+1         train   1900/2737    8:33/ 3:46         1.119         {"position_acc": 0.6809}  5.5433
+1         train   2000/2737    9:00/ 3:19         1.115         {"position_acc": 0.6815}  6.7625
+1         train   2100/2737    9:26/ 2:51         1.111         {"position_acc": 0.6825}  9.0076
+1         train   2200/2737    9:53/ 2:24         1.109         {"position_acc": 0.6827}  9.0637
+1         train   2300/2737   10:19/ 1:57         1.106         {"position_acc": 0.6833}  11.084
+1         train   2400/2737   10:45/ 1:30         1.103         {"position_acc": 0.6829}  9.4829
+1         train   2500/2737   11:12/ 1:03         1.101         {"position_acc": 0.683}  8.6958
+1         train   2600/2737   11:38/ 0:36         1.097         {"position_acc": 0.6841}  10.3908
+1         train   2700/2737   12:05/ 0:09         1.096         {"position_acc": 0.6846}  7.3672
+False False
+==================== begin saving model and validation ====================
+1         train   2737/2737   12:16/ 0:00         1.095         {"position_acc": 0.6846}  None
+09/23/2022 08:28:19 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/1.pkl
+1         valid   1/330        0:12/67:08         0.000           None
+1         valid   101/330      0:23/ 0:53         0.000           None
+1         valid   201/330      0:35/ 0:22         0.000           None
+1         valid   301/330      0:46/ 0:04         0.000           None
+1         valid   330/330      0:52/ 0:00         0.000         {"EM": 0.8071, "F1": 0.8812}  None
+2         train   100/2737     0:39/17:19         1.007         {"position_acc": 0.7144}  6.8927
+2         train   200/2737     1:05/13:47         0.996         {"position_acc": 0.7131}  7.0304
+2         train   300/2737     1:31/12:23         1.017         {"position_acc": 0.7053}  12.4049
+2         train   400/2737     1:57/11:26         1.031         {"position_acc": 0.7024}  5.9124
+2         train   500/2737     2:23/10:41         1.032         {"position_acc": 0.7027}  6.0113
+2         train   600/2737     2:49/10:03         1.031         {"position_acc": 0.7051}  11.1741
+2         train   700/2737     3:15/ 9:28         1.027         {"position_acc": 0.7064}  6.687
+2         train   800/2737     3:41/ 8:56         1.020         {"position_acc": 0.7088}  6.64
+2         train   900/2737     4:07/ 8:25         1.021         {"position_acc": 0.7079}  7.4019
+2         train   1000/2737    4:33/ 7:55         1.017         {"position_acc": 0.708}  14.0566
+2         train   1100/2737    4:59/ 7:25         1.014         {"position_acc": 0.7078}  6.1651
+2         train   1200/2737    5:25/ 6:57         1.013         {"position_acc": 0.707}  8.8112
+2         train   1300/2737    5:51/ 6:28         1.018         {"position_acc": 0.7045}  12.1576
+2         train   1400/2737    6:17/ 6:00         1.018         {"position_acc": 0.7047}  10.9915
+2         train   1500/2737    6:43/ 5:33         1.019         {"position_acc": 0.704}  12.0173
+2         train   1600/2737    7:10/ 5:05         1.015         {"position_acc": 0.705}  8.0869
+2         train   1700/2737    7:35/ 4:38         1.016         {"position_acc": 0.7048}  12.6683
+2         train   1800/2737    8:02/ 4:10         1.019         {"position_acc": 0.7041}  7.666
+2         train   1900/2737    8:28/ 3:43         1.021         {"position_acc": 0.7035}  8.9343
+2         train   2000/2737    8:54/ 3:16         1.018         {"position_acc": 0.7039}  7.548
+2         train   2100/2737    9:20/ 2:49         1.015         {"position_acc": 0.7047}  10.4424
+2         train   2200/2737    9:46/ 2:23         1.013         {"position_acc": 0.7046}  7.6868
+2         train   2300/2737   10:12/ 1:56         1.013         {"position_acc": 0.7043}  12.0059
+2         train   2400/2737   10:38/ 1:29         1.010         {"position_acc": 0.7044}  11.4409
+2         train   2500/2737   11:05/ 1:03         1.008         {"position_acc": 0.7048}  9.8127
+2         train   2600/2737   11:31/ 0:36         1.006         {"position_acc": 0.7058}  9.1843
+2         train   2700/2737   11:58/ 0:09         1.004         {"position_acc": 0.7052}  13.5972
+False False
+==================== begin saving model and validation ====================
+2         train   2737/2737   12:09/ 0:00         1.004         {"position_acc": 0.705}  None
+09/23/2022 08:41:21 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/2.pkl
+2         valid   1/330        0:11/65:40         0.000           None
+2         valid   101/330      0:23/ 0:53         0.000           None
+2         valid   201/330      0:35/ 0:22         0.000           None
+2         valid   301/330      0:47/ 0:04         0.000           None
+2         valid   330/330      0:52/ 0:00         0.000         {"EM": 0.8128, "F1": 0.8867}  None
+3         train   100/2737     0:39/17:25         0.893         {"position_acc": 0.7388}  7.7121
+3         train   200/2737     1:05/13:52         0.892         {"position_acc": 0.7347}  6.8424
+3         train   300/2737     1:31/12:24         0.917         {"position_acc": 0.7299}  9.335
+3         train   400/2737     1:57/11:27         0.933         {"position_acc": 0.7228}  9.5836
+3         train   500/2737     2:23/10:42         0.925         {"position_acc": 0.7256}  9.6587
+3         train   600/2737     2:49/10:04         0.924         {"position_acc": 0.7261}  6.9584
+3         train   700/2737     3:15/ 9:29         0.921         {"position_acc": 0.7266}  11.1578
+3         train   800/2737     3:41/ 8:57         0.920         {"position_acc": 0.7267}  7.309
+3         train   900/2737     4:07/ 8:25         0.920         {"position_acc": 0.7261}  6.8921
+3         train   1000/2737    4:33/ 7:55         0.915         {"position_acc": 0.7267}  10.5683
+3         train   1100/2737    5:00/ 7:26         0.915         {"position_acc": 0.7254}  11.9214
+3         train   1200/2737    5:26/ 6:57         0.915         {"position_acc": 0.7259}  10.4137
+3         train   1300/2737    5:52/ 6:29         0.918         {"position_acc": 0.7245}  13.9145
+3         train   1400/2737    6:19/ 6:02         0.917         {"position_acc": 0.7249}  8.2631
+3         train   1500/2737    6:46/ 5:34         0.917         {"position_acc": 0.7258}  9.3608
+3         train   1600/2737    7:12/ 5:07         0.912         {"position_acc": 0.7269}  11.9185
+3         train   1700/2737    7:39/ 4:40         0.914         {"position_acc": 0.7267}  10.008
+3         train   1800/2737    8:06/ 4:13         0.917         {"position_acc": 0.7263}  6.4651
+3         train   1900/2737    8:33/ 3:46         0.919         {"position_acc": 0.7252}  6.7909
+3         train   2000/2737    9:00/ 3:19         0.916         {"position_acc": 0.7262}  7.7486
+3         train   2100/2737    9:27/ 2:52         0.914         {"position_acc": 0.7267}  12.1423
+3         train   2200/2737    9:54/ 2:25         0.913         {"position_acc": 0.7273}  5.6315
+3         train   2300/2737   10:21/ 1:58         0.909         {"position_acc": 0.7282}  13.9236
+3         train   2400/2737   10:48/ 1:31         0.909         {"position_acc": 0.7279}  11.5913
+3         train   2500/2737   11:15/ 1:04         0.906         {"position_acc": 0.728}  9.0621
+3         train   2600/2737   11:42/ 0:37         0.905         {"position_acc": 0.7287}  9.0823
+3         train   2700/2737   12:09/ 0:09         0.903         {"position_acc": 0.7292}  8.098
+False False
+==================== begin saving model and validation ====================
+3         train   2737/2737   12:20/ 0:00         0.902         {"position_acc": 0.7292}  None
+09/23/2022 08:54:34 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/3.pkl
+3         valid   1/330        0:11/65:31         0.000           None
+3         valid   101/330      0:23/ 0:53         0.000           None
+3         valid   201/330      0:35/ 0:22         0.000           None
+3         valid   301/330      0:46/ 0:04         0.000           None
+3         valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8291, "F1": 0.8976}  None
+4         train   100/2737     0:39/17:32         0.830         {"position_acc": 0.7619}  8.8897
+4         train   200/2737     1:06/13:58         0.808         {"position_acc": 0.7638}  7.9781
+4         train   300/2737     1:32/12:30         0.829         {"position_acc": 0.7566}  9.8004
+4         train   400/2737     1:58/11:32         0.844         {"position_acc": 0.7495}  6.2949
+4         train   500/2737     2:24/10:47         0.842         {"position_acc": 0.7497}  9.5338
+4         train   600/2737     2:50/10:08         0.839         {"position_acc": 0.7503}  7.0671
+4         train   700/2737     3:17/ 9:33         0.837         {"position_acc": 0.7494}  10.0569
+4         train   800/2737     3:43/ 9:00         0.829         {"position_acc": 0.7506}  9.4295
+4         train   900/2737     4:09/ 8:29         0.829         {"position_acc": 0.7501}  11.1858
+4         train   1000/2737    4:35/ 7:59         0.818         {"position_acc": 0.7511}  10.7897
+4         train   1100/2737    5:02/ 7:29         0.815         {"position_acc": 0.7507}  8.1938
+4         train   1200/2737    5:28/ 7:00         0.817         {"position_acc": 0.7496}  11.0623
+4         train   1300/2737    5:54/ 6:32         0.823         {"position_acc": 0.7482}  11.3368
+4         train   1400/2737    6:20/ 6:03         0.822         {"position_acc": 0.7482}  12.4571
+4         train   1500/2737    6:47/ 5:35         0.821         {"position_acc": 0.7487}  12.3797
+4         train   1600/2737    7:13/ 5:07         0.820         {"position_acc": 0.749}  10.1043
+4         train   1700/2737    7:39/ 4:40         0.822         {"position_acc": 0.7483}  10.5118
+4         train   1800/2737    8:06/ 4:13         0.825         {"position_acc": 0.7473}  9.2392
+4         train   1900/2737    8:32/ 3:45         0.824         {"position_acc": 0.7471}  13.6842
+4         train   2000/2737    8:59/ 3:18         0.822         {"position_acc": 0.7473}  6.5593
+4         train   2100/2737    9:26/ 2:51         0.818         {"position_acc": 0.7474}  9.1763
+4         train   2200/2737    9:53/ 2:24         0.817         {"position_acc": 0.7482}  8.4964
+4         train   2300/2737   10:20/ 1:57         0.816         {"position_acc": 0.7485}  12.0046
+4         train   2400/2737   10:46/ 1:30         0.814         {"position_acc": 0.7485}  9.9424
+4         train   2500/2737   11:13/ 1:03         0.811         {"position_acc": 0.7491}  5.9899
+4         train   2600/2737   11:40/ 0:36         0.809         {"position_acc": 0.7494}  8.7393
+4         train   2700/2737   12:06/ 0:09         0.807         {"position_acc": 0.7501}  11.015
+False False
+==================== begin saving model and validation ====================
+4         train   2737/2737   12:17/ 0:00         0.807         {"position_acc": 0.7501}  None
+09/23/2022 09:07:44 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/4.pkl
+4         valid   1/330        0:12/66:06         0.000           None
+4         valid   101/330      0:23/ 0:53         0.000           None
+4         valid   201/330      0:35/ 0:22         0.000           None
+4         valid   301/330      0:46/ 0:04         0.000           None
+4         valid   330/330      0:51/ 0:00         0.000         {"EM": 0.834, "F1": 0.9021}  None
+5         train   100/2737     0:39/17:27         0.739         {"position_acc": 0.7719}  7.0881
+5         train   200/2737     1:05/13:50         0.726         {"position_acc": 0.7728}  5.3532
+5         train   300/2737     1:31/12:22         0.736         {"position_acc": 0.7701}  9.1641
+5         train   400/2737     1:57/11:24         0.741         {"position_acc": 0.7673}  6.5315
+5         train   500/2737     2:22/10:38         0.734         {"position_acc": 0.7697}  6.922
+5         train   600/2737     2:48/10:00         0.732         {"position_acc": 0.7715}  10.3272
+5         train   700/2737     3:14/ 9:26         0.728         {"position_acc": 0.772}  7.1685
+5         train   800/2737     3:40/ 8:54         0.726         {"position_acc": 0.773}  8.4287
+5         train   900/2737     4:06/ 8:24         0.724         {"position_acc": 0.7723}  12.8012
+5         train   1000/2737    4:33/ 7:54         0.721         {"position_acc": 0.7717}  9.2549
+5         train   1100/2737    4:59/ 7:25         0.715         {"position_acc": 0.7733}  7.0463
+5         train   1200/2737    5:25/ 6:56         0.713         {"position_acc": 0.7733}  11.1634
+5         train   1300/2737    5:51/ 6:28         0.718         {"position_acc": 0.7711}  9.2268
+5         train   1400/2737    6:18/ 6:01         0.720         {"position_acc": 0.7704}  26.4988
+5         train   1500/2737    6:44/ 5:33         0.721         {"position_acc": 0.7702}  10.0776
+5         train   1600/2737    7:11/ 5:06         0.721         {"position_acc": 0.7702}  10.1312
+5         train   1700/2737    7:37/ 4:39         0.722         {"position_acc": 0.7704}  12.9862
+5         train   1800/2737    8:04/ 4:12         0.725         {"position_acc": 0.7689}  13.7697
+5         train   1900/2737    8:31/ 3:45         0.725         {"position_acc": 0.7687}  5.7631
+5         train   2000/2737    8:57/ 3:18         0.721         {"position_acc": 0.7698}  8.2375
+5         train   2100/2737    9:23/ 2:51         0.720         {"position_acc": 0.7708}  7.8841
+5         train   2200/2737    9:50/ 2:24         0.721         {"position_acc": 0.7708}  5.2476
+5         train   2300/2737   10:16/ 1:57         0.719         {"position_acc": 0.7711}  8.9379
+5         train   2400/2737   10:43/ 1:30         0.717         {"position_acc": 0.7712}  12.2384
+5         train   2500/2737   11:09/ 1:03         0.714         {"position_acc": 0.7719}  8.6852
+5         train   2600/2737   11:36/ 0:36         0.711         {"position_acc": 0.7731}  8.2794
+5         train   2700/2737   12:02/ 0:09         0.708         {"position_acc": 0.7739}  10.0454
+False False
+==================== begin saving model and validation ====================
+5         train   2737/2737   12:13/ 0:00         0.708         {"position_acc": 0.774}  None
+09/23/2022 09:20:49 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/5.pkl
+5         valid   1/330        0:11/65:35         0.000           None
+5         valid   101/330      0:23/ 0:53         0.000           None
+5         valid   201/330      0:35/ 0:22         0.000           None
+5         valid   301/330      0:46/ 0:04         0.000           None
+5         valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8377, "F1": 0.9049}  None
+6         train   100/2737     0:39/17:22         0.619         {"position_acc": 0.8163}  7.2224
+6         train   200/2737     1:05/13:49         0.609         {"position_acc": 0.8078}  8.3583
+6         train   300/2737     1:31/12:26         0.642         {"position_acc": 0.7995}  11.2502
+6         train   400/2737     1:58/11:31         0.646         {"position_acc": 0.7968}  11.1072
+6         train   500/2737     2:25/10:48         0.638         {"position_acc": 0.7984}  6.9171
+6         train   600/2737     2:51/10:11         0.637         {"position_acc": 0.8003}  9.4822
+6         train   700/2737     3:18/ 9:36         0.629         {"position_acc": 0.7997}  11.3837
+6         train   800/2737     3:45/ 9:05         0.626         {"position_acc": 0.8}  6.8413
+6         train   900/2737     4:12/ 8:34         0.627         {"position_acc": 0.7993}  6.8374
+6         train   1000/2737    4:39/ 8:04         0.623         {"position_acc": 0.8013}  10.7191
+6         train   1100/2737    5:06/ 7:35         0.622         {"position_acc": 0.8015}  5.9494
+6         train   1200/2737    5:33/ 7:06         0.625         {"position_acc": 0.8008}  6.9388
+6         train   1300/2737    6:00/ 6:38         0.628         {"position_acc": 0.7993}  9.6968
+6         train   1400/2737    6:27/ 6:09         0.630         {"position_acc": 0.7987}  11.1004
+6         train   1500/2737    6:54/ 5:41         0.630         {"position_acc": 0.7988}  7.6655
+6         train   1600/2737    7:21/ 5:13         0.629         {"position_acc": 0.7994}  12.0329
+6         train   1700/2737    7:48/ 4:45         0.627         {"position_acc": 0.7995}  11.3525
+6         train   1800/2737    8:15/ 4:17         0.629         {"position_acc": 0.7985}  6.9729
+6         train   1900/2737    8:42/ 3:50         0.629         {"position_acc": 0.7985}  6.0261
+6         train   2000/2737    9:09/ 3:22         0.626         {"position_acc": 0.799}  7.8637
+6         train   2100/2737    9:36/ 2:54         0.624         {"position_acc": 0.7999}  10.0068
+6         train   2200/2737   10:03/ 2:27         0.625         {"position_acc": 0.7999}  5.7078
+6         train   2300/2737   10:31/ 1:59         0.623         {"position_acc": 0.8001}  9.0954
+6         train   2400/2737   10:58/ 1:32         0.622         {"position_acc": 0.8002}  10.0305
+6         train   2500/2737   11:26/ 1:05         0.620         {"position_acc": 0.8005}  5.4172
+6         train   2600/2737   11:53/ 0:37         0.618         {"position_acc": 0.8015}  8.3082
+6         train   2700/2737   12:20/ 0:10         0.615         {"position_acc": 0.8022}  9.6765
+False False
+==================== begin saving model and validation ====================
+6         train   2737/2737   12:32/ 0:00         0.615         {"position_acc": 0.8023}  None
+09/23/2022 09:34:14 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/6.pkl
+6         valid   1/330        0:11/64:07         0.000           None
+6         valid   101/330      0:23/ 0:52         0.000           None
+6         valid   201/330      0:34/ 0:22         0.000           None
+6         valid   301/330      0:46/ 0:04         0.000           None
+6         valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8473, "F1": 0.9131}  None
+7         train   100/2737     0:40/17:41         0.543         {"position_acc": 0.8181}  6.0636
+7         train   200/2737     1:06/14:05         0.541         {"position_acc": 0.8172}  5.6832
+7         train   300/2737     1:33/12:35         0.552         {"position_acc": 0.8157}  9.3282
+7         train   400/2737     1:59/11:36         0.560         {"position_acc": 0.8123}  4.2583
+7         train   500/2737     2:25/10:51         0.559         {"position_acc": 0.8123}  10.7668
+7         train   600/2737     2:51/10:12         0.556         {"position_acc": 0.8158}  7.7908
+7         train   700/2737     3:18/ 9:36         0.550         {"position_acc": 0.817}  10.4578
+7         train   800/2737     3:44/ 9:03         0.546         {"position_acc": 0.8176}  6.0123
+7         train   900/2737     4:10/ 8:32         0.549         {"position_acc": 0.8169}  7.9032
+7         train   1000/2737    4:37/ 8:01         0.544         {"position_acc": 0.8187}  8.4925
+7         train   1100/2737    5:03/ 7:32         0.543         {"position_acc": 0.819}  6.742
+7         train   1200/2737    5:30/ 7:03         0.546         {"position_acc": 0.8186}  5.3836
+7         train   1300/2737    5:57/ 6:34         0.548         {"position_acc": 0.8169}  6.1932
+7         train   1400/2737    6:23/ 6:06         0.552         {"position_acc": 0.8158}  7.7474
+7         train   1500/2737    6:50/ 5:38         0.552         {"position_acc": 0.8165}  8.5388
+7         train   1600/2737    7:17/ 5:10         0.552         {"position_acc": 0.8164}  8.4857
+7         train   1700/2737    7:43/ 4:42         0.553         {"position_acc": 0.8158}  8.8798
+7         train   1800/2737    8:10/ 4:15         0.556         {"position_acc": 0.8146}  6.3869
+7         train   1900/2737    8:37/ 3:47         0.558         {"position_acc": 0.8137}  6.1669
+7         train   2000/2737    9:03/ 3:20         0.556         {"position_acc": 0.8144}  4.268
+7         train   2100/2737    9:30/ 2:53         0.556         {"position_acc": 0.8145}  5.9565
+7         train   2200/2737    9:57/ 2:25         0.557         {"position_acc": 0.8146}  4.9838
+7         train   2300/2737   10:24/ 1:58         0.557         {"position_acc": 0.8144}  11.2133
+7         train   2400/2737   10:51/ 1:31         0.557         {"position_acc": 0.8144}  9.8446
+7         train   2500/2737   11:17/ 1:04         0.556         {"position_acc": 0.8148}  8.9629
+7         train   2600/2737   11:44/ 0:37         0.554         {"position_acc": 0.8151}  5.4978
+7         train   2700/2737   12:11/ 0:10         0.552         {"position_acc": 0.8158}  6.1022
+False False
+==================== begin saving model and validation ====================
+7         train   2737/2737   12:22/ 0:00         0.552         {"position_acc": 0.8159}  None
+09/23/2022 09:47:29 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/7.pkl
+7         valid   1/330        0:12/67:20         0.000           None
+7         valid   101/330      0:23/ 0:54         0.000           None
+7         valid   201/330      0:35/ 0:22         0.000           None
+7         valid   301/330      0:47/ 0:04         0.000           None
+7         valid   330/330      0:52/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+8         train   100/2737     0:39/17:22         0.537         {"position_acc": 0.8219}  5.1974
+8         train   200/2737     1:05/13:47         0.526         {"position_acc": 0.8244}  4.3948
+8         train   300/2737     1:31/12:21         0.535         {"position_acc": 0.8269}  7.6229
+8         train   400/2737     1:57/11:26         0.537         {"position_acc": 0.826}  4.0791
+8         train   500/2737     2:23/10:44         0.536         {"position_acc": 0.8246}  7.4366
+8         train   600/2737     2:50/10:06         0.536         {"position_acc": 0.8248}  7.0916
+8         train   700/2737     3:16/ 9:32         0.530         {"position_acc": 0.8255}  4.4033
+8         train   800/2737     3:43/ 9:00         0.530         {"position_acc": 0.8247}  5.7436
+8         train   900/2737     4:09/ 8:29         0.531         {"position_acc": 0.8233}  13.3147
+8         train   1000/2737    4:35/ 7:59         0.527         {"position_acc": 0.8244}  7.0516
+8         train   1100/2737    5:02/ 7:29         0.528         {"position_acc": 0.8244}  6.9059
+8         train   1200/2737    5:28/ 7:00         0.531         {"position_acc": 0.8239}  9.3145
+8         train   1300/2737    5:54/ 6:32         0.534         {"position_acc": 0.8215}  7.3853
+8         train   1400/2737    6:21/ 6:04         0.535         {"position_acc": 0.8204}  6.1091
+8         train   1500/2737    6:47/ 5:36         0.538         {"position_acc": 0.821}  10.4492
+8         train   1600/2737    7:14/ 5:08         0.538         {"position_acc": 0.8212}  10.9838
+8         train   1700/2737    7:40/ 4:40         0.539         {"position_acc": 0.8207}  13.6161
+8         train   1800/2737    8:06/ 4:13         0.542         {"position_acc": 0.8195}  7.6916
+8         train   1900/2737    8:32/ 3:45         0.542         {"position_acc": 0.8193}  6.3296
+8         train   2000/2737    8:59/ 3:18         0.541         {"position_acc": 0.819}  6.7121
+8         train   2100/2737    9:25/ 2:51         0.542         {"position_acc": 0.8187}  5.9217
+8         train   2200/2737    9:51/ 2:24         0.544         {"position_acc": 0.8185}  4.266
+8         train   2300/2737   10:18/ 1:57         0.544         {"position_acc": 0.8184}  8.7343
+8         train   2400/2737   10:44/ 1:30         0.545         {"position_acc": 0.8177}  9.5223
+8         train   2500/2737   11:10/ 1:03         0.544         {"position_acc": 0.8177}  8.3846
+8         train   2600/2737   11:36/ 0:36         0.544         {"position_acc": 0.8178}  7.7571
+8         train   2700/2737   12:03/ 0:09         0.543         {"position_acc": 0.8175}  6.5294
+False False
+==================== begin saving model and validation ====================
+8         train   2737/2737   12:14/ 0:00         0.544         {"position_acc": 0.8174}  None
+09/23/2022 10:00:36 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/8.pkl
+8         valid   1/330        0:11/63:04         0.000           None
+8         valid   101/330      0:23/ 0:52         0.000           None
+8         valid   201/330      0:34/ 0:22         0.000           None
+8         valid   301/330      0:46/ 0:04         0.000           None
+8         valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+9         train   100/2737     0:39/17:28         0.536         {"position_acc": 0.8281}  5.0579
+9         train   200/2737     1:05/13:53         0.524         {"position_acc": 0.8247}  5.8001
+9         train   300/2737     1:31/12:25         0.535         {"position_acc": 0.8232}  8.6419
+9         train   400/2737     1:57/11:29         0.533         {"position_acc": 0.8218}  6.4636
+9         train   500/2737     2:24/10:46         0.538         {"position_acc": 0.8213}  7.1335
+9         train   600/2737     2:51/10:09         0.533         {"position_acc": 0.8236}  5.8253
+9         train   700/2737     3:17/ 9:35         0.531         {"position_acc": 0.8218}  8.3134
+9         train   800/2737     3:44/ 9:03         0.530         {"position_acc": 0.8225}  7.0474
+9         train   900/2737     4:10/ 8:32         0.536         {"position_acc": 0.8215}  6.2844
+9         train   1000/2737    4:37/ 8:02         0.532         {"position_acc": 0.8227}  7.5484
+9         train   1100/2737    5:04/ 7:32         0.532         {"position_acc": 0.8223}  47.4329
+9         train   1200/2737    5:30/ 7:03         0.536         {"position_acc": 0.8222}  8.0959
+9         train   1300/2737    5:57/ 6:35         0.539         {"position_acc": 0.8208}  10.6416
+9         train   1400/2737    6:24/ 6:07         0.542         {"position_acc": 0.8194}  10.3589
+9         train   1500/2737    6:51/ 5:39         0.545         {"position_acc": 0.8191}  8.9364
+9         train   1600/2737    7:17/ 5:11         0.544         {"position_acc": 0.8191}  8.6041
+9         train   1700/2737    7:44/ 4:43         0.546         {"position_acc": 0.8182}  7.2715
+9         train   1800/2737    8:11/ 4:15         0.548         {"position_acc": 0.8172}  6.2009
+9         train   1900/2737    8:38/ 3:48         0.549         {"position_acc": 0.8164}  5.4289
+9         train   2000/2737    9:05/ 3:21         0.549         {"position_acc": 0.816}  5.3868
+9         train   2100/2737    9:32/ 2:53         0.550         {"position_acc": 0.8157}  7.9435
+9         train   2200/2737    9:59/ 2:26         0.550         {"position_acc": 0.8157}  8.7532
+9         train   2300/2737   10:26/ 1:59         0.550         {"position_acc": 0.816}  9.5628
+9         train   2400/2737   10:53/ 1:31         0.550         {"position_acc": 0.8161}  10.5024
+9         train   2500/2737   11:20/ 1:04         0.549         {"position_acc": 0.8162}  7.2592
+9         train   2600/2737   11:47/ 0:37         0.548         {"position_acc": 0.8167}  6.6888
+9         train   2700/2737   12:14/ 0:10         0.547         {"position_acc": 0.8165}  7.2
+False False
+==================== begin saving model and validation ====================
+9         train   2737/2737   12:25/ 0:00         0.547         {"position_acc": 0.8164}  None
+09/23/2022 10:13:54 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/9.pkl
+9         valid   1/330        0:11/62:35         0.000           None
+9         valid   101/330      0:23/ 0:52         0.000           None
+9         valid   201/330      0:34/ 0:22         0.000           None
+9         valid   301/330      0:46/ 0:04         0.000           None
+9         valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+10        train   100/2737     0:39/17:34         0.526         {"position_acc": 0.835}  5.6153
+10        train   200/2737     1:06/13:58         0.521         {"position_acc": 0.8319}  5.6168
+10        train   300/2737     1:32/12:30         0.530         {"position_acc": 0.828}  9.965
+10        train   400/2737     1:58/11:33         0.531         {"position_acc": 0.8223}  6.6765
+10        train   500/2737     2:25/10:49         0.537         {"position_acc": 0.8211}  7.7717
+10        train   600/2737     2:51/10:10         0.537         {"position_acc": 0.8219}  8.7597
+10        train   700/2737     3:17/ 9:35         0.535         {"position_acc": 0.8202}  4.5706
+10        train   800/2737     3:44/ 9:02         0.532         {"position_acc": 0.8216}  17.1093
+10        train   900/2737     4:10/ 8:31         0.537         {"position_acc": 0.8201}  6.5283
+10        train   1000/2737    4:36/ 8:00         0.533         {"position_acc": 0.8197}  6.1407
+10        train   1100/2737    5:03/ 7:31         0.535         {"position_acc": 0.8191}  5.7783
+10        train   1200/2737    5:29/ 7:01         0.538         {"position_acc": 0.8193}  15.3927
+10        train   1300/2737    5:55/ 6:33         0.541         {"position_acc": 0.818}  9.1181
+10        train   1400/2737    6:21/ 6:04         0.545         {"position_acc": 0.817}  6.8727
+10        train   1500/2737    6:48/ 5:36         0.546         {"position_acc": 0.8175}  9.7285
+10        train   1600/2737    7:14/ 5:08         0.547         {"position_acc": 0.8175}  9.5727
+10        train   1700/2737    7:41/ 4:41         0.549         {"position_acc": 0.8165}  7.1351
+10        train   1800/2737    8:07/ 4:13         0.551         {"position_acc": 0.8155}  5.6636
+10        train   1900/2737    8:34/ 3:46         0.552         {"position_acc": 0.8149}  5.7853
+10        train   2000/2737    9:00/ 3:19         0.549         {"position_acc": 0.8155}  5.3848
+10        train   2100/2737    9:27/ 2:52         0.549         {"position_acc": 0.8157}  8.5816
+10        train   2200/2737    9:53/ 2:24         0.551         {"position_acc": 0.8158}  8.1203
+10        train   2300/2737   10:20/ 1:57         0.550         {"position_acc": 0.816}  7.9739
+10        train   2400/2737   10:47/ 1:30         0.550         {"position_acc": 0.8162}  7.3083
+10        train   2500/2737   11:14/ 1:03         0.548         {"position_acc": 0.8166}  8.7146
+10        train   2600/2737   11:41/ 0:36         0.547         {"position_acc": 0.8171}  5.4206
+10        train   2700/2737   12:08/ 0:09         0.545         {"position_acc": 0.8174}  8.2133
+False False
+==================== begin saving model and validation ====================
+10        train   2737/2737   12:19/ 0:00         0.546         {"position_acc": 0.8174}  None
+09/23/2022 10:27:05 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/10.pkl
+10        valid   1/330        0:12/67:41         0.000           None
+10        valid   101/330      0:23/ 0:54         0.000           None
+10        valid   201/330      0:35/ 0:22         0.000           None
+10        valid   301/330      0:47/ 0:04         0.000           None
+10        valid   330/330      0:52/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+11        train   100/2737     0:40/17:40         0.532         {"position_acc": 0.8281}  6.5834
+11        train   200/2737     1:06/14:03         0.522         {"position_acc": 0.8256}  5.4534
+11        train   300/2737     1:32/12:34         0.541         {"position_acc": 0.8238}  7.312
+11        train   400/2737     1:58/11:34         0.546         {"position_acc": 0.8207}  3.7127
+11        train   500/2737     2:25/10:49         0.548         {"position_acc": 0.8193}  5.9755
+11        train   600/2737     2:51/10:10         0.545         {"position_acc": 0.8216}  8.4707
+11        train   700/2737     3:17/ 9:34         0.540         {"position_acc": 0.8213}  7.4253
+11        train   800/2737     3:43/ 9:01         0.536         {"position_acc": 0.822}  11.0466
+11        train   900/2737     4:09/ 8:30         0.539         {"position_acc": 0.821}  5.1882
+11        train   1000/2737    4:36/ 7:59         0.534         {"position_acc": 0.8229}  10.4157
+11        train   1100/2737    5:02/ 7:29         0.534         {"position_acc": 0.823}  9.581
+11        train   1200/2737    5:28/ 7:00         0.539         {"position_acc": 0.8207}  6.0641
+11        train   1300/2737    5:54/ 6:32         0.542         {"position_acc": 0.8188}  5.2929
+11        train   1400/2737    6:21/ 6:03         0.545         {"position_acc": 0.8179}  9.8788
+11        train   1500/2737    6:47/ 5:35         0.547         {"position_acc": 0.8176}  8.4444
+11        train   1600/2737    7:13/ 5:08         0.546         {"position_acc": 0.818}  9.148
+11        train   1700/2737    7:39/ 4:40         0.550         {"position_acc": 0.8171}  13.2743
+11        train   1800/2737    8:06/ 4:13         0.552         {"position_acc": 0.8163}  6.5869
+11        train   1900/2737    8:32/ 3:45         0.552         {"position_acc": 0.8158}  7.1248
+11        train   2000/2737    8:58/ 3:18         0.550         {"position_acc": 0.8163}  16.3674
+11        train   2100/2737    9:25/ 2:51         0.551         {"position_acc": 0.8164}  6.1394
+11        train   2200/2737    9:52/ 2:24         0.552         {"position_acc": 0.8165}  7.5692
+11        train   2300/2737   10:18/ 1:57         0.552         {"position_acc": 0.8164}  10.4291
+11        train   2400/2737   10:45/ 1:30         0.553         {"position_acc": 0.8164}  10.199
+11        train   2500/2737   11:12/ 1:03         0.552         {"position_acc": 0.8167}  8.0462
+11        train   2600/2737   11:39/ 0:36         0.551         {"position_acc": 0.817}  6.0303
+11        train   2700/2737   12:06/ 0:09         0.550         {"position_acc": 0.8177}  6.1928
+False False
+==================== begin saving model and validation ====================
+11        train   2737/2737   12:18/ 0:00         0.550         {"position_acc": 0.8179}  None
+09/23/2022 10:40:15 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/11.pkl
+11        valid   1/330        0:12/66:56         0.000           None
+11        valid   101/330      0:23/ 0:53         0.000           None
+11        valid   201/330      0:35/ 0:22         0.000           None
+11        valid   301/330      0:47/ 0:04         0.000           None
+11        valid   330/330      0:52/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+12        train   100/2737     0:39/17:15         0.515         {"position_acc": 0.8325}  5.4686
+12        train   200/2737     1:05/13:52         0.522         {"position_acc": 0.8303}  4.4425
+12        train   300/2737     1:32/12:28         0.537         {"position_acc": 0.8274}  9.9639
+12        train   400/2737     1:58/11:32         0.544         {"position_acc": 0.8215}  5.2921
+12        train   500/2737     2:25/10:48         0.543         {"position_acc": 0.8221}  7.747
+12        train   600/2737     2:51/10:10         0.538         {"position_acc": 0.8245}  6.4601
+12        train   700/2737     3:17/ 9:35         0.532         {"position_acc": 0.8234}  4.2423
+12        train   800/2737     3:44/ 9:03         0.531         {"position_acc": 0.8233}  5.9417
+12        train   900/2737     4:10/ 8:31         0.533         {"position_acc": 0.8229}  11.3912
+12        train   1000/2737    4:37/ 8:01         0.527         {"position_acc": 0.8238}  10.3257
+12        train   1100/2737    5:03/ 7:31         0.527         {"position_acc": 0.8245}  5.0344
+12        train   1200/2737    5:30/ 7:02         0.528         {"position_acc": 0.8244}  6.9441
+12        train   1300/2737    5:56/ 6:34         0.531         {"position_acc": 0.8227}  11.4662
+12        train   1400/2737    6:23/ 6:06         0.533         {"position_acc": 0.8221}  7.4578
+12        train   1500/2737    6:49/ 5:38         0.534         {"position_acc": 0.8225}  8.745
+12        train   1600/2737    7:16/ 5:09         0.535         {"position_acc": 0.8224}  10.3386
+12        train   1700/2737    7:42/ 4:42         0.537         {"position_acc": 0.822}  13.0761
+12        train   1800/2737    8:08/ 4:14         0.540         {"position_acc": 0.8204}  6.9303
+12        train   1900/2737    8:34/ 3:46         0.541         {"position_acc": 0.8202}  5.9555
+12        train   2000/2737    9:01/ 3:19         0.541         {"position_acc": 0.82}  3.9676
+12        train   2100/2737    9:27/ 2:52         0.541         {"position_acc": 0.8201}  9.1653
+12        train   2200/2737    9:54/ 2:25         0.543         {"position_acc": 0.8198}  5.5282
+12        train   2300/2737   10:20/ 1:57         0.543         {"position_acc": 0.82}  11.0783
+12        train   2400/2737   10:46/ 1:30         0.543         {"position_acc": 0.8198}  8.4961
+12        train   2500/2737   11:13/ 1:03         0.542         {"position_acc": 0.8201}  9.1357
+12        train   2600/2737   11:39/ 0:36         0.541         {"position_acc": 0.8201}  6.5859
+12        train   2700/2737   12:05/ 0:09         0.540         {"position_acc": 0.8199}  8.1298
+False False
+==================== begin saving model and validation ====================
+12        train   2737/2737   12:16/ 0:00         0.541         {"position_acc": 0.8198}  None
+09/23/2022 10:53:24 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/12.pkl
+12        valid   1/330        0:11/61:20         0.000           None
+12        valid   101/330      0:22/ 0:51         0.000           None
+12        valid   201/330      0:34/ 0:22         0.000           None
+12        valid   301/330      0:46/ 0:04         0.000           None
+12        valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+13        train   100/2737     0:38/17:02         0.533         {"position_acc": 0.8306}  4.9336
+13        train   200/2737     1:04/13:40         0.526         {"position_acc": 0.8297}  5.2478
+13        train   300/2737     1:30/12:16         0.539         {"position_acc": 0.8242}  7.9614
+13        train   400/2737     1:56/11:20         0.541         {"position_acc": 0.8221}  8.7318
+13        train   500/2737     2:22/10:36         0.538         {"position_acc": 0.8216}  6.7418
+13        train   600/2737     2:48/ 9:58         0.539         {"position_acc": 0.8216}  5.8778
+13        train   700/2737     3:13/ 9:24         0.541         {"position_acc": 0.821}  10.9806
+13        train   800/2737     3:39/ 8:52         0.537         {"position_acc": 0.822}  9.1542
+13        train   900/2737     4:05/ 8:21         0.538         {"position_acc": 0.821}  7.4798
+13        train   1000/2737    4:31/ 7:51         0.536         {"position_acc": 0.8217}  7.5233
+13        train   1100/2737    4:57/ 7:22         0.537         {"position_acc": 0.8211}  5.787
+13        train   1200/2737    5:23/ 6:54         0.540         {"position_acc": 0.8209}  6.4848
+13        train   1300/2737    5:50/ 6:27         0.543         {"position_acc": 0.819}  6.6256
+13        train   1400/2737    6:16/ 5:59         0.546         {"position_acc": 0.8179}  8.4911
+13        train   1500/2737    6:43/ 5:32         0.549         {"position_acc": 0.8171}  11.3045
+13        train   1600/2737    7:09/ 5:05         0.548         {"position_acc": 0.8171}  10.5826
+13        train   1700/2737    7:35/ 4:38         0.550         {"position_acc": 0.8168}  7.9144
+13        train   1800/2737    8:02/ 4:11         0.554         {"position_acc": 0.8154}  4.8615
+13        train   1900/2737    8:28/ 3:44         0.555         {"position_acc": 0.8147}  7.4587
+13        train   2000/2737    8:55/ 3:17         0.556         {"position_acc": 0.8143}  4.4216
+13        train   2100/2737    9:21/ 2:50         0.555         {"position_acc": 0.8148}  13.5624
+13        train   2200/2737    9:48/ 2:23         0.556         {"position_acc": 0.8149}  4.8252
+13        train   2300/2737   10:15/ 1:56         0.556         {"position_acc": 0.8147}  10.2753
+13        train   2400/2737   10:42/ 1:30         0.555         {"position_acc": 0.8147}  10.6491
+13        train   2500/2737   11:09/ 1:03         0.555         {"position_acc": 0.814}  8.3372
+13        train   2600/2737   11:36/ 0:36         0.555         {"position_acc": 0.8138}  8.4563
+13        train   2700/2737   12:03/ 0:09         0.553         {"position_acc": 0.8141}  9.8232
+False False
+==================== begin saving model and validation ====================
+13        train   2737/2737   12:14/ 0:00         0.553         {"position_acc": 0.8141}  None
+09/23/2022 11:06:30 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/13.pkl
+13        valid   1/330        0:11/61:42         0.000           None
+13        valid   101/330      0:22/ 0:51         0.000           None
+13        valid   201/330      0:34/ 0:22         0.000           None
+13        valid   301/330      0:46/ 0:04         0.000           None
+13        valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+14        train   100/2737     0:38/17:07         0.505         {"position_acc": 0.8306}  6.2661
+14        train   200/2737     1:05/13:50         0.512         {"position_acc": 0.8241}  5.7309
+14        train   300/2737     1:31/12:24         0.540         {"position_acc": 0.8188}  10.9185
+14        train   400/2737     1:57/11:28         0.541         {"position_acc": 0.8184}  2.8507
+14        train   500/2737     2:23/10:43         0.540         {"position_acc": 0.8163}  7.6256
+14        train   600/2737     2:50/10:05         0.537         {"position_acc": 0.8191}  6.0735
+14        train   700/2737     3:16/ 9:30         0.535         {"position_acc": 0.8193}  5.3284
+14        train   800/2737     3:42/ 8:58         0.534         {"position_acc": 0.8195}  6.2199
+14        train   900/2737     4:08/ 8:27         0.538         {"position_acc": 0.8194}  11.8648
+14        train   1000/2737    4:34/ 7:56         0.535         {"position_acc": 0.8199}  7.299
+14        train   1100/2737    5:00/ 7:27         0.534         {"position_acc": 0.8208}  7.2436
+14        train   1200/2737    5:26/ 6:58         0.537         {"position_acc": 0.8205}  6.3864
+14        train   1300/2737    5:53/ 6:30         0.540         {"position_acc": 0.819}  10.3211
+14        train   1400/2737    6:19/ 6:02         0.543         {"position_acc": 0.8185}  10.354
+14        train   1500/2737    6:45/ 5:34         0.547         {"position_acc": 0.8185}  8.3195
+14        train   1600/2737    7:11/ 5:06         0.545         {"position_acc": 0.8188}  7.6098
+14        train   1700/2737    7:37/ 4:39         0.547         {"position_acc": 0.8186}  8.1133
+14        train   1800/2737    8:04/ 4:11         0.550         {"position_acc": 0.8175}  8.5792
+14        train   1900/2737    8:30/ 3:44         0.552         {"position_acc": 0.8167}  5.6755
+14        train   2000/2737    8:56/ 3:17         0.552         {"position_acc": 0.8168}  7.1191
+14        train   2100/2737    9:22/ 2:50         0.552         {"position_acc": 0.8168}  10.7398
+14        train   2200/2737    9:49/ 2:23         0.553         {"position_acc": 0.8166}  4.5374
+14        train   2300/2737   10:15/ 1:56         0.553         {"position_acc": 0.8164}  8.8353
+14        train   2400/2737   10:41/ 1:30         0.553         {"position_acc": 0.8161}  14.867
+14        train   2500/2737   11:07/ 1:03         0.552         {"position_acc": 0.8161}  7.0584
+14        train   2600/2737   11:33/ 0:36         0.551         {"position_acc": 0.8166}  7.8755
+14        train   2700/2737   11:59/ 0:09         0.550         {"position_acc": 0.817}  6.5646
+False False
+==================== begin saving model and validation ====================
+14        train   2737/2737   12:10/ 0:00         0.550         {"position_acc": 0.817}  None
+09/23/2022 11:19:32 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/14.pkl
+14        valid   1/330        0:11/61:59         0.000           None
+14        valid   101/330      0:22/ 0:51         0.000           None
+14        valid   201/330      0:34/ 0:22         0.000           None
+14        valid   301/330      0:46/ 0:04         0.000           None
+14        valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+15        train   100/2737     0:39/17:09         0.522         {"position_acc": 0.8337}  5.057
+15        train   200/2737     1:05/13:46         0.514         {"position_acc": 0.8322}  4.1638
+15        train   300/2737     1:31/12:23         0.534         {"position_acc": 0.8284}  10.1678
+15        train   400/2737     1:58/11:30         0.537         {"position_acc": 0.824}  6.8504
+15        train   500/2737     2:24/10:47         0.537         {"position_acc": 0.8223}  7.2586
+15        train   600/2737     2:51/10:10         0.534         {"position_acc": 0.8232}  9.4187
+15        train   700/2737     3:18/ 9:36         0.531         {"position_acc": 0.8235}  5.584
+15        train   800/2737     3:44/ 9:03         0.530         {"position_acc": 0.8237}  9.3392
+15        train   900/2737     4:11/ 8:32         0.535         {"position_acc": 0.822}  7.5167
+15        train   1000/2737    4:37/ 8:02         0.531         {"position_acc": 0.8228}  6.628
+15        train   1100/2737    5:04/ 7:32         0.531         {"position_acc": 0.8225}  5.1046
+15        train   1200/2737    5:31/ 7:04         0.534         {"position_acc": 0.8223}  12.1085
+15        train   1300/2737    5:57/ 6:35         0.538         {"position_acc": 0.8204}  10.9412
+15        train   1400/2737    6:24/ 6:07         0.542         {"position_acc": 0.8187}  8.9304
+15        train   1500/2737    6:51/ 5:39         0.544         {"position_acc": 0.8192}  8.3232
+15        train   1600/2737    7:18/ 5:11         0.543         {"position_acc": 0.8193}  8.8188
+15        train   1700/2737    7:44/ 4:43         0.545         {"position_acc": 0.8187}  7.9839
+15        train   1800/2737    8:11/ 4:16         0.548         {"position_acc": 0.8177}  4.0411
+15        train   1900/2737    8:38/ 3:48         0.549         {"position_acc": 0.8173}  4.6792
+15        train   2000/2737    9:05/ 3:20         0.548         {"position_acc": 0.8176}  4.6915
+15        train   2100/2737    9:32/ 2:53         0.547         {"position_acc": 0.8182}  11.5653
+15        train   2200/2737    9:58/ 2:26         0.549         {"position_acc": 0.8178}  7.7364
+15        train   2300/2737   10:25/ 1:58         0.548         {"position_acc": 0.8178}  9.0618
+15        train   2400/2737   10:51/ 1:31         0.549         {"position_acc": 0.8174}  12.1524
+15        train   2500/2737   11:18/ 1:04         0.549         {"position_acc": 0.817}  8.998
+15        train   2600/2737   11:44/ 0:37         0.549         {"position_acc": 0.8173}  7.354
+15        train   2700/2737   12:11/ 0:10         0.546         {"position_acc": 0.8178}  6.8363
+False False
+==================== begin saving model and validation ====================
+15        train   2737/2737   12:22/ 0:00         0.547         {"position_acc": 0.8179}  None
+09/23/2022 11:32:46 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/15.pkl
+15        valid   1/330        0:32/179:32        0.000           None
+15        valid   101/330      0:44/ 1:40         0.000           None
+15        valid   201/330      0:55/ 0:35         0.000           None
+15        valid   301/330      1:07/ 0:06         0.000           None
+15        valid   330/330      1:12/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+16        train   100/2737     0:39/17:13         0.512         {"position_acc": 0.8269}  6.6853
+16        train   200/2737     1:05/13:48         0.515         {"position_acc": 0.8263}  4.0194
+16        train   300/2737     1:31/12:22         0.532         {"position_acc": 0.8232}  7.181
+16        train   400/2737     1:57/11:27         0.536         {"position_acc": 0.8207}  4.8503
+16        train   500/2737     2:24/10:44         0.541         {"position_acc": 0.8168}  8.2697
+16        train   600/2737     2:50/10:07         0.541         {"position_acc": 0.82}  8.3374
+16        train   700/2737     3:16/ 9:33         0.537         {"position_acc": 0.8196}  8.942
+16        train   800/2737     3:43/ 9:01         0.535         {"position_acc": 0.82}  7.0233
+16        train   900/2737     4:09/ 8:30         0.539         {"position_acc": 0.8183}  5.3246
+16        train   1000/2737    4:36/ 7:59         0.535         {"position_acc": 0.8184}  11.5932
+16        train   1100/2737    5:02/ 7:29         0.535         {"position_acc": 0.8185}  6.2266
+16        train   1200/2737    5:28/ 7:00         0.537         {"position_acc": 0.8176}  5.6541
+16        train   1300/2737    5:54/ 6:31         0.542         {"position_acc": 0.8171}  11.9154
+16        train   1400/2737    6:20/ 6:03         0.544         {"position_acc": 0.8161}  12.4959
+16        train   1500/2737    6:46/ 5:35         0.545         {"position_acc": 0.8162}  9.77
+16        train   1600/2737    7:12/ 5:07         0.545         {"position_acc": 0.8162}  10.655
+16        train   1700/2737    7:38/ 4:39         0.547         {"position_acc": 0.8163}  10.7105
+16        train   1800/2737    8:04/ 4:12         0.551         {"position_acc": 0.8149}  5.3027
+16        train   1900/2737    8:30/ 3:44         0.552         {"position_acc": 0.8141}  5.9559
+16        train   2000/2737    8:56/ 3:17         0.551         {"position_acc": 0.8146}  10.4154
+16        train   2100/2737    9:22/ 2:50         0.551         {"position_acc": 0.8144}  7.3124
+16        train   2200/2737    9:48/ 2:23         0.554         {"position_acc": 0.814}  6.0022
+16        train   2300/2737   10:14/ 1:56         0.554         {"position_acc": 0.8143}  10.4134
+16        train   2400/2737   10:41/ 1:30         0.553         {"position_acc": 0.8143}  7.363
+16        train   2500/2737   11:07/ 1:03         0.552         {"position_acc": 0.8142}  8.2607
+16        train   2600/2737   11:33/ 0:36         0.551         {"position_acc": 0.8144}  8.2797
+16        train   2700/2737   11:59/ 0:09         0.549         {"position_acc": 0.8149}  7.5618
+False False
+==================== begin saving model and validation ====================
+16        train   2737/2737   12:10/ 0:00         0.550         {"position_acc": 0.815}  None
+09/23/2022 11:46:09 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/16.pkl
+16        valid   1/330        0:11/61:10         0.000           None
+16        valid   101/330      0:22/ 0:51         0.000           None
+16        valid   201/330      0:34/ 0:22         0.000           None
+16        valid   301/330      0:46/ 0:04         0.000           None
+16        valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+17        train   100/2737     0:38/17:06         0.545         {"position_acc": 0.8263}  7.1536
+17        train   200/2737     1:04/13:43         0.522         {"position_acc": 0.8263}  4.4924
+17        train   300/2737     1:30/12:19         0.536         {"position_acc": 0.8226}  8.5352
+17        train   400/2737     1:56/11:23         0.532         {"position_acc": 0.8209}  4.0744
+17        train   500/2737     2:23/10:39         0.530         {"position_acc": 0.8206}  8.1619
+17        train   600/2737     2:49/10:02         0.529         {"position_acc": 0.823}  9.2891
+17        train   700/2737     3:15/ 9:29         0.527         {"position_acc": 0.8226}  5.4355
+17        train   800/2737     3:42/ 8:58         0.525         {"position_acc": 0.8234}  7.3
+17        train   900/2737     4:08/ 8:27         0.528         {"position_acc": 0.8224}  10.2248
+17        train   1000/2737    4:35/ 7:57         0.525         {"position_acc": 0.8233}  8.3326
+17        train   1100/2737    5:01/ 7:28         0.526         {"position_acc": 0.8234}  9.8003
+17        train   1200/2737    5:27/ 6:59         0.528         {"position_acc": 0.8233}  6.8571
+17        train   1300/2737    5:54/ 6:31         0.532         {"position_acc": 0.8215}  8.3782
+17        train   1400/2737    6:20/ 6:03         0.535         {"position_acc": 0.8199}  5.9021
+17        train   1500/2737    6:47/ 5:36         0.539         {"position_acc": 0.8192}  8.2315
+17        train   1600/2737    7:14/ 5:08         0.539         {"position_acc": 0.8196}  12.4787
+17        train   1700/2737    7:40/ 4:40         0.540         {"position_acc": 0.8197}  7.0967
+17        train   1800/2737    8:07/ 4:13         0.543         {"position_acc": 0.8186}  11.5408
+17        train   1900/2737    8:33/ 3:46         0.544         {"position_acc": 0.8175}  7.3266
+17        train   2000/2737    9:00/ 3:19         0.542         {"position_acc": 0.8186}  4.7666
+17        train   2100/2737    9:26/ 2:51         0.542         {"position_acc": 0.8186}  9.6014
+17        train   2200/2737    9:53/ 2:24         0.545         {"position_acc": 0.8177}  7.2479
+17        train   2300/2737   10:20/ 1:57         0.546         {"position_acc": 0.8176}  11.729
+17        train   2400/2737   10:46/ 1:30         0.546         {"position_acc": 0.8175}  9.6988
+17        train   2500/2737   11:13/ 1:03         0.545         {"position_acc": 0.8174}  7.4051
+17        train   2600/2737   11:39/ 0:36         0.543         {"position_acc": 0.8179}  5.9321
+17        train   2700/2737   12:06/ 0:09         0.542         {"position_acc": 0.818}  9.9855
+False False
+==================== begin saving model and validation ====================
+17        train   2737/2737   12:17/ 0:00         0.543         {"position_acc": 0.8175}  None
+09/23/2022 11:59:19 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/17.pkl
+17        valid   1/330        0:11/60:38         0.000           None
+17        valid   101/330      0:22/ 0:51         0.000           None
+17        valid   201/330      0:34/ 0:21         0.000           None
+17        valid   301/330      0:45/ 0:04         0.000           None
+17        valid   330/330      0:50/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+18        train   100/2737     0:38/17:08         0.550         {"position_acc": 0.8137}  7.2326
+18        train   200/2737     1:05/13:44         0.533         {"position_acc": 0.8191}  3.4276
+18        train   300/2737     1:31/12:21         0.549         {"position_acc": 0.8188}  7.8418
+18        train   400/2737     1:57/11:25         0.549         {"position_acc": 0.8161}  4.3231
+18        train   500/2737     2:23/10:41         0.548         {"position_acc": 0.8161}  13.7583
+18        train   600/2737     2:49/10:03         0.546         {"position_acc": 0.8185}  8.5717
+18        train   700/2737     3:15/ 9:29         0.544         {"position_acc": 0.8181}  8.0523
+18        train   800/2737     3:41/ 8:56         0.541         {"position_acc": 0.819}  8.9742
+18        train   900/2737     4:07/ 8:25         0.544         {"position_acc": 0.8175}  11.8458
+18        train   1000/2737    4:33/ 7:55         0.539         {"position_acc": 0.8184}  9.2987
+18        train   1100/2737    5:00/ 7:26         0.539         {"position_acc": 0.8187}  4.8112
+18        train   1200/2737    5:26/ 6:57         0.540         {"position_acc": 0.8182}  7.0895
+18        train   1300/2737    5:52/ 6:29         0.543         {"position_acc": 0.8161}  9.7244
+18        train   1400/2737    6:19/ 6:01         0.546         {"position_acc": 0.8155}  11.2748
+18        train   1500/2737    6:45/ 5:34         0.547         {"position_acc": 0.8155}  9.577
+18        train   1600/2737    7:12/ 5:07         0.547         {"position_acc": 0.8157}  10.714
+18        train   1700/2737    7:39/ 4:40         0.549         {"position_acc": 0.8157}  9.8094
+18        train   1800/2737    8:05/ 4:12         0.552         {"position_acc": 0.815}  5.3303
+18        train   1900/2737    8:32/ 3:45         0.555         {"position_acc": 0.8139}  8.1511
+18        train   2000/2737    8:59/ 3:18         0.554         {"position_acc": 0.8139}  5.9317
+18        train   2100/2737    9:25/ 2:51         0.555         {"position_acc": 0.8137}  10.2062
+18        train   2200/2737    9:52/ 2:24         0.555         {"position_acc": 0.8139}  7.3795
+18        train   2300/2737   10:19/ 1:57         0.554         {"position_acc": 0.8147}  10.2379
+18        train   2400/2737   10:45/ 1:30         0.554         {"position_acc": 0.8144}  11.0749
+18        train   2500/2737   11:11/ 1:03         0.553         {"position_acc": 0.8144}  7.071
+18        train   2600/2737   11:38/ 0:36         0.552         {"position_acc": 0.8149}  6.5774
+18        train   2700/2737   12:04/ 0:09         0.550         {"position_acc": 0.8156}  6.0052
+False False
+==================== begin saving model and validation ====================
+18        train   2737/2737   12:15/ 0:00         0.550         {"position_acc": 0.8157}  None
+09/23/2022 12:12:25 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/18.pkl
+18        valid   1/330        0:11/61:21         0.000           None
+18        valid   101/330      0:22/ 0:51         0.000           None
+18        valid   201/330      0:34/ 0:22         0.000           None
+18        valid   301/330      0:46/ 0:04         0.000           None
+18        valid   330/330      0:51/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None
+19        train   100/2737     0:38/17:05         0.530         {"position_acc": 0.8294}  6.7621
+19        train   200/2737     1:04/13:41         0.522         {"position_acc": 0.8263}  4.5601
+19        train   300/2737     1:30/12:18         0.537         {"position_acc": 0.8226}  11.5814
+19        train   400/2737     1:57/11:27         0.537         {"position_acc": 0.8196}  4.2601
+19        train   500/2737     2:24/10:45         0.539         {"position_acc": 0.8188}  7.1271
+19        train   600/2737     2:51/10:09         0.535         {"position_acc": 0.8213}  6.3093
+19        train   700/2737     3:17/ 9:35         0.530         {"position_acc": 0.8227}  4.0688
+19        train   800/2737     3:44/ 9:04         0.529         {"position_acc": 0.8239}  6.6698
+19        train   900/2737     4:11/ 8:33         0.535         {"position_acc": 0.8218}  23.3247
+19        train   1000/2737    4:38/ 8:03         0.529         {"position_acc": 0.8226}  7.2014
+19        train   1100/2737    5:04/ 7:33         0.527         {"position_acc": 0.8227}  6.4927
+19        train   1200/2737    5:31/ 7:04         0.530         {"position_acc": 0.822}  6.2639
+19        train   1300/2737    5:57/ 6:35         0.536         {"position_acc": 0.8208}  11.2586
+19        train   1400/2737    6:23/ 6:06         0.537         {"position_acc": 0.8195}  8.136
+19        train   1500/2737    6:50/ 5:38         0.539         {"position_acc": 0.8201}  9.0668
+19        train   1600/2737    7:16/ 5:10         0.539         {"position_acc": 0.8195}  9.7415
+19        train   1700/2737    7:43/ 4:42         0.541         {"position_acc": 0.8189}  7.4094
+19        train   1800/2737    8:09/ 4:14         0.545         {"position_acc": 0.8168}  7.879
+19        train   1900/2737    8:36/ 3:47         0.546         {"position_acc": 0.8159}  4.3548
+19        train   2000/2737    9:02/ 3:19         0.546         {"position_acc": 0.8162}  6.8818
+19        train   2100/2737    9:29/ 2:52         0.546         {"position_acc": 0.8166}  9.1914
+19        train   2200/2737    9:56/ 2:25         0.549         {"position_acc": 0.8166}  6.6792
+19        train   2300/2737   10:23/ 1:58         0.548         {"position_acc": 0.8166}  8.8287
+19        train   2400/2737   10:49/ 1:31         0.549         {"position_acc": 0.8166}  11.4791
+19        train   2500/2737   11:16/ 1:04         0.547         {"position_acc": 0.8168}  6.7811
+19        train   2600/2737   11:42/ 0:37         0.547         {"position_acc": 0.8173}  60.5628
+19        train   2700/2737   12:08/ 0:09         0.545         {"position_acc": 0.8177}  8.5593
+False False
+==================== begin saving model and validation ====================
+19        train   2737/2737   12:19/ 0:00         0.546         {"position_acc": 0.8177}  None
+09/23/2022 12:25:37 - INFO - tools.train_tool -   Checkpoint saved to /data_new/private/xiaochaojun/DomainPlugin/checkpoints/SQuAD-Lora/19.pkl
+19        valid   1/330        0:21/118:50        0.000           None
+19        valid   101/330      0:33/ 1:15         0.000           None
+19        valid   201/330      0:44/ 0:28         0.000           None
+19        valid   301/330      0:56/ 0:05         0.000           None
+19        valid   330/330      1:01/ 0:00         0.000         {"EM": 0.8459, "F1": 0.9134}  None

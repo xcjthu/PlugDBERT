@@ -36,7 +36,15 @@ def init_all(config, gpu_list, checkpoint, mode, *args, **params):
         else:
             model = model.to(gpu_list[params['local_rank']])
         try:
+            # print_rank("before init DDP model")
+            # print_rank(model.state_dict().keys())
             model = nn.parallel.DistributedDataParallel(model, device_ids = [params['local_rank']])#, find_unused_parameters = True)
+            # print_rank("init DDP model")
+            # print_rank(model.state_dict().keys())
+            # print_rank("==" * 20)
+            # print_rank(model.module.state_dict().keys())
+            # print_rank("==" * 20)
+            # from IPython import embed; embed()
         except Exception as e:
             output_log(logger, "No init_multi_gpu implemented in the model, use single gpu instead.", logging.WARNING)
 

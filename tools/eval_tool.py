@@ -4,6 +4,7 @@ import torch
 from torch.autograd import Variable
 from torch.optim import lr_scheduler
 from timeit import default_timer as timer
+from kara_storage.pytorch.base import KaraPytorchDatasetBase
 
 logger = logging.getLogger(__name__)
 
@@ -61,6 +62,9 @@ def valid(model, dataset, epoch, config, gpu_list, output_function, mode="valid"
     more = ""
     if total_len < 10000:
         more = "\t"
+
+    if isinstance(dataset.dataset, KaraPytorchDatasetBase):
+        dataset.dataset.set_epoch(0)
 
     for step, data in enumerate(dataset):
         model.zero_grad()

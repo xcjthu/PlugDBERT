@@ -95,6 +95,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
             dataset.dataset.set_epoch(epoch_num)
         # if dataset.sampler is not None:
         #     dataset.sampler.set_epoch(epoch_num)
+
         for step, data in enumerate(dataset):
             if step < load_step:
                 if step % 1000 == 0:
@@ -171,7 +172,7 @@ def train(parameters, config, gpu_list, do_test=False, local_rank=-1):
                 acc_result = None
                 if local_rank <= 0:
                     print_rank()
-                    checkpoint(os.path.join(output_path, "%d.pkl" % current_epoch), model, optimizer, current_epoch, config, step + 1, lr_scheduler)
+                    checkpoint(os.path.join(output_path, "%d-step%d.pkl" % (current_epoch, step + 1)), model, optimizer, current_epoch, config, step + 1, lr_scheduler)
                 #     # path = os.path.join(output_path, 'model_%d_%d' % (current_epoch, (step + 1) // grad_accumulate))
                 #     # if local_rank < 0:
                 #     #     model.save_pretrained(path)

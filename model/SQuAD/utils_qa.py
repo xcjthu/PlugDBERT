@@ -59,7 +59,7 @@ def postprocess_qa_predictions(
 
 
     # Let's loop over all the examples!
-    for example_index, example in enumerate(tqdm(examples)):
+    for example_index, example in enumerate(examples):
         # Those are the indices of the features associated to the current example.
         feature_indices = features_per_example[example_index]
 
