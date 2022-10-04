@@ -29,5 +29,4 @@ class SQuADDataset(Dataset):
         return ret
 
     def __len__(self):
-        # return 160
         return len(self.qas)

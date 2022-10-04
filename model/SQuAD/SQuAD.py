@@ -1,11 +1,12 @@
 from transformers import BertTokenizer,AutoConfig,BertForQuestionAnswering,RobertaForQuestionAnswering
 import torch
-from torch import nn
+from torch import nn,Tensor
 from model.metric import softmax_acc
 from opendelta import AdapterModel,Visualization,LoraModel
 from opendelta.auto_delta import AutoDeltaModel
 from .utils_qa import *
 from tools import print_rank
+from typing import OrderedDict
 
 class SQuAD(nn.Module):
     def __init__(self, config, gpu_list, *args, **params):
@@ -16,13 +17,13 @@ class SQuAD(nn.Module):
         self.model = RobertaForQuestionAnswering.from_pretrained(self.plm)
         Visualization(self.model).structure_graph()
 
-        self.delta_model = LoraModel(backbone_model=self.model,
+        delta_model = LoraModel(backbone_model=self.model,
                 lora_r=config.getint("train", "lora_r"),
                 lora_alpha=config.getint("train", "lora_alpha"),
                 modified_modules=["self.query", "self.value"]
             )
-        self.delta_model.freeze_module(set_state_dict=True, exclude=["deltas","qa_outputs"])
-        self.delta_model.log(delta_ratio=True, trainable_ratio=True, visualization=True)
+        delta_model.freeze_module(set_state_dict=True, exclude=["deltas","qa_outputs"])
+        delta_model.log(delta_ratio=True, trainable_ratio=True, visualization=True)
         # print_rank("init delta model")
         # print_rank(self.model.state_dict().keys())
         # print_rank(self.state_dict().keys())
@@ -30,6 +31,27 @@ class SQuAD(nn.Module):
 
         self.hidden_size = self.model.config.hidden_size
         self.layer_num = self.model.config.num_hidden_layers
+
+        self.add_domain_plugin(config.get("model", "domain_plugin_path"))
+    
+    def add_domain_plugin(self, path=None):
+        if path is None:
+            return
+        print_rank("load domain plugin from", path)
+        domain_delta = AdapterModel(backbone_model=self.model,
+                bottleneck_dim=256,
+                modified_modules=["[r]encoder.layer.(\d)+\.attention.output.LayerNorm",
+                                "[r]encoder.layer.(\d)+\.output.LayerNorm"]
+            )
+        domain_delta.log(delta_ratio=True, trainable_ratio=True, visualization=True)
+        self.model.load_state_dict(torch.load(path)["model"], False)
+
+    def state_dict(self):
+        return self.model.state_dict()
+
+    def load_state_dict(self, state_dict: 'OrderedDict[str, Tensor]', strict: bool = True):
+        print("our self load function")
+        return self.model.load_state_dict(state_dict, strict=strict)
 
     def forward(self, data, config, gpu_list, acc_result, mode):
         # print(data.keys())

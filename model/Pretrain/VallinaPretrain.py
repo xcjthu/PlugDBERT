@@ -1,9 +1,11 @@
 from transformers import BertTokenizer,AutoConfig,BertForMaskedLM,AutoModelForMaskedLM
 import torch
-from torch import nn
+from torch import nn,Tensor
+from tools import print_rank
 from model.metric import softmax_acc
 from opendelta import AdapterModel,Visualization
 from opendelta.auto_delta import AutoDeltaModel
+from typing import OrderedDict
 
 class VallinaPretrain(nn.Module):
     def __init__(self, config, gpu_list, *args, **params):
@@ -37,16 +39,25 @@ class VallinaDeltaPretrain(nn.Module):
         self.model = AutoModelForMaskedLM.from_pretrained(self.plm)
         Visualization(self.model).structure_graph()
 
-        self.domain_delta = AdapterModel(backbone_model=self.model,
+        domain_delta = AdapterModel(backbone_model=self.model,
                 bottleneck_dim=config.getint("train", "bottleneck_dim"),
                 modified_modules=["[r]encoder.layer.(\d)+\.attention.output.LayerNorm",
                                 "[r]encoder.layer.(\d)+\.output.LayerNorm"]
             )
-        self.domain_delta.freeze_module(set_state_dict=True, exclude=["deltas"])
-        self.domain_delta.log(delta_ratio=True, trainable_ratio=True, visualization=True)
+        domain_delta.freeze_module(set_state_dict=True, exclude=["deltas"])
+        domain_delta.log(delta_ratio=True, trainable_ratio=True, visualization=True)
 
         self.hidden_size = self.model.config.hidden_size
         self.layer_num = self.model.config.num_hidden_layers
+
+    def state_dict(self):
+        return self.model.state_dict()
+
+    def load_state_dict(self, state_dict: 'OrderedDict[str, Tensor]', strict: bool = True):
+        print_rank("our self load function")
+        ret = self.model.load_state_dict(state_dict, strict=strict)
+        print_rank(ret)
+        return ret
 
     def forward(self, data, config, gpu_list, acc_result, mode):
         total_batch_size, ctx_len = data["input_ids"].size()

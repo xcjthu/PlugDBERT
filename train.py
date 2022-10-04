@@ -13,6 +13,9 @@ from tools.init_tool import init_all
 from config_parser import create_config
 from tools.train_tool import train
 from tools import print_rank,use_hfai
+from tools.eval_tool import valid
+from tools.init_tool import init_test_dataset, init_formatter
+import random
 
 import re
 
@@ -39,6 +42,14 @@ def print_config(config):
             print_rank("%s: %s" % (op, config.get(sec, op)))
         print_rank("========")
 
+def set_seed(seed):
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    random.seed(seed)
+    import numpy as np
+    np.random.seed(seed)
+
 def get_args(local_rank=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', '-c', help="specific config file", required=True)
@@ -48,7 +59,10 @@ def get_args(local_rank=None):
         parser.add_argument('--local_rank', type=int, help='local rank', default=-1)
     parser.add_argument('--do_test', help="do test while training or not", action="store_true")
     parser.add_argument('--comment', help="checkpoint file path", default=None)
+    parser.add_argument('--only_eval', help="only do evaluation", action="store_true")
     parser.add_argument('--hyper_para', "-hp", default=None)
+    parser.add_argument("--seed", type=int, default=2333)
+    parser.add_argument("--domain_plugin_path", default=None)
     args = parser.parse_args()
     if not local_rank is None:
         args.local_rank = local_rank
@@ -58,6 +72,9 @@ def get_args(local_rank=None):
 
 def main():
     args, config = get_args()
+    set_seed(args.seed)
+
+    config.set("model", "domain_plugin_path", args.domain_plugin_path)
 
     gpu_list = []
 
@@ -87,12 +104,19 @@ def main():
     do_test = False
     if args.do_test:
         do_test = True
-    
+
     if args.local_rank <= 0:
         print_config(config)
     if not args.comment is None:
         print_rank(args.comment)
-    train(parameters, config, gpu_list, do_test, args.local_rank)
+    if not args.only_eval:
+        train(parameters, config, gpu_list, do_test, args.local_rank)
+    with torch.no_grad():
+        valid(parameters["model"], parameters["valid_dataset"], 0, config, gpu_list, parameters["output_function"])
+        if do_test:
+            init_formatter(config, ["test"])
+            test_dataset = init_test_dataset(config)
+            valid(parameters["model"], test_dataset, 0, config, gpu_list, parameters["output_function"], mode="test")
 
 def main_hfai(local_rank):
     import hfai.distributed as dist

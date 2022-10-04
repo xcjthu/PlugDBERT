@@ -48,6 +48,7 @@ def init_all(config, gpu_list, checkpoint, mode, *args, **params):
         except Exception as e:
             output_log(logger, "No init_multi_gpu implemented in the model, use single gpu instead.", logging.WARNING)
 
+    print_rank(model.module.state_dict().keys())
     try:
         if checkpoint is None and config.getboolean("output", "load_from_path"):
             path = os.path.join(config.get("output", "model_path"), config.get("output", "model_name"))
@@ -61,6 +62,7 @@ def init_all(config, gpu_list, checkpoint, mode, *args, **params):
             model.module.load_state_dict(parameters["model"], strict=False)
         else:
             model.load_state_dict(parameters["model"])
+
         if mode == "train":
             trained_epoch = parameters["trained_epoch"]
             if config.get("train", "optimizer") == parameters["optimizer_name"]:
