@@ -37,13 +37,13 @@ class VallinaDeltaPretrain(nn.Module):
         self.model = AutoModelForMaskedLM.from_pretrained(self.plm)
         Visualization(self.model).structure_graph()
 
-        delta_model = AdapterModel(backbone_model=self.model,
+        self.domain_delta = AdapterModel(backbone_model=self.model,
                 bottleneck_dim=config.getint("train", "bottleneck_dim"),
                 modified_modules=["[r]encoder.layer.(\d)+\.attention.output.LayerNorm",
                                 "[r]encoder.layer.(\d)+\.output.LayerNorm"]
             )
-        delta_model.freeze_module(set_state_dict=True, exclude=["deltas"])
-        delta_model.log(delta_ratio=True, trainable_ratio=True, visualization=True)
+        self.domain_delta.freeze_module(set_state_dict=True, exclude=["deltas"])
+        self.domain_delta.log(delta_ratio=True, trainable_ratio=True, visualization=True)
 
         self.hidden_size = self.model.config.hidden_size
         self.layer_num = self.model.config.num_hidden_layers
