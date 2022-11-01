@@ -4,6 +4,8 @@ from .Pretrain.RawDataset import RawDataset
 from .PileDataset import PileDataset
 from .FFRecordDataset import FFRecordDataset
 from .SQuAD.SQuADDataset import SQuADDataset
+from .Fewrel.FewrelDataset import FewrelDataset
+from .Pretrain.MultiDataset import MultiDataset
 
 dataset_list = {
     "kara": make_kara_dataset,
@@ -11,4 +13,6 @@ dataset_list = {
     "Pile": PileDataset,
     "FFRecord": FFRecordDataset,
     "SQuAD": SQuADDataset,
+    "Fewrel": FewrelDataset,
+    "multi": MultiDataset,
 }

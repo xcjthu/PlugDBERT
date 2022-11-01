@@ -33,13 +33,13 @@ class SQuAD(nn.Module):
         self.layer_num = self.model.config.num_hidden_layers
 
         self.add_domain_plugin(config.get("model", "domain_plugin_path"))
-    
+
     def add_domain_plugin(self, path=None):
         if path is None:
             return
         print_rank("load domain plugin from", path)
         domain_delta = AdapterModel(backbone_model=self.model,
-                bottleneck_dim=256,
+                bottleneck_dim=64,
                 modified_modules=["[r]encoder.layer.(\d)+\.attention.output.LayerNorm",
                                 "[r]encoder.layer.(\d)+\.output.LayerNorm"]
             )

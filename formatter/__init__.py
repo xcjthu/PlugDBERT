@@ -3,12 +3,16 @@ import logging
 from .mlm.MLMFormatter import WikiMLMFormatter
 from .mlm.VallinaFormatter import VallinaMLMFormatter
 from .SQuAD.SQuADFormatter import SQuADFormatter
+from .Fewrel.FewrelFormatter import FewrelFormatter
+from .mlm.MultiMLMFormatter import MultiMLMFormatter
 logger = logging.getLogger(__name__)
 
 formatter_list = {
     "mlm": WikiMLMFormatter,
     "vallina": VallinaMLMFormatter,
     "SQuAD": SQuADFormatter,
+    "Fewrel": FewrelFormatter,
+    "multi": MultiMLMFormatter,
 }
 
 def init_formatter(config, mode, *args, **params):

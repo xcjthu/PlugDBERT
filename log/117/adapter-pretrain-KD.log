@@ -1,0 +1,221 @@
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter64-multi.config
+None
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter64-multi.config
+None
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter64-multi.config
+None
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter64-multi.config
+None
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter64-multi.config
+None
+/data3/private/xcj/DomainPlugin/DomainPlugin
+/data3/private/xcj/DomainPlugin/DomainPlugin
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter64-multi.config
+read config from config/pre-train/adapter64-multi.config
+read config from config/pre-train/adapter64-multi.config
+None
+None
+None
+11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:18 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
+11/01/2022 13:26:25 - INFO - tools.init_tool -   Begin to initialize models...
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   └── query,key,value(Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[64, 768] bias:[64]
+│               │                   └── up_proj (Linear) weight:[768, 64] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[64, 768] bias:[64]
+│                               └── up_proj (Linear) weight:[768, 64] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-11-01 13:26:31,191 >> Trainable Ratio: 1.872306%
+[INFO|(OpenDelta)basemodel:677]2022-11-01 13:26:31,191 >> Delta Parameter Ratio: 1.872306%
+[INFO|(OpenDelta)basemodel:679]2022-11-01 13:26:31,191 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+all parameters are turned
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+1
+0
+5
+3
+7
+6
+4
+2
+odict_keys(['roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.bias'])
+11/01/2022 13:26:39 - INFO - tools.init_tool -   Begin to load checkpoint... from None
+11/01/2022 13:26:39 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+11/01/2022 13:26:39 - INFO - tools.init_tool -   Initialize done.
+[train]
+epoch: 20
+batch_size: 4
+shuffle: True
+reader_num: 4
+optimizer: AdamW
+learning_rate: 1e-3
+weight_decay: 1e-5
+step_size: 1
+lr_multiplier: 1
+doc_len: 512
+warmup_steps: 20000
+training_steps: 200000
+max_grad_norm: 1.0
+fp16: False
+mlm_prob: 0.15
+valid_mode: step
+step_epoch: 5000
+bottleneck_dim: 64
+grad_accumulate: 4
+========
+[eval]
+batch_size: 4
+shuffle: False
+reader_num: 4
+========
+[distributed]
+use: True
+backend: nccl
+local_rank: 0
+gpu_num: 8
+========
+[data]
+train_dataset_type: multi
+train_formatter_type: multi
+valid_dataset_type: multi
+valid_formatter_type: multi
+========
+[model]
+model_name: multi
+pretrained_model: roberta-base
+domain_plugin_path: None
+========
+[output]
+output_time: 100
+test_time: 1
+model_path: checkpoints/
+model_name: BERT-Adapter-64-KD
+output_function: avgloss
+load_from_path: False
+========
+11/01/2022 13:26:39 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
+valid_mode step no_valid False
+step_epoch 5000
+11/01/2022 13:26:39 - INFO - tools.train_tool -   Start training
+Epoch  Stage  Iterations  Time Usage    Loss    Output Information
+training from epoch: 0 step: 0
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+0         train   100/204934   0:50/1736:02       1.776         {"mlm": 1.5337099087238313, "kdloss": 0.24261510960757732}  1.3241
+0         train   200/204934   1:29/1532:12       1.718         {"mlm": 1.4846322140097619, "kdloss": 0.23301028292626141}  1.1944
+0         train   300/204934   2:09/1469:34       1.709         {"mlm": 1.4808650475740432, "kdloss": 0.22831215860943}  1.0627
