@@ -2,7 +2,7 @@ from .Pretrain.MLMPretrain import MLMPretrain
 from .Pretrain.VallinaPretrain import VallinaPretrain,VallinaDeltaPretrain
 from .SQuAD.SQuAD import SQuAD
 from .Fewrel.Fewrel import Fewrel
-from .Pretrain.MultiMLMPretrain import MultiMLMPretrain
+from .Pretrain.MultiMLMPretrain import MultiMLMPretrain,MultiMLMFullPretrain
 
 model_list = {
     "mlm": MLMPretrain,
@@ -11,6 +11,7 @@ model_list = {
     "SQuAD": SQuAD,
     "Fewrel": Fewrel,
     "multi": MultiMLMPretrain,
+    "multi-full": MultiMLMFullPretrain,
 }
 
 def get_model(model_name):

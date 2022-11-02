@@ -5,7 +5,7 @@ from model.metric import softmax_acc
 from opendelta import AdapterModel,Visualization,LoraModel
 from opendelta.auto_delta import AutoDeltaModel
 from .utils_qa import *
-from tools import print_rank
+from tools import print_rank, get_rank
 from typing import OrderedDict
 
 class SQuAD(nn.Module):
@@ -23,7 +23,8 @@ class SQuAD(nn.Module):
                 modified_modules=["self.query", "self.value"]
             )
         delta_model.freeze_module(set_state_dict=True, exclude=["deltas","qa_outputs"])
-        delta_model.log(delta_ratio=True, trainable_ratio=True, visualization=True)
+        if get_rank() == 0:
+            delta_model.log(delta_ratio=True, trainable_ratio=True, visualization=True)
         # print_rank("init delta model")
         # print_rank(self.model.state_dict().keys())
         # print_rank(self.state_dict().keys())
@@ -39,12 +40,13 @@ class SQuAD(nn.Module):
             return
         print_rank("load domain plugin from", path)
         domain_delta = AdapterModel(backbone_model=self.model,
-                bottleneck_dim=64,
+                bottleneck_dim=48,
                 modified_modules=["[r]encoder.layer.(\d)+\.attention.output.LayerNorm",
                                 "[r]encoder.layer.(\d)+\.output.LayerNorm"]
             )
-        domain_delta.log(delta_ratio=True, trainable_ratio=True, visualization=True)
-        self.model.load_state_dict(torch.load(path)["model"], False)
+        if get_rank() == 0:
+            domain_delta.log(delta_ratio=True, trainable_ratio=True, visualization=True)
+        self.model.load_state_dict(torch.load(path, map_location=lambda storage, loc: storage)["model"], False)
 
     def state_dict(self):
         return self.model.state_dict()

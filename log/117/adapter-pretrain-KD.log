@@ -12,67 +12,55 @@ WARNING:torch.distributed.run:
 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
 *****************************************
 /data3/private/xcj/DomainPlugin/DomainPlugin
-read config from config/pre-train/adapter64-multi.config
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter-multi-full.config
+read config from config/pre-train/adapter-multi-full.config
+None
 None
 /data3/private/xcj/DomainPlugin/DomainPlugin
-read config from config/pre-train/adapter64-multi.config
+read config from config/pre-train/adapter-multi-full.config
 None
 /data3/private/xcj/DomainPlugin/DomainPlugin
-read config from config/pre-train/adapter64-multi.config
-None
-/data3/private/xcj/DomainPlugin/DomainPlugin
-read config from config/pre-train/adapter64-multi.config
-None
-/data3/private/xcj/DomainPlugin/DomainPlugin
-read config from config/pre-train/adapter64-multi.config
+read config from config/pre-train/adapter-multi-full.config
 None
 /data3/private/xcj/DomainPlugin/DomainPlugin
 /data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter-multi-full.config
+read config from config/pre-train/adapter-multi-full.config
+None
+None
 /data3/private/xcj/DomainPlugin/DomainPlugin
-read config from config/pre-train/adapter64-multi.config
-read config from config/pre-train/adapter64-multi.config
-read config from config/pre-train/adapter64-multi.config
+read config from config/pre-train/adapter-multi-full.config
 None
+/data3/private/xcj/DomainPlugin/DomainPlugin
+read config from config/pre-train/adapter-multi-full.config
 None
-None
-11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
-11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
-11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
-11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
-11/01/2022 13:26:17 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:18 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:18 - INFO - __main__ -   CUDA available: True
-11/01/2022 13:26:25 - INFO - tools.init_tool -   Begin to initialize models...
-/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
-/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
-/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
-/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
-/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
-/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
+11/02/2022 06:06:54 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 4
+11/02/2022 06:06:54 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 6
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 5
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 7
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:06:55 - INFO - tools.init_tool -   Begin to initialize dataset and formatter...
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:06:55 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+11/02/2022 06:06:55 - INFO - __main__ -   CUDA available: True
+11/02/2022 06:07:03 - INFO - tools.init_tool -   Begin to initialize models...
 root
 ├── roberta (RobertaModel)
 │   ├── embeddings (RobertaEmbeddings)
@@ -118,8 +106,8 @@ root
 │               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
 │               │           └── adapter (AdapterLayer)
 │               │               └── modulelist (Sequential)
-│               │                   ├── down_proj (Linear) weight:[64, 768] bias:[64]
-│               │                   └── up_proj (Linear) weight:[768, 64] bias:[768]
+│               │                   ├── down_proj (Linear) weight:[48, 768] bias:[48]
+│               │                   └── up_proj (Linear) weight:[768, 48] bias:[768]
 │               ├── intermediate (RobertaIntermediate)
 │               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
 │               └── output (RobertaOutput)
@@ -127,30 +115,89 @@ root
 │                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
 │                       └── adapter (AdapterLayer)
 │                           └── modulelist (Sequential)
-│                               ├── down_proj (Linear) weight:[64, 768] bias:[64]
-│                               └── up_proj (Linear) weight:[768, 64] bias:[768]
+│                               ├── down_proj (Linear) weight:[48, 768] bias:[48]
+│                               └── up_proj (Linear) weight:[768, 48] bias:[768]
 └── lm_head (RobertaLMHead) bias:[50265]
     ├── dense (Linear) weight:[768, 768] bias:[768]
     ├── layer_norm (LayerNorm) weight:[768] bias:[768]
     └── decoder (Linear) weight:[50265, 768] bias:[50265]
-[INFO|(OpenDelta)basemodel:675]2022-11-01 13:26:31,191 >> Trainable Ratio: 1.872306%
-[INFO|(OpenDelta)basemodel:677]2022-11-01 13:26:31,191 >> Delta Parameter Ratio: 1.872306%
-[INFO|(OpenDelta)basemodel:679]2022-11-01 13:26:31,191 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+[INFO|(OpenDelta)basemodel:675]2022-11-02 06:07:07,743 >> Trainable Ratio: 1.414425%
+[INFO|(OpenDelta)basemodel:677]2022-11-02 06:07:07,743 >> Delta Parameter Ratio: 1.414425%
+[INFO|(OpenDelta)basemodel:679]2022-11-02 06:07:07,743 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+load task plugin from checkpoints/SQuAD-Lora/6.pkl
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+root
+├── roberta (RobertaModel)
+│   ├── embeddings (RobertaEmbeddings)
+│   │   ├── word_embeddings (Embedding) weight:[50265, 768]
+│   │   ├── position_embeddings (Embedding) weight:[514, 768]
+│   │   ├── token_type_embeddings (Embedding) weight:[1, 768]
+│   │   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│   └── encoder (RobertaEncoder)
+│       └── layer (ModuleList)
+│           └── 0-11(RobertaLayer)
+│               ├── attention (RobertaAttention)
+│               │   ├── self (RobertaSelfAttention)
+│               │   │   ├── query,value(Linear) weight:[768, 768] bias:[768]
+│               │   │   │   └── lora (LowRankLinear) lora_A:[32, 768] lora_B:[768, 32]
+│               │   │   └── key (Linear) weight:[768, 768] bias:[768]
+│               │   └── output (RobertaSelfOutput)
+│               │       ├── dense (Linear) weight:[768, 768] bias:[768]
+│               │       └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│               │           └── adapter (AdapterLayer)
+│               │               └── modulelist (Sequential)
+│               │                   ├── down_proj (Linear) weight:[48, 768] bias:[48]
+│               │                   └── up_proj (Linear) weight:[768, 48] bias:[768]
+│               ├── intermediate (RobertaIntermediate)
+│               │   └── dense (Linear) weight:[3072, 768] bias:[3072]
+│               └── output (RobertaOutput)
+│                   ├── dense (Linear) weight:[768, 3072] bias:[768]
+│                   └── LayerNorm (LayerNorm) weight:[768] bias:[768]
+│                       └── adapter (AdapterLayer)
+│                           └── modulelist (Sequential)
+│                               ├── down_proj (Linear) weight:[48, 768] bias:[48]
+│                               └── up_proj (Linear) weight:[768, 48] bias:[768]
+└── lm_head (RobertaLMHead) bias:[50265]
+    ├── dense (Linear) weight:[768, 768] bias:[768]
+    ├── layer_norm (LayerNorm) weight:[768] bias:[768]
+    └── decoder (Linear) weight:[50265, 768] bias:[50265]
+[INFO|(OpenDelta)basemodel:675]2022-11-02 06:07:07,786 >> Trainable Ratio: 2.325365%
+[INFO|(OpenDelta)basemodel:677]2022-11-02 06:07:07,786 >> Delta Parameter Ratio: 2.325365%
+[INFO|(OpenDelta)basemodel:679]2022-11-02 06:07:07,786 >> Static Memory 0.00 GB, Max Memory 0.00 GB
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+========== parameters with grad ==========
+['roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.bias']
+========================================
+========== load task plugin ==========
+_IncompatibleKeys(missing_keys=['roberta.embeddings.position_ids', 'roberta.embeddings.word_embeddings.weight', 'roberta.embeddings.position_embeddings.weight', 'roberta.embeddings.token_type_embeddings.weight', 'roberta.embeddings.LayerNorm.weight', 'roberta.embeddings.LayerNorm.bias', 'roberta.encoder.layer.0.attention.self.query.weight', 'roberta.encoder.layer.0.attention.self.query.bias', 'roberta.encoder.layer.0.attention.self.key.weight', 'roberta.encoder.layer.0.attention.self.key.bias', 'roberta.encoder.layer.0.attention.self.value.weight', 'roberta.encoder.layer.0.attention.self.value.bias', 'roberta.encoder.layer.0.attention.output.dense.weight', 'roberta.encoder.layer.0.attention.output.dense.bias', 'roberta.encoder.layer.0.attention.output.LayerNorm.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.bias', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.0.intermediate.dense.weight', 'roberta.encoder.layer.0.intermediate.dense.bias', 'roberta.encoder.layer.0.output.dense.weight', 'roberta.encoder.layer.0.output.dense.bias', 'roberta.encoder.layer.0.output.LayerNorm.weight', 'roberta.encoder.layer.0.output.LayerNorm.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.attention.self.query.weight', 'roberta.encoder.layer.1.attention.self.query.bias', 'roberta.encoder.layer.1.attention.self.key.weight', 'roberta.encoder.layer.1.attention.self.key.bias', 'roberta.encoder.layer.1.attention.self.value.weight', 'roberta.encoder.layer.1.attention.self.value.bias', 'roberta.encoder.layer.1.attention.output.dense.weight', 'roberta.encoder.layer.1.attention.output.dense.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.intermediate.dense.weight', 'roberta.encoder.layer.1.intermediate.dense.bias', 'roberta.encoder.layer.1.output.dense.weight', 'roberta.encoder.layer.1.output.dense.bias', 'roberta.encoder.layer.1.output.LayerNorm.weight', 'roberta.encoder.layer.1.output.LayerNorm.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.attention.self.query.weight', 'roberta.encoder.layer.2.attention.self.query.bias', 'roberta.encoder.layer.2.attention.self.key.weight', 'roberta.encoder.layer.2.attention.self.key.bias', 'roberta.encoder.layer.2.attention.self.value.weight', 'roberta.encoder.layer.2.attention.self.value.bias', 'roberta.encoder.layer.2.attention.output.dense.weight', 'roberta.encoder.layer.2.attention.output.dense.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.intermediate.dense.weight', 'roberta.encoder.layer.2.intermediate.dense.bias', 'roberta.encoder.layer.2.output.dense.weight', 'roberta.encoder.layer.2.output.dense.bias', 'roberta.encoder.layer.2.output.LayerNorm.weight', 'roberta.encoder.layer.2.output.LayerNorm.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.attention.self.query.weight', 'roberta.encoder.layer.3.attention.self.query.bias', 'roberta.encoder.layer.3.attention.self.key.weight', 'roberta.encoder.layer.3.attention.self.key.bias', 'roberta.encoder.layer.3.attention.self.value.weight', 'roberta.encoder.layer.3.attention.self.value.bias', 'roberta.encoder.layer.3.attention.output.dense.weight', 'roberta.encoder.layer.3.attention.output.dense.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.intermediate.dense.weight', 'roberta.encoder.layer.3.intermediate.dense.bias', 'roberta.encoder.layer.3.output.dense.weight', 'roberta.encoder.layer.3.output.dense.bias', 'roberta.encoder.layer.3.output.LayerNorm.weight', 'roberta.encoder.layer.3.output.LayerNorm.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.attention.self.query.weight', 'roberta.encoder.layer.4.attention.self.query.bias', 'roberta.encoder.layer.4.attention.self.key.weight', 'roberta.encoder.layer.4.attention.self.key.bias', 'roberta.encoder.layer.4.attention.self.value.weight', 'roberta.encoder.layer.4.attention.self.value.bias', 'roberta.encoder.layer.4.attention.output.dense.weight', 'roberta.encoder.layer.4.attention.output.dense.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.intermediate.dense.weight', 'roberta.encoder.layer.4.intermediate.dense.bias', 'roberta.encoder.layer.4.output.dense.weight', 'roberta.encoder.layer.4.output.dense.bias', 'roberta.encoder.layer.4.output.LayerNorm.weight', 'roberta.encoder.layer.4.output.LayerNorm.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.attention.self.query.weight', 'roberta.encoder.layer.5.attention.self.query.bias', 'roberta.encoder.layer.5.attention.self.key.weight', 'roberta.encoder.layer.5.attention.self.key.bias', 'roberta.encoder.layer.5.attention.self.value.weight', 'roberta.encoder.layer.5.attention.self.value.bias', 'roberta.encoder.layer.5.attention.output.dense.weight', 'roberta.encoder.layer.5.attention.output.dense.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.intermediate.dense.weight', 'roberta.encoder.layer.5.intermediate.dense.bias', 'roberta.encoder.layer.5.output.dense.weight', 'roberta.encoder.layer.5.output.dense.bias', 'roberta.encoder.layer.5.output.LayerNorm.weight', 'roberta.encoder.layer.5.output.LayerNorm.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.attention.self.query.weight', 'roberta.encoder.layer.6.attention.self.query.bias', 'roberta.encoder.layer.6.attention.self.key.weight', 'roberta.encoder.layer.6.attention.self.key.bias', 'roberta.encoder.layer.6.attention.self.value.weight', 'roberta.encoder.layer.6.attention.self.value.bias', 'roberta.encoder.layer.6.attention.output.dense.weight', 'roberta.encoder.layer.6.attention.output.dense.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.intermediate.dense.weight', 'roberta.encoder.layer.6.intermediate.dense.bias', 'roberta.encoder.layer.6.output.dense.weight', 'roberta.encoder.layer.6.output.dense.bias', 'roberta.encoder.layer.6.output.LayerNorm.weight', 'roberta.encoder.layer.6.output.LayerNorm.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.attention.self.query.weight', 'roberta.encoder.layer.7.attention.self.query.bias', 'roberta.encoder.layer.7.attention.self.key.weight', 'roberta.encoder.layer.7.attention.self.key.bias', 'roberta.encoder.layer.7.attention.self.value.weight', 'roberta.encoder.layer.7.attention.self.value.bias', 'roberta.encoder.layer.7.attention.output.dense.weight', 'roberta.encoder.layer.7.attention.output.dense.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.intermediate.dense.weight', 'roberta.encoder.layer.7.intermediate.dense.bias', 'roberta.encoder.layer.7.output.dense.weight', 'roberta.encoder.layer.7.output.dense.bias', 'roberta.encoder.layer.7.output.LayerNorm.weight', 'roberta.encoder.layer.7.output.LayerNorm.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.attention.self.query.weight', 'roberta.encoder.layer.8.attention.self.query.bias', 'roberta.encoder.layer.8.attention.self.key.weight', 'roberta.encoder.layer.8.attention.self.key.bias', 'roberta.encoder.layer.8.attention.self.value.weight', 'roberta.encoder.layer.8.attention.self.value.bias', 'roberta.encoder.layer.8.attention.output.dense.weight', 'roberta.encoder.layer.8.attention.output.dense.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.intermediate.dense.weight', 'roberta.encoder.layer.8.intermediate.dense.bias', 'roberta.encoder.layer.8.output.dense.weight', 'roberta.encoder.layer.8.output.dense.bias', 'roberta.encoder.layer.8.output.LayerNorm.weight', 'roberta.encoder.layer.8.output.LayerNorm.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.attention.self.query.weight', 'roberta.encoder.layer.9.attention.self.query.bias', 'roberta.encoder.layer.9.attention.self.key.weight', 'roberta.encoder.layer.9.attention.self.key.bias', 'roberta.encoder.layer.9.attention.self.value.weight', 'roberta.encoder.layer.9.attention.self.value.bias', 'roberta.encoder.layer.9.attention.output.dense.weight', 'roberta.encoder.layer.9.attention.output.dense.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.intermediate.dense.weight', 'roberta.encoder.layer.9.intermediate.dense.bias', 'roberta.encoder.layer.9.output.dense.weight', 'roberta.encoder.layer.9.output.dense.bias', 'roberta.encoder.layer.9.output.LayerNorm.weight', 'roberta.encoder.layer.9.output.LayerNorm.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.attention.self.query.weight', 'roberta.encoder.layer.10.attention.self.query.bias', 'roberta.encoder.layer.10.attention.self.key.weight', 'roberta.encoder.layer.10.attention.self.key.bias', 'roberta.encoder.layer.10.attention.self.value.weight', 'roberta.encoder.layer.10.attention.self.value.bias', 'roberta.encoder.layer.10.attention.output.dense.weight', 'roberta.encoder.layer.10.attention.output.dense.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.intermediate.dense.weight', 'roberta.encoder.layer.10.intermediate.dense.bias', 'roberta.encoder.layer.10.output.dense.weight', 'roberta.encoder.layer.10.output.dense.bias', 'roberta.encoder.layer.10.output.LayerNorm.weight', 'roberta.encoder.layer.10.output.LayerNorm.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.attention.self.query.weight', 'roberta.encoder.layer.11.attention.self.query.bias', 'roberta.encoder.layer.11.attention.self.key.weight', 'roberta.encoder.layer.11.attention.self.key.bias', 'roberta.encoder.layer.11.attention.self.value.weight', 'roberta.encoder.layer.11.attention.self.value.bias', 'roberta.encoder.layer.11.attention.output.dense.weight', 'roberta.encoder.layer.11.attention.output.dense.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.intermediate.dense.weight', 'roberta.encoder.layer.11.intermediate.dense.bias', 'roberta.encoder.layer.11.output.dense.weight', 'roberta.encoder.layer.11.output.dense.bias', 'roberta.encoder.layer.11.output.LayerNorm.weight', 'roberta.encoder.layer.11.output.LayerNorm.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.bias', 'lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias'], unexpected_keys=['qa_outputs.weight', 'qa_outputs.bias'])
+========================================
 all parameters are turned
 /data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
   warnings.warn(
-1
-0
-5
-3
-7
-6
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/data/disk1/private/xcj/env/miniconda3/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
 4
 2
+6
+3
+7
+0
+1
+5
+========== the keys in state dict ==========
 odict_keys(['roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.0.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.1.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.2.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.3.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.4.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.5.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.6.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.7.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.8.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.9.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.10.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.attention.output.LayerNorm.adapter.modulelist.up_proj.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.down_proj.bias', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.weight', 'roberta.encoder.layer.11.output.LayerNorm.adapter.modulelist.up_proj.bias'])
-11/01/2022 13:26:39 - INFO - tools.init_tool -   Begin to load checkpoint... from None
-11/01/2022 13:26:39 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
-11/01/2022 13:26:39 - INFO - tools.init_tool -   Initialize done.
+==============================
+11/02/2022 06:07:15 - INFO - tools.init_tool -   Begin to load checkpoint... from None
+11/02/2022 06:07:15 - WARNING - tools.init_tool -   Cannot load checkpoint file with error 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+11/02/2022 06:07:15 - INFO - tools.init_tool -   Initialize done.
 [train]
 epoch: 20
 batch_size: 4
@@ -169,7 +216,7 @@ fp16: False
 mlm_prob: 0.15
 valid_mode: step
 step_epoch: 5000
-bottleneck_dim: 64
+bottleneck_dim: 48
 grad_accumulate: 4
 ========
 [eval]
@@ -190,32 +237,34 @@ valid_dataset_type: multi
 valid_formatter_type: multi
 ========
 [model]
-model_name: multi
+model_name: multi-full
 pretrained_model: roberta-base
+task_plugin_path: checkpoints/SQuAD-Lora/6.pkl
 domain_plugin_path: None
 ========
 [output]
 output_time: 100
 test_time: 1
 model_path: checkpoints/
-model_name: BERT-Adapter-64-KD
+model_name: BERT-Adapter-full-KD
 output_function: avgloss
 load_from_path: False
 ========
-11/01/2022 13:26:39 - WARNING - tools.train_tool -   Output path exists, check whether need to change a name of model
 valid_mode step no_valid False
 step_epoch 5000
-11/01/2022 13:26:39 - INFO - tools.train_tool -   Start training
+11/02/2022 06:07:15 - INFO - tools.train_tool -   Start training
 Epoch  Stage  Iterations  Time Usage    Loss    Output Information
 training from epoch: 0 step: 0
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-11/01/2022 13:26:52 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
-0         train   100/204934   0:50/1736:02       1.776         {"mlm": 1.5337099087238313, "kdloss": 0.24261510960757732}  1.3241
-0         train   200/204934   1:29/1532:12       1.718         {"mlm": 1.4846322140097619, "kdloss": 0.23301028292626141}  1.1944
-0         train   300/204934   2:09/1469:34       1.709         {"mlm": 1.4808650475740432, "kdloss": 0.22831215860943}  1.0627
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+11/02/2022 06:07:29 - INFO - root -   Reducer buckets have been rebuilt in this iteration.
+0         train   100/204934   0:51/1774:14       2.734         {"mlm": 1.5374449741840364, "kdloss": 1.1965679842233659}  1.4488
+0         train   200/204934   1:31/1565:49       2.675         {"mlm": 1.508534937798977, "kdloss": 1.1664311483502388}  2.0559
+0         train   300/204934   2:12/1502:55       2.664         {"mlm": 1.4937834386030833, "kdloss": 1.1700897787014644}  1.748
+0         train   400/204934   2:53/1474:29       2.623         {"mlm": 1.4827256199717522, "kdloss": 1.1407233166694641}  1.493
+0         train   500/204934   3:34/1459:20       2.611         {"mlm": 1.4795233138799668, "kdloss": 1.131654344201088}  3.5342
