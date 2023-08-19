@@ -1,17 +1,5 @@
 import logging
-
-try:
-    import hfai
-    import hfai.distributed as dist
-    import hfai_env
-    # hfai_env.set_env('xcj_env')
-    _use_hfai=True
-except:
-    import torch.distributed as dist
-    _use_hfai=False
-
-def use_hfai():
-    return _use_hfai
+import torch.distributed as dist
 
 
 def output_log(logger: logging.Logger, info: str, level: int = logging.INFO, *args):

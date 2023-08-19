@@ -1,8 +1,3 @@
-from tools import use_hfai
-if use_hfai():
-    import hfai_env
-    hfai_env.set_env('xcj_env')
-
 import argparse
 import os
 from threading import local
@@ -12,7 +7,7 @@ import logging
 from tools.init_tool import init_all
 from config_parser import create_config
 from tools.train_tool import train
-from tools import print_rank,use_hfai
+from tools import print_rank
 from tools.eval_tool import valid
 from tools.init_tool import init_test_dataset, init_formatter
 import random
@@ -62,7 +57,6 @@ def get_args(local_rank=None):
     parser.add_argument('--only_eval', help="only do evaluation", action="store_true")
     parser.add_argument('--hyper_para', "-hp", default=None)
     parser.add_argument("--seed", type=int, default=2333)
-    parser.add_argument("--domain_plugin_path", default=None)
     args = parser.parse_args()
     if not local_rank is None:
         args.local_rank = local_rank
@@ -74,7 +68,6 @@ def main():
     args, config = get_args()
     set_seed(args.seed)
 
-    config.set("model", "domain_plugin_path", args.domain_plugin_path)
 
     gpu_list = []
 
@@ -89,10 +82,10 @@ def main():
 
     # os.system("clear")
     config.set('distributed', 'local_rank', args.local_rank)
-    if config.getboolean("distributed", "use"):
-        torch.cuda.set_device(gpu_list[args.local_rank])
-        torch.distributed.init_process_group(backend=config.get("distributed", "backend"))
-        config.set('distributed', 'gpu_num', len(gpu_list))
+
+    torch.cuda.set_device(gpu_list[args.local_rank])
+    torch.distributed.init_process_group(backend=config.get("distributed", "backend"))
+    config.set('distributed', 'gpu_num', len(gpu_list))
 
     cuda = torch.cuda.is_available()
     logger.info("CUDA available: %s" % str(cuda))
@@ -118,47 +111,8 @@ def main():
             test_dataset = init_test_dataset(config)
             valid(parameters["model"], test_dataset, 0, config, gpu_list, parameters["output_function"], mode="test")
 
-def main_hfai(local_rank):
-    import hfai.distributed as dist
-
-    ip = os.environ['MASTER_ADDR']
-    port = os.environ['MASTER_PORT']
-    hosts = int(os.environ['WORLD_SIZE'])  # 机器个数
-    rank = int(os.environ['RANK'])  # 当前机器编号
-    gpus = torch.cuda.device_count()  # 每台机器的GPU个数
-
-    args, config = get_args(local_rank)
-
-    gpu_list = list(range(torch.cuda.device_count()))
-
-    os.environ["CUDA_VISIBLE_DEVICES"] = ",".join([str(i) for i in gpu_list])
-
-
-    print_rank(args.hyper_para)
-    parse_hyper_para(args.hyper_para, config)
-
-    # os.system("clear")
-    config.set('distributed', 'local_rank', args.local_rank)
-
-    dist.init_process_group(backend='nccl',
-                            init_method=f'tcp://{ip}:{port}',
-                            world_size=hosts * gpus,
-                            rank=rank * gpus + local_rank)
-    config.set('distributed', 'gpu_num', gpus)
-
-    if args.local_rank <= 0:
-        print_config(config)
-
-    parameters = init_all(config, gpu_list, args.checkpoint, "train", local_rank = args.local_rank)
-
-    print_rank(args.comment)
-    train(parameters, config, gpu_list, args.do_test, args.local_rank)
 
 if __name__ == "__main__":
     print_rank(os.getcwd())
-    if use_hfai():
-        ngpus = torch.cuda.device_count()
-        torch.multiprocessing.spawn(main_hfai, args=(), nprocs=ngpus)
-    else:
-        main()
+    main()
 

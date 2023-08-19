@@ -43,6 +43,9 @@ def binary_output_function(data, config, *args, **params):
         metric = {'acc': 0}
     else:
         metric = {'acc': round(data['right'] / data['total'], 4)}
+        for key in data:
+            if key != "right" and key != "total":
+                metric[key] = round(data[key] / data['total'], 4)
     return json.dumps(metric)
 
 

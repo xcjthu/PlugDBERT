@@ -1,18 +1,11 @@
 import logging
 
-from .mlm.MLMFormatter import WikiMLMFormatter
-from .mlm.VallinaFormatter import VallinaMLMFormatter
-from .SQuAD.SQuADFormatter import SQuADFormatter
-from .Fewrel.FewrelFormatter import FewrelFormatter
-from .mlm.MultiMLMFormatter import MultiMLMFormatter
+from .mlm.MLMFormatter import MLMPlugDFormatter
+
 logger = logging.getLogger(__name__)
 
 formatter_list = {
-    "mlm": WikiMLMFormatter,
-    "vallina": VallinaMLMFormatter,
-    "SQuAD": SQuADFormatter,
-    "Fewrel": FewrelFormatter,
-    "multi": MultiMLMFormatter,
+    "MLMPlugD": MLMPlugDFormatter,
 }
 
 def init_formatter(config, mode, *args, **params):
